@@ -665,7 +665,7 @@ Sorry I have to be super aggressive in this legal stuff, but there has been some
     min-height: calc(95vh - 250px);
 }
 .message-group .comment .markup .highlight {
-    background: rgba(255, 255, 255, 0.05)
+    background: rgba(255, 255, 255, 0.05);
 }
 .user-popout .header.streaming,
 #user-profile-modal .header,
@@ -688,7 +688,7 @@ Sorry I have to be super aggressive in this legal stuff, but there has been some
 .theme-dark .chat form {
     border: none!important;
     margin: 0;
-    box-shadow: rgba(0, 0, 0, .1) 0 0 20px
+    box-shadow: rgba(0, 0, 0, .1) 0 0 20px;
 }
 .container-3NvGrL, .header-1tSljs,
 .guild-header {
