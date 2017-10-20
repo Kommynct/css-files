@@ -1,26 +1,10 @@
-/*
-///////////////////////////////////////
- - Beard's Material Discord Theme -
-- made from scratch by Beard Design -
-      - Created 10/07/2016 -
-       - beard-design.com -
-///////////////////////////////////////
-/!\
-Lilian Tedone(Beard Design) retains full copyright of this code.
-You are NOT ALLOWED to redistribute this file/Theme or any of the contents of it in any way or method.
-I.e. you are NOT ALLOWED to post an edited version of this theme to Github or other similar platforms without a clear and direct permission from Lilian Tedone.
-You are allowed to use this theme as it is, and edit it it AS LONG AS YOU KEEP IT FOR YOURSELF.
-Sorry I have to be super aggressive in this legal stuff, but there has been some problems and I just dont want more :3
-///////////////////////////////////////
-*/
-
 /*changelog*/
 .ui-standard-sidebar-view #bd-settingspane-container .content-column.default .bda-slist::before {
     content: "Changelog: Changelog now on github or in the discord server.\A \A Theme settings:go to the Custom CSS tab.\A \A Please help me inprove the theme!\A Go to bit.ly/BMTserver to signal bugs or incoherences :)"!important;
 }
 :root {
     --version:"Beard's Material Theme v2.2.7";
-    --accent-color: #d32f2f;
+    --accent-color: #D32F2F;
     --notification-color: #fff;
     --important-notification-color: #F04747;
     --channels-scrollbar: var(--disabled);
@@ -413,7 +397,7 @@ Sorry I have to be super aggressive in this legal stuff, but there has been some
 #bd-settingspane-container .bda-slist::before {
     display: block;
     position: relative;
-    background: #2e7c00;
+    background: #b54343;
     padding: 10px 15px;
     white-space: pre;
     margin-bottom: 10px;
@@ -476,7 +460,7 @@ Sorry I have to be super aggressive in this legal stuff, but there has been some
 .form .btn-primary {
     background: var(--accent-color);
 }
-.cardPrimaryEditable-2IQ7-V[style="background-color: rgb(218, 0, 0);"],
+.cardPrimaryEditable-2IQ7-V[style="background-color: rgb(218, 114, 114);"],
 .theme-dark .ui-card-primary.checked{
     background: var(--accent-color)!important;
 }
@@ -622,8 +606,8 @@ Sorry I have to be super aggressive in this legal stuff, but there has been some
 .content-region #bd-customcss-attach-controls::after {
     width: 100%;
     padding: 10px;
-    content:"To add custom settings to the theme, copy the following\A code in your custom CSS and replace the things you want\A to change:\A \A :root {\A --accent-color: #7289DA !important;\A --notification-color: #FFFFFF !important;\A --important-notification-color: #F04747 !important;\A}\A\A Don't forget to save/update when you're done!\A\A And if you're too lazy to manually copy it,\A just go to bit.ly/BMTsettings and directly copy/paste\Athe code. ";
-    background: #d32f2f;
+    content:"To add custom settings to the theme, copy the following\A code in your custom CSS and replace the things you want\A to change:\A \A :root {\A --accent-color: #D32F2F !important;\A --notification-color: #FFFFFF !important;\A --important-notification-color: #F04747 !important;\A}\A\A Don't forget to save/update when you're done!\A\A And if you're too lazy to manually copy it,\A just go to bit.ly/BMTsettings and directly copy/paste\Athe code. ";
+    background: #b54343;
     margin-top: 10px;
     display: block;
     border-radius: 2px;
@@ -665,7 +649,7 @@ Sorry I have to be super aggressive in this legal stuff, but there has been some
     min-height: calc(95vh - 250px);
 }
 .message-group .comment .markup .highlight {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.05)
 }
 .user-popout .header.streaming,
 #user-profile-modal .header,
@@ -688,7 +672,7 @@ Sorry I have to be super aggressive in this legal stuff, but there has been some
 .theme-dark .chat form {
     border: none!important;
     margin: 0;
-    box-shadow: rgba(0, 0, 0, .1) 0 0 20px;
+    box-shadow: rgba(0, 0, 0, .1) 0 0 20px
 }
 .container-3NvGrL, .header-1tSljs,
 .guild-header {
@@ -984,7 +968,7 @@ Sorry I have to be super aggressive in this legal stuff, but there has been some
 .theme-dark .chat .welcome-message a:hover,
 .friends-table .messages .message-group a:hover,
 .messages-wrapper .messages .message-group a:hover {
-    color: #f92500!important;
+    color: #90CAF9!important;
     text-decoration: none;
 }
 .modal-2LIEKY .inner-1_1f7b:hover,
@@ -1162,7 +1146,7 @@ Sorry I have to be super aggressive in this legal stuff, but there has been some
 .container-3lnMWU,
 #rtc-connection,
 #voice-connection {
-    background: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0.1);
     background-color: var(--lvl3);
     transition: all 500ms ease;
     border:none;
@@ -1367,8 +1351,8 @@ Sorry I have to be super aggressive in this legal stuff, but there has been some
     left: 0px;
     bottom: -16px;
     z-index: -1;
-    background: rgba(48, 48, 48, 0);
-    background: rgba(48, 48, 48, 0);
+    background: rgba(48, 48, 48, 1);
+    background: rgba(48, 48, 48, 1);
     pointer-events: none;
 }
 
@@ -1642,7 +1626,7 @@ Sorry I have to be super aggressive in this legal stuff, but there has been some
     content:"";
     display:block;
     height:4px;
-    background: var(--white10);
+    background: var(--lvl3);
     width:18.5px;
     position:absolute;
     transform:translate(7px,15.5px)rotate(45deg)translate(10px,-2px)scale(0,1);
@@ -1656,7 +1640,7 @@ Sorry I have to be super aggressive in this legal stuff, but there has been some
     content:"";
     display:block;
     height:4px;
-    background: var(--white10);
+    background: var(--lvl3);
     width:18px;
     position:absolute;
     transform:translate(7px,15.5px)rotate(45deg)translate(0,-2px)scale(1,1);
@@ -1684,7 +1668,7 @@ Sorry I have to be super aggressive in this legal stuff, but there has been some
     content:"";
     display:block;
     height:4px;
-    background: var(--white10);
+    background: var(--lvl3);
     width:18.5px;
     position:absolute;
     transform:translate(7px,15.5px)rotate(45deg)translate(10px,-2px)scale(0,1);
@@ -1697,7 +1681,7 @@ Sorry I have to be super aggressive in this legal stuff, but there has been some
     content:"";
     display:block;
     height:4px;
-    background: var(--white10);
+    background: var(--lvl3);
     width:18.5px;
     position:absolute;
     transform:translate(7px,15.5px)rotate(45deg)translate(0,-2px)scale(1,1);
@@ -3369,7 +3353,7 @@ code:hover .copybutton {
 
 .call-avatar .avatar-xxlarge.speaking {
     transition: transform 400ms cubic-bezier(0, 0, 0, 1), opacity 300ms cubic-bezier(0, 0, 0, 1), box-shadow 100ms cubic-bezier(0, 0, 0, 1)!important;
-    box-shadow: 0 0 0 3px var(--lvl3) inset, 0 0 0 5px #d32f2f, 0 0 10px 5px rgba(67, 181, 129,.2)!important;
+    box-shadow: 0 0 0 3px var(--lvl3) inset, 0 0 0 5px #b54343, 0 0 10px 5px rgba(67, 181, 129,.2)!important;
     border:none!important;
 }
 
@@ -3791,7 +3775,7 @@ span {
 }
 #friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-accept:active,
 #friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-accept:hover{
-  background-color: #d32f2f!important;
+  background-color: #b54343!important;
 }
 #friends .friends-table .friends-row .friends-column-actions {
     padding-right: 12px;
@@ -3829,17 +3813,17 @@ span {
 }
 
 .input-switch input:checked+.input-switch-slider {
-    background: #a05959!important;
+    background: #5A6AA1!important;
 }
 
 .input-switch-slider {
-    background: #917f7f!important;
+    background: #808492!important;
     border-color: transparent!important;
     box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
 }
 
 .input-switch .input-switch-slider::before {
-    background: #8c3c00!important;
+    background: #8C3CAE!important;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
     margin-top: 5px!important;
 }
@@ -4723,7 +4707,7 @@ body:active .status-picker.popout-menu:not(:active) {
 }
 
 .status-picker .popout-menu-item:nth-of-type(1) {
-    background-color: #d32f2f;
+    background-color: #b54343;
     background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNOSAxNi4yTDQuOCAxMmwtMS40IDEuNEw5IDE5IDIxIDdsLTEuNC0xLjRMOSAxNi4yeiIvPjwvc3ZnPg==);
     background-size: 50%;
     background-repeat: no-repeat;
@@ -6755,7 +6739,7 @@ div[style="background:#2E3136; color:#ADADAD; height:30px; position:absolute; bo
 }
 
 .search-popout .option::after {
-    background: hsla(0, 0%, 100%, 0);
+    background: var(--lvl2);
 }
 
 .search-popout .option.selected {
@@ -6767,7 +6751,7 @@ div[style="background:#2E3136; color:#ADADAD; height:30px; position:absolute; bo
 }
 
 .search-popout .option.selected::after {
-    background: hsla(0, 0%, 100%, 0);
+    background: #252525;
 }
 
 .search-popout .option.selected::after {
@@ -7059,7 +7043,7 @@ div[style="background:#2E3136; color:#ADADAD; height:30px; position:absolute; bo
     }
 }
 .theme-dark .quickswitcher-2NdiGJ .scrollerOuter-ppJFBc::before {
-    background-image: var(--lvl2) 100%, transparent);
+    background-image: var(--lvl2);
     display:none;
 }
 .theme-dark .quickswitcher-2NdiGJ .result-2fJqMr {
@@ -7194,24 +7178,24 @@ div[style="background:#2E3136; color:#ADADAD; height:30px; position:absolute; bo
 }
 
 .guild-channels .channel {
-    border-top: 0px solid #d32f2f;
-    border-bottom: 0px solid #d32f2f;
+    border-top: 0px solid #b54343;
+    border-bottom: 0px solid #b54343;
     transition: 100ms ease;
 }
 
 .guild-channels .channel.sorting:not(.sorting-after) {
-    border-top: 36px solid #d32f2f;
+    border-top: 36px solid #b54343;
     transition: 100ms ease;
 }
 
 .guild-channels .channel.sorting-after {
-    border-bottom: 36px solid #d32f2f;
+    border-bottom: 36px solid #b54343;
     transition: 100ms ease!important;
 }
 
 .guild-channels .channel.sorting::after {
     border: none;
-    background: #d32f2f;
+    background: #b54343;
     bottom: 36px;
     top: auto;
     height: 36px;
@@ -7221,7 +7205,7 @@ div[style="background:#2E3136; color:#ADADAD; height:30px; position:absolute; bo
 
 .guild-channels .channel.sorting:active {
     border: none!important;
-    background: #d32f2f!important;
+    background: #b54343!important;
 }
 
 .guild-header.popout-open~.ui-scroller-wrap {
@@ -7440,7 +7424,7 @@ body:active .popout-bottom:not(:active) .popout-menu:not(:active){
     margin-left: 5px!important;
     border-radius: 0!important;
     background-position: 50%;
-    background-color: #d32f2f!important;
+    background-color: #b54343!important;
     animation: none!important;
     box-shadow: 0 10px 20px rgba(0, 0, 0, .2) inset;
 }
@@ -10198,7 +10182,7 @@ body .citar-btn:active{
     background-size:70%!important;
     background-position: 50%!important;
     background-repeat: no-repeat!important;
-    background-color:#d32f2f!important;
+    background-color:#b54343!important;
 }
 .chat .jump-to-present-bar{
     bottom:15px;
@@ -10739,7 +10723,7 @@ body .citar-btn:active{
 .guild-role::before{
     display: none!important;
 }
-.theme-dark .ui-selectable-item[style*="background: rgb(218, 137, 137);"]{
+.theme-dark .ui-selectable-item[style*="background: rgb(218, 114, 114);"]{
     background:var(--accent-color)!important;
 }
 .theme-dark .item-3tXG-o{
@@ -11639,7 +11623,7 @@ body .create-guild-container.deprecated .action.join:active .btn{
     background: transparent;
 }*/
 .theme-dark .quickswitcher-2NdiGJ .scrollerOuter-ppJFBc:before{
-    background-image: var(--lvl2);
+    background-image: var(--lvl2) 60%;
 }
 .upload-modal .inner .file .icon.image[style*="background-image:"]{
     border:none;
@@ -11825,13 +11809,13 @@ body .create-guild-container.deprecated .action.join:active .btn{
     border-radius:5px;
     left:0px;
     top:0px;
-    box-shadow:0 0 0 4px #d32f2f,0 0 30px rgba(67,181,129,.7);
+    box-shadow:0 0 0 4px #b54343,0 0 30px rgba(67,181,129,.7);
     pointer-events:none;
     opacity:0;
     transition:300ms;
 }
 #instant-invite-modal .clipboard-input-copied .clipboard-input-inner::after{
-    box-shadow:0 0 0 4px #d32f2f,0 0 30px rgba(67,181,129,.7);
+    box-shadow:0 0 0 4px #b54343,0 0 30px rgba(67,181,129,.7);
     pointer-events:none;
     opacity:1!important;
     animation:box-shadow 200ms ease;
@@ -13192,10 +13176,10 @@ body #sort-options.open .item{
 .cardPrimaryEditable-2IQ7-V{
   transition:opacity 200ms ease;
 }
-.checkbox-1QwaS4[style="border-color: rgb(218, 137, 137);"]{
+.checkbox-1QwaS4[style="border-color: rgb(218, 114, 114);"]{
   border-color:var(--white10)!important;
 }
-.checkbox-1QwaS4 polyline[stroke="#7289da"]{
+.checkbox-1QwaS4 polyline[stroke="#D32F2F"]{
   stroke:var(--accent-color)!important;
 }
 .checkbox-1QwaS4 polyline[stroke="transparent"]{
@@ -13247,7 +13231,7 @@ background: transparent!important;
 .guild-sorter{
   margin-bottom:0!important;
 }
-.theme-dark .cardPrimaryEditable-2IQ7-V[style*="border-color: rgb(218, 137, 137); background-color: rgb(218, 137, 137);"]{
+.theme-dark .cardPrimaryEditable-2IQ7-V[style*="border-color: rgb(218, 114, 114); background-color: rgb(218, 114, 114);"]{
   background: var(--accent-color)!important
 }
 /*
@@ -13586,11 +13570,11 @@ textarea:focus + .maxLength-1NjdA0{
   border-radius:3px;
 }/*
 .ui-call-avatar-border.video.selected:not(.speaking){
-  box-shadow: 0 0 0 0 #d32f2f,0 0 0 3px #212121 inset,0 5px 10px rgba(0,0,0,.2);
+  box-shadow: 0 0 0 0 #b54343,0 0 0 3px #212121 inset,0 5px 10px rgba(0,0,0,.2);
   transition: 100ms ease;
 }
 .ui-call-avatar-border.video.selected.speaking{
-  box-shadow: 0 0 0 0px #d32f2f,0 0 0 4px #d32f2f inset,0 5px 15px rgba(0,0,0,.4);
+  box-shadow: 0 0 0 0px #b54343,0 0 0 4px #b54343 inset,0 5px 15px rgba(0,0,0,.4);
   transition: 100ms ease;
 }
 .ui-call-avatar.video{
@@ -13692,7 +13676,7 @@ textarea:focus + .maxLength-1NjdA0{
   box-shadow: 0 0px 10px rgba(0,0,0,.2);
   transition: all 50ms ease,z-index 0ms;
 }
-.theme-dark .cardPrimaryEditable-2IQ7-V[style*="border-color: rgb(218, 137, 137); background-color: rgb(218, 137, 137);"]:hover{
+.theme-dark .cardPrimaryEditable-2IQ7-V[style*="border-color: rgb(218, 114, 114); background-color: rgb(218, 114, 114);"]:hover{
   filter:brightness(1.1);
 }
 .radioGroup-2P3MJo .cardPrimaryEditable-2IQ7-V:first-of-type{
