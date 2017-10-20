@@ -13,9 +13,9 @@
     --enabled: initial;
     --user-avatar-url:url("");
     /*MAIN COLORS*/
-    --lvl1:#303030;/*var(--lvl1)*/
-    --lvl2:#212121;/*var(--lvl2)*/
-    --lvl3:#141414;/*var(--lvl3)*/
+    --lvl1:#202020;/*var(--lvl1)*/
+    --lvl2:#151515;/*var(--lvl2)*/
+    --lvl3:#050505;/*var(--lvl3)*/
     /*WHITE*/
     --white0:rgba(255,255,255,0);/*var(--white0)*/
     --white1:rgba(255,255,255,.1);/*var(--white1)*/
