@@ -11224,7 +11224,8 @@ body .citar-btn:active{
 
 .container-iksrDt{
   height:70px;
-  margin-bottom: 0
+  margin-bottom: 0;
+  padding: 0px;
 }
 
 .theme-dark .channel-members .member:hover{
