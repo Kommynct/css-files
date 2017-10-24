@@ -63,7 +63,7 @@
   font-size:25px;
   z-index:1;
   position:relative;
-  font-family:BMTicons;
+  font-family:BMTicons,Noto Sans;
   top:-20px;
   right:-490px;
   background:transparent;
@@ -116,7 +116,7 @@
   margin-left:-3px;
   transform: translate(0,1px);
   cursor:pointer;
-  font-family:BMTicons;
+  font-family:BMTicons,Noto Sans;
   transition:100ms ease;
   pointer-events: initial;
 }
@@ -1043,6 +1043,8 @@
 }
 
 .guilds-wrapper .guilds .guild a:hover {
+  background-color: rgba(240, 71, 71, 1);
+  transition:100ms ease;
   opacity: 1!important;
 }
 
@@ -1186,7 +1188,7 @@
 }
 
 .guilds-wrapper .guild.guilds-add::after {
-  background: var(--accent-color);
+  background: transparent;
   transition: all 200ms ease!important;
   position: absolute;
   left: 50%;
@@ -3329,6 +3331,7 @@ code:hover .copybutton {
   opacity: 0.8;
   margin-top: 4px;
   background-size: 50%!important;
+  transition: all 200ms ease!important;
 }
 
 .active .friends-icon {
