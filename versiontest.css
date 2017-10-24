@@ -63,7 +63,7 @@
   font-size:25px;
   z-index:1;
   position:relative;
-  font-family:BMTicons;
+  font-family:BMTicons,Noto Sans;
   top:-20px;
   right:-490px;
   background:transparent;
@@ -116,7 +116,7 @@
   margin-left:-3px;
   transform: translate(0,1px);
   cursor:pointer;
-  font-family:BMTicons;
+  font-family:BMTicons,Noto Sans;
   transition:100ms ease;
   pointer-events: initial;
 }
@@ -12920,7 +12920,6 @@ body .create-guild-container.deprecated .action.join:active .btn{
 
 #friends .friends-header,
 .chat .title-wrap {
-  z-index: 10000!important;
   display: -ms-flexbox;
   display: flex;
 }
