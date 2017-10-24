@@ -3123,8 +3123,7 @@ code:hover .copybutton {
   transition: all 0ms!important
 }
 
-.container-iksrDt,
-.account {
+.container-iksrDt, .account {
   background: var(--lvl3);
   padding: 0;
 }
