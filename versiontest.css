@@ -3332,7 +3332,8 @@ code:hover .copybutton {
 }
 
 .active .friends-icon {
-  opacity: 1
+  background-color: rgba(240, 71, 71, 1);
+  opacity: 1;
 }
 
 .call-avatar .avatar-xxlarge {
@@ -7854,11 +7855,11 @@ a:active .friends-icon {
 }
 
 .friends-icon:hover {
-  opacity: .9;
+  opacity: 1;
 }
 
 .active .friends-icon:hover {
-  opacity: 1;
+  background-color: rgba(240, 71, 71, 0.5);
 }
 
 .theme-dark .messages-popout-wrap .has-more button {
