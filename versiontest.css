@@ -1186,7 +1186,7 @@
 }
 
 .guilds-wrapper .guild.guilds-add::after {
-  background: var(--accent-color);
+  background: transparent;
   transition: all 200ms ease!important;
   position: absolute;
   left: 50%;
@@ -7859,7 +7859,7 @@ a:active .friends-icon {
 }
 
 .active .friends-icon:hover {
-  background-color: rgba(240, 71, 71, 0.5);
+  background-color: rgba(240, 71, 71, 1);
 }
 
 .theme-dark .messages-popout-wrap .has-more button {
