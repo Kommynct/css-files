@@ -1,7 +1,7 @@
 /*changelog*/
 
 .ui-standard-sidebar-view #bd-settingspane-container .content-column.default .bda-slist::before {
-  content: "Changelog: Changelog now on github or in the discord server.\A \A Theme settings:go to the Custom CSS tab.\A \A Please help me inprove the theme!\A Go to bit.ly/BMTserver to signal bugs or incoherences :)"!important;
+  content: "theme)";
 }
 
 :root {
@@ -11225,7 +11225,6 @@ body .citar-btn:active{
 .container-iksrDt{
   height:70px;
   margin-bottom: 0;
-  padding: 0px;
 }
 
 .theme-dark .channel-members .member:hover{
