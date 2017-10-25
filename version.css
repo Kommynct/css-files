@@ -2259,7 +2259,7 @@ body {
 .embed .embed-thumbnail img {
     border-radius: 3px;
     /*-webkit-filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.4));*/
-    
+
     box-shadow: 0 3px 7px rgba(0, 0, 0, .4);
     transition: 200ms cubic-bezier(.2, 0, 0, 1);
     background-color: #212121;
@@ -8065,7 +8065,7 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
 .layer.stop-animations+.layer {
     pointer-events: initial!important;
     transform: none!important;
-    opacity: 1!important;
+    opacity: 0!important;
     animation: pubslayer 0.5s cubic-bezier(.4, 0, 0, 1);
 }
 #pubslayerroot .layer .ui-standard-sidebar-view {
@@ -8481,38 +8481,6 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
     left: 120px;
     background: var(--accent-color);
     font-weight: 600;
-}
-.ui-standard-sidebar-view .bda-slist .bda-description[data-reactid*="$Beard_s_Material_theme_for_Discord."] {
-    display: none;
-}
-.ui-standard-sidebar-view .bda-slist .scroller-wrap[data-reactid*="$Beard_s_Material_theme_for_Discord."] {
-    position: relative;
-}
-.ui-standard-sidebar-view .bda-slist .scroller-wrap[data-reactid*="$Beard_s_Material_theme_for_Discord."]::before {
-    content: "Accent color";
-    position: relative;
-    left: 0;
-    color: var(--white10);
-    background: var(--accent-color);
-    display: block;
-    padding: 30px;
-    margin: 5px;
-    border-radius: 2px;
-    margin-top: 10px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, .2);
-}
-.ui-standard-sidebar-view .bda-slist .scroller-wrap[data-reactid*="$Beard_s_Material_theme_for_Discord."]::after {
-    content: "Notification color";
-    position: relative;
-    left: 0;
-    color: #000000;
-    background: var(--notification-color);
-    display: block;
-    padding: 30px;
-    margin: 5px;
-    border-radius: 2px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, .2);
-    margin-top: 10px;
 }
 .content-region #bd-customcss-attach-controls::before {
     content: "";
@@ -11487,9 +11455,7 @@ body:active .popout.popout-right.no-arrow[style*="visibility: visible;"]:not(:ac
 #bd-customcss-detach-controls-button span {
     font-size: 12px!important;
 }
-.ui-standard-sidebar-view .bda-slist .bda-description[data-reactid*="$Beard_s_Material_theme_for_Discord."] {
-    display: none!important;
-}
+
 div.user-settings-locale div[class*=checked] polyline {
     stroke: var(--white10)!important;
 }
@@ -11664,7 +11630,6 @@ body #sort-options.open .item {
     width: 18px;
     height: 18px;
 }
-/*User Popouts Fix - Originally by Zerebos, edited by Beard*/
 
 .userPopout-4pfA0d .headerStreaming-3F-wjT {
     background-color: #953636;
@@ -11968,7 +11933,7 @@ body #sort-options.open .item {
     color: var(--white6);
     background: transparent;
     /* Previous:  white1; */
-    
+
     position: relative;
     border-radius: 50%;
     box-shadow: none;
