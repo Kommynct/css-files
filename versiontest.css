@@ -47,6 +47,18 @@
   --black10:rgba(0,0,0,1);/*var(--black10)*/
 }
 
+body {
+   -moz-user-select: none;
+   -ms-user-select: none;
+   -webkit-user-select: none;
+   background: transparent;
+   font-family:Noto Sans,Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+   line-height: 1;
+   margin: 0;
+   overflow: hidden;
+   padding: 0;
+   user-select: none;
+}
 
 .avatar-profile::before,
 .avatar-profile::after,
@@ -55,9 +67,6 @@
   display:none!important;
 }
 
-body {
-  font-family:Noto Sans,Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
-}
 .avatar-profile{
   pointer-events: none;
 }
@@ -7859,8 +7868,8 @@ a:active .friends-icon {
 }
 
 .friends-icon:hover {
-  background-color: rgba(240, 71, 71, 1)
-  transition: all 100ms ease;
+  background-color: rgba(240, 71, 71, 1);
+  transition: 100ms ease;
   opacity: 1;
 }
 
