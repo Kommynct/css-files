@@ -47,6 +47,19 @@
   --black10:rgba(0,0,0,1);/*var(--black10)*/
 }
 
+body {
+   -moz-user-select: none;
+   -ms-user-select: none;
+   -webkit-user-select: none;
+   background: transparent;
+   font-family:Noto Sans,Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+   line-height: 1;
+   margin: 0;
+   overflow: hidden;
+   padding: 0;
+   user-select: none;
+}
+
 .avatar-profile::before,
 .avatar-profile::after,
 .avatar-large+.comment .timestamp::before,
@@ -1043,8 +1056,6 @@
 }
 
 .guilds-wrapper .guilds .guild a:hover {
-  background-color: rgba(240, 71, 71, 1);
-  transition:100ms ease;
   opacity: 1!important;
 }
 
@@ -1555,6 +1566,7 @@
   background-size:60%!important;
   background-position:50%!important;
   background-repeat:no-repeat!important;
+  align-items:inherit;
 }
 
 /*Audio disabled/deafened*/
@@ -1666,6 +1678,11 @@
 
 .container-iksrDt .horizontal-2BEEBe .button-1aU9q1{
   transition:background 100ms ease!important;
+  align-items: inherit;
+  background-size: 60% !important;
+  background-position: 50% center !important;
+  background-repeat: no-repeat !important;
+  align-content: center;
 }
 
 .buttonInfo-3r6H7z {
@@ -2172,6 +2189,7 @@
 
 .guilds-wrapper .friends-icon {
   background-color: transparent;
+  transition: all 200ms ease;
 }
 
 .scroller-wrap.fade.light {
@@ -3331,7 +3349,6 @@ code:hover .copybutton {
   opacity: 0.8;
   margin-top: 4px;
   background-size: 50%!important;
-  transition: all 200ms ease!important;
 }
 
 .active .friends-icon {
@@ -7858,11 +7875,13 @@ a:active .friends-icon {
 }
 
 .friends-icon:hover {
+  background-color: rgba(240, 71, 71, 1);
+  transition: all 200ms ease;
   opacity: 1;
 }
 
 .active .friends-icon:hover {
-  background-color: rgba(240, 71, 71, 0.5);
+  background-color: rgba(240, 71, 71, 1);
 }
 
 .theme-dark .messages-popout-wrap .has-more button {
