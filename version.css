@@ -2241,7 +2241,6 @@ body {
 
 .channels-wrap{
   position:relative;
-  z-index: 3;
 }
 
 @keyframes connected {
@@ -7390,11 +7389,9 @@ div[style="background:#2E3136; color:#ADADAD; height:30px; position:absolute; bo
 
 .channels-wrap {
   background: var(--lvl3);
+  z-index: 3!important;
 }
 
-.channels-wrap {
-  background: var(--lvl3);
-}
 
 .popout-bottom .popout-menu {
   background: transparent;
