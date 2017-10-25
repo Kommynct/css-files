@@ -1,7 +1,7 @@
 /*changelog*/
 
 .ui-standard-sidebar-view #bd-settingspane-container .content-column.default .bda-slist::before {
-  content: "theme)";
+  content: "(theme)";
 }
 
 :root {
@@ -726,9 +726,9 @@ body {
     transition: all 100ms ease, z-index 0ms 100ms;
     margin-top: 10px;
     margin: 0 20px 0 20px;
-    opacity: .9!important;
+    opacity: 1!important;
     border-radius: 0;
-    background: #333333;
+    background: rgba(1,1,1,0);
     padding: 16px 10px;
     z-index: 0;
     position: relative;
@@ -2259,7 +2259,7 @@ body {
 .embed .embed-thumbnail img {
     border-radius: 3px;
     /*-webkit-filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.4));*/
-    
+
     box-shadow: 0 3px 7px rgba(0, 0, 0, .4);
     transition: 200ms cubic-bezier(.2, 0, 0, 1);
     background-color: #212121;
@@ -3163,7 +3163,7 @@ span {
 #friends .friends-table .friends-row .friends-column-actions {
     padding-right: 12px;
     visibility: visible;
-    opacity: 0;
+    opacity: 1;
 }
 #friends .friends-table .friends-row:hover .friends-column-actions {
     padding-right: 12px;
@@ -3171,7 +3171,10 @@ span {
     opacity: 1;
 }
 #friends .friends-table .friends-row .friends-column-actions {
+    margin-left: 0!important;
+    margin-right: 0!important;
     padding-right: 12px;
+    
 }
 #friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-add {
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiICB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCI+CiAgIDxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0xNSwxNEMxMi4zMywxNCA3LDE1LjMzIDcsMThWMjBIMjNWMThDMjMsMTUuMzMgMTcuNjcsMTQgMTUsMTRNNiwxMFY3SDRWMTBIMVYxMkg0VjE1SDZWMTJIOVYxME0xNSwxMkE0LDQgMCAwLDAgMTksOEE0LDQgMCAwLDAgMTUsNEE0LDQgMCAwLDAgMTEsOEE0LDQgMCAwLDAgMTUsMTJaIiAvPgo8L3N2Zz4K);
@@ -5359,8 +5362,7 @@ div[style="background:#2E3136; color:#ADADAD; height:30px; position:absolute; bo
     background: var(--lvl1)
 }
 #friends .friends-table .friends-table-header {
-    border: none!important;
-    box-shadow: 0 -11px 0 -10px rgba(255, 255, 255, .02) inset;
+    display: none;
 }
 #friends .friends-table .friends-table-header+ .scroller-wrap .scroller {
     box-shadow: 0 10px 20px -10px rgba(0, 0, 0, .1) inset;
@@ -11933,7 +11935,7 @@ body #sort-options.open .item {
     color: var(--white6);
     background: transparent;
     /* Previous:  white1; */
-    
+
     position: relative;
     border-radius: 50%;
     box-shadow: none;
