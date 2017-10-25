@@ -1,7 +1,7 @@
 /*changelog*/
 
 .ui-standard-sidebar-view #bd-settingspane-container .content-column.default .bda-slist::before {
-  content: "theme)";
+  content: "(theme)";
 }
 
 :root {
@@ -726,9 +726,9 @@ body {
     transition: all 100ms ease, z-index 0ms 100ms;
     margin-top: 10px;
     margin: 0 20px 0 20px;
-    opacity: .9!important;
+    opacity: 1!important;
     border-radius: 0;
-    background: #333333;
+    background: rgba(1,1,1,0);
     padding: 16px 10px;
     z-index: 0;
     position: relative;
@@ -3163,7 +3163,7 @@ span {
 #friends .friends-table .friends-row .friends-column-actions {
     padding-right: 12px;
     visibility: visible;
-    opacity: 0;
+    opacity: 1;
 }
 #friends .friends-table .friends-row:hover .friends-column-actions {
     padding-right: 12px;
@@ -5359,8 +5359,7 @@ div[style="background:#2E3136; color:#ADADAD; height:30px; position:absolute; bo
     background: var(--lvl1)
 }
 #friends .friends-table .friends-table-header {
-    border: none!important;
-    box-shadow: 0 -11px 0 -10px rgba(255, 255, 255, .02) inset;
+    display: none;
 }
 #friends .friends-table .friends-table-header+ .scroller-wrap .scroller {
     box-shadow: 0 10px 20px -10px rgba(0, 0, 0, .1) inset;
@@ -8065,7 +8064,7 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
 .layer.stop-animations+.layer {
     pointer-events: initial!important;
     transform: none!important;
-    opacity: 0!important;
+    opacity: 1!important;
     animation: pubslayer 0.5s cubic-bezier(.4, 0, 0, 1);
 }
 #pubslayerroot .layer .ui-standard-sidebar-view {
