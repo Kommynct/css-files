@@ -1566,6 +1566,7 @@ body {
   background-size:60%!important;
   background-position:50%!important;
   background-repeat:no-repeat!important;
+  align-items:inherit;
 }
 
 /*Audio disabled/deafened*/
@@ -1677,6 +1678,11 @@ body {
 
 .container-iksrDt .horizontal-2BEEBe .button-1aU9q1{
   transition:background 100ms ease!important;
+  align-items: inherit;
+  background-size: 60% !important;
+  background-position: 50% center !important;
+  background-repeat: no-repeat !important;
+  align-content: center;
 }
 
 .buttonInfo-3r6H7z {
@@ -11242,7 +11248,8 @@ body .citar-btn:active{
 .container-iksrDt{
   height:70px;
   margin-bottom: 0;
-  padding: 0;
+  padding: 0!important;
+  display: -webkit-box!important;
 }
 
 .theme-dark .channel-members .member:hover{
