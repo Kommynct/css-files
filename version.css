@@ -2241,6 +2241,7 @@ body {
 
 .channels-wrap{
   position:relative;
+  z-index: 3;
 }
 
 @keyframes connected {
