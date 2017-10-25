@@ -93,7 +93,6 @@ body {
 }
 
 .avatar-profile::after{
-  color:var(--white4);
   font-size:18px;
   z-index:1;
   position:relative;
@@ -861,7 +860,6 @@ body {
 
 #friends .friends-table .friends-row:last-of-type:hover,
 #friends .friends-table .friends-row:last-of-type{
-  border-bottom-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
 
@@ -7204,10 +7202,9 @@ div[style="background:#2E3136; color:#ADADAD; height:30px; position:absolute; bo
 
 .theme-dark .quickswitcher-2NdiGJ .resultFocused-2geRUA::after {
   opacity: 1;
-  transition: 100ms ease 100ms;
+  transition: all 100ms ease;
   -ms-transform: translate(0);
   transform: translate(0);
-  transition: 200ms cubic-bezier(0,0,0,1);
 }
 
 .theme-dark .quickswitcher-2NdiGJ .resultFocused-2geRUA:active::after {
@@ -9686,7 +9683,7 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
 
 .layer{
   transform:none!important;
-  transition:all 0.3s cubic-bezier(.4,0,0,1);
+  transition:all 100ms ease;
 }
 
 .layer[style]{
