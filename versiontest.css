@@ -47,6 +47,7 @@
   --black10:rgba(0,0,0,1);/*var(--black10)*/
 }
 
+
 .avatar-profile::before,
 .avatar-profile::after,
 .avatar-large+.comment .timestamp::before,
@@ -54,6 +55,9 @@
   display:none!important;
 }
 
+body {
+  font-family:Noto Sans,Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
 .avatar-profile{
   pointer-events: none;
 }
@@ -7855,6 +7859,8 @@ a:active .friends-icon {
 }
 
 .friends-icon:hover {
+  background-color: rgba(240, 71, 71, 1)
+  transition: all 100ms ease;
   opacity: 1;
 }
 
