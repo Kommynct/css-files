@@ -2188,7 +2188,6 @@ body {
 }
 
 .guilds-wrapper .friends-icon {
-  background-size: 50%!important;
   background-color: transparent;
   transition: all 200ms ease;
 }
