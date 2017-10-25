@@ -1652,7 +1652,7 @@ body {
   opacity: 0;
   position: absolute;
   left:calc(50% + 0.5px);
-  top:calc(50% + 0);
+  top:calc(50% + 0px);
   -ms-transform:translate(-50%,-50%) scale(1.3);
   transform:translate(-50%,-50%) scale(1.3);
   transition: 300ms ease;
@@ -7389,11 +7389,9 @@ div[style="background:#2E3136; color:#ADADAD; height:30px; position:absolute; bo
 
 .channels-wrap {
   background: var(--lvl3);
+  z-index: 3!important;
 }
 
-.channels-wrap {
-  background: var(--lvl3);
-}
 
 .popout-bottom .popout-menu {
   background: transparent;
@@ -11248,7 +11246,8 @@ body .citar-btn:active{
 .container-iksrDt{
   height:70px;
   margin-bottom: 0;
-  padding: 0;
+  padding: 0!important;
+  display: -webkit-box!important;
 }
 
 .theme-dark .channel-members .member:hover{
