@@ -1566,6 +1566,7 @@ body {
   background-size:60%!important;
   background-position:50%!important;
   background-repeat:no-repeat!important;
+  align-items:inherit;
 }
 
 /*Audio disabled/deafened*/
@@ -1677,6 +1678,11 @@ body {
 
 .container-iksrDt .horizontal-2BEEBe .button-1aU9q1{
   transition:background 100ms ease!important;
+  align-items: inherit;
+  background-size: 60% !important;
+  background-position: 50% center !important;
+  background-repeat: no-repeat !important;
+  align-content: center;
 }
 
 .buttonInfo-3r6H7z {
@@ -2182,7 +2188,9 @@ body {
 }
 
 .guilds-wrapper .friends-icon {
+  background-size: 50%!important;
   background-color: transparent;
+  transition: all 200ms ease;
 }
 
 .scroller-wrap.fade.light {
@@ -7869,7 +7877,7 @@ a:active .friends-icon {
 
 .friends-icon:hover {
   background-color: rgba(240, 71, 71, 1);
-  transition: 100ms ease;
+  transition: all 200ms ease;
   opacity: 1;
 }
 
