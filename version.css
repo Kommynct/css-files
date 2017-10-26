@@ -51,7 +51,7 @@ body {
     -ms-user-select: none;
     -webkit-user-select: none;
     background: transparent;
-    font-family: Noto Sans, Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: Noto Sans, Whitney, Helvetica Neue, Helvetica, Arial, sans-serif!important;
     line-height: 1;
     margin: 0;
     overflow: hidden;
@@ -72,7 +72,7 @@ body {
     font-size: 25px;
     z-index: 1;
     position: relative;
-    font-family: BMTicons, Noto Sans;
+    font-family: BMTicons, Noto Sans!important;
     top: -20px;
     right: -490px;
     background: transparent;
@@ -120,7 +120,7 @@ body {
     margin-left: -3px;
     transform: translate(0, 1px);
     cursor: pointer;
-    font-family: BMTicons, Noto Sans;
+    font-family: BMTicons, Noto Sans!important;
     transition: 100ms ease;
     pointer-events: initial;
 }
@@ -903,11 +903,6 @@ body {
     border-radius: 50%!important;
     border: 3px;
 }
-.guilds-wrapper .guilds .guild {
-    opacity: 1;
-    transform: translate(0, 0)!important;
-    transition: all 0ms ease!important;
-}
 .guilds-wrapper .guilds .guild.selected {
     opacity: 1;
 }
@@ -929,11 +924,6 @@ body {
 .guilds-wrapper .guilds .guild .guild-inner .avatar-small:active {
     transition: 0;
     opacity: 1!important;
-}
-.guilds-wrapper .guilds .guild {
-    transition: all 10ms ease;
-    margin-bottom: 0px!important;
-    z-index: 5;
 }
 .guilds-wrapper .guilds .guild .badge {
     -ms-transform: translate(-12px, -10px)!important;
@@ -2794,9 +2784,16 @@ code:hover .copybutton {
     opacity: 0.8;
     margin-top: 4px;
     background-size: 50%!important;
+    width: 100%!important;
+    height: 100%!important;
+    background-position: 50%!important;
+    margin-left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .active .friends-icon {
-    background-color: rgba(240, 71, 71, 1);
+    background-color: var(--accent-color);
     opacity: 1;
 }
 .call-avatar .avatar-xxlarge {
@@ -3431,7 +3428,7 @@ span {
 .container-3NvGrL::after,
 .guild-header::after {
     content: "";
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGlkPSJDYWxxdWVfMSIgdmlld0JveD0iLTk1MCA1MzIgMTggMTgiPjxzdHlsZSBpZD0ic3R5bGUyIj4uc3Qwe2ZpbGw6bm9uZTt9IC5zdDF7ZmlsbDpub25lO3N0cm9rZTojRkZGRkZGO3N0cm9rZS13aWR0aDoxLjU7c3Ryb2tlLW1pdGVybGltaXQ6MTA7fTwvc3R5bGU+PHBhdGggaWQ9InBvbHlsaW5lNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmZGZkIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBkPSJNLTkzNi42IDUzOC44bC00LjQgNC40LTQuNC00LjQiIGNsYXNzPSJzdDEiLz48L3N2Zz4=);
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGlkPSJDYWxxdWVfMSIgdmlld0JveD0iLTk1MCA1MzIgMTggMTgiPjxzdHlsZSBpZD0ic3R5bGUyIj4uc3Qwe2ZpbGw6bm9uZTt9IC5zdDF7ZmlsbDpub25lO3N0cm9rZTojRkZGRkZGO3N0cm9rZS13aWR0aDoxLjU7c3Ryb2tlLW1pdGVybGltaXQ6MTA7fTwvc3R5bGU+PHBhdGggaWQ9InBvbHlsaW5lNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBkPSJNLTkzNi42IDU0My43bC00LjQtNC40LTQuNCA0LjQiIGNsYXNzPSJzdDEiLz48L3N2Zz4=);
     width: 23px;
     height: 23px;
     display: block;
@@ -6242,22 +6239,27 @@ body:active .popout-bottom:not(:active) .popout-menu:not(:active) {
 }
 .guilds-wrapper .guilds .guild.selected .guild-inner .avatar-small:hover::before,
 .guilds-wrapper .guilds .guild.selected .guild-inner .avatar-small::before {
-    background: var(--lvl2);
-    transition: 0ms ease;
+    background: var(--accent-color);
+    transition: all 100ms ease;
 }
 .guilds-wrapper .guilds .guild .guild-inner .avatar-small:hover::before {
-    background: rgba(255, 255, 255, 0.06);
-    transition: 0ms ease;
+    background: rgba(240, 71, 71, 0.06);
+    transition: all 100ms ease;
 }
 .guilds-wrapper .guilds .guild .guild-inner .avatar-small:active::before {
-    background: var(--white1);
-    transition: 0ms ease;
+    background: rgba(240, 71, 71, 0.1);
+    transition: all 100ms ease;
 }
 .guilds-wrapper .guilds .guild {
     padding: 0;
     width: 70px;
     height: 64px;
     margin-left: 0!important;
+    transition: all 10ms ease;
+    margin-bottom: 0px!important;
+    transform: translate(0, 0)!important;
+    transition: all 0ms ease!important;
+    z-index: 5;
 }
 .guilds-wrapper .guilds .dms {
     width: auto;
@@ -6274,16 +6276,6 @@ body:active .popout-bottom:not(:active) .popout-menu:not(:active) {
     background-color: #b54343!important;
     animation: none!important;
     box-shadow: 0 10px 20px rgba(0, 0, 0, .2) inset;
-}
-.friends-icon {
-    width: 100%!important;
-    height: 100%!important;
-    background-size: 35%!important;
-    background-position: 50%!important;
-    margin-left: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 .guilds-wrapper .guilds .guild:first-of-type .guild-inner {
     height: 64px;
@@ -6502,12 +6494,12 @@ a:active .friends-icon {
     background-color: var(--lvl1);
 }
 .friends-icon:hover {
-    background-color: rgba(240, 71, 71, 1);
+    background-color: var(--accent-color);
     transition: all 200ms ease;
     opacity: 1;
 }
 .active .friends-icon:hover {
-    background-color: rgba(240, 71, 71, 1);
+    background-color: var(--accent-color);
 }
 .theme-dark .messages-popout-wrap .has-more button {
     background: var(--lvl1);
@@ -7411,7 +7403,7 @@ body .themeClear-1NqU69.valueChecked-3Bzkbm.switch-3lyafC::after,
     content: "|";
     width: 24px;
     height: 0;
-    font-family: BMTicons, Noto Sans, Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: BMTicons, Noto Sans, Whitney, Helvetica Neue, Helvetica, Arial, sans-serif!important;
     color: var(--accent-color);
     font-size: 23px;
     transform: translate(0, 4px);
@@ -7425,7 +7417,7 @@ body .themeClear-1NqU69.valueChecked-3Bzkbm.switch-3lyafC::after,
 .layer[layer-id="user-settings"] .ui-standard-sidebar-view .sidebar-region .ui-tab-bar.SIDE .ui-tab-bar-item.selected:nth-of-type(7)::before {
     width: 24px;
     height: 0;
-    font-family: BMTicons, Noto Sans, Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: BMTicons, Noto Sans, Whitney, Helvetica Neue, Helvetica, Arial, sans-serif!important;
     color: var(--white10);
     font-size: 23px;
     transform: translate(0, 4px);
@@ -8224,7 +8216,7 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
 }
 .avatar-large[style*="avatars/184021060562321419"]+.comment .markup em>img[src="/assets/8dcca2877f51849a159035186bf93dff.svg"]+u::after {
     content: "}";
-    font-family: BMTicons, Noto Sans, Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: BMTicons, Noto Sans, Whitney, Helvetica Neue, Helvetica, Arial, sans-serif!important;
     font-style: initial!important;
     color: var(--accent-color);
 }
