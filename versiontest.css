@@ -9263,6 +9263,7 @@ body .citar-btn:active {
 .theme-dark .private-channel-call.minimum .private-channel-call-actions .center {
     background: var(--lvl2);
     border-color: var(--lvl2);
+    transition: all 200ms
 }
 .theme-dark .ui-quick-select-popout {
     background: var(--lvl1);
