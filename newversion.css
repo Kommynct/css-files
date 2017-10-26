@@ -6247,15 +6247,15 @@ body:active .popout-bottom:not(:active) .popout-menu:not(:active) {
 .guilds-wrapper .guilds .guild.selected .guild-inner .avatar-small:hover::before,
 .guilds-wrapper .guilds .guild.selected .guild-inner .avatar-small::before {
     background: var(--accent-color);
-    transition: 0ms ease;
+    transition: all 100ms ease;
 }
 .guilds-wrapper .guilds .guild .guild-inner .avatar-small:hover::before {
     background: rgba(255, 255, 255, 0.06);
-    transition: 0ms ease;
+    transition: all 100ms ease;
 }
 .guilds-wrapper .guilds .guild .guild-inner .avatar-small:active::before {
     background: var(--white1);
-    transition: 0ms ease;
+    transition: all 100ms ease;
 }
 .guilds-wrapper .guilds .guild {
     padding: 0;
