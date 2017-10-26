@@ -60,10 +60,25 @@ body {
 
 
 }
+	.status {
+	border-radius: 100%;
+}
 	.status-online {
 	background-color: rgba(10, 219, 60, 1)!important;
 	opacity: 1!important;
-	}
+}
+.status-invisible, .status-offline {
+    background-color: rgba(135, 135, 135, 1)!important;
+    opacity: 0.6!important;
+}
+.status-idle {
+    background-color: rgba(255, 165, 0, 1);
+    opacity: 0.6!important;
+}
+.status-dnd {
+    background-color: rgba(255, 42, 0, 1)!important;
+    opacity: 1!important;
+}
 .avatar-profile::before,
 .avatar-profile::after,
 .avatar-large+.comment .timestamp::before,
