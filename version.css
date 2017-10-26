@@ -2916,7 +2916,8 @@ code:hover .copybutton {
 .container-iksrDt .accountDetails-15i-_e .discriminator,
 .account .account-details .discriminator {
     color: var(--white10)!important;
-    opacity: 0.3
+    opacity: 0.3;
+    margin-left: 5px;
 }
 /*-----POPOUT-----*/
 
@@ -11137,6 +11138,7 @@ body:active .popout.popout-right.no-arrow[style*="visibility: visible;"]:not(:ac
 }
 .container-iksrDt .avatar-small {
     transition: 200ms ease;
+    margin: 0 8px 0 10px;
 }
 .container-iksrDt .avatar-small:active {
     opacity: 1
