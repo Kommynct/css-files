@@ -832,6 +832,7 @@ body {
     line-height: 55px;
     box-sizing: border-box;
     border-radius: 0;
+    transition: all 100ms;
 }
 .theme-dark #friends .friends-header .tab-bar .tab-bar-item.selected {
     background: none;
