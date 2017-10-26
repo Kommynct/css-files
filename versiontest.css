@@ -902,6 +902,7 @@ body {
 .guilds-wrapper .guilds .guild .guild-inner .avatar-small {
     border-radius: 50%!important;
     border: 3px;
+    transition: 100ms all
 }
 .guilds-wrapper .guilds .guild.selected {
     opacity: 1;
@@ -1018,7 +1019,7 @@ body {
     background-position: 50%;
     background-repeat: no-repeat;
     border-radius: 50%;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, .25), 0 -1px 0 rgba(0, 0, 0, 0.2) inset, 0 2px 1px var(--white1) inset;
+    box-shadow: none;
     line-height: 53px;
 }
 .guilds-wrapper .guild.guilds-add:hover::after {
