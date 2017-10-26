@@ -755,6 +755,14 @@ body {
     border-radius: 0;
     box-shadow: 0 3px 10px rgba(0, 0, 0, .05);
 }
+#friends .friends-table .friends-row .friends-column {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-shrink: 0;
+    min-width: 150px;
+    width: 30%;
+}
 #friends .friends-table .friends-row .friends-column-status {
     font-weight: 400;
     width: 40%;
@@ -3121,11 +3129,11 @@ span {
     -webkit-backface-visibility: hidden!important;
 }
 #friends .friends-table .friends-row .friends-column-actions .friends-action {
-    background-color: transparent!important;
     transition: all 200ms cubic-bezier(.33, .01, 0, 1);
-    border-radius: 50%;
+    border-radius: 0%;
     transform: scale(1);
-    opacity: 0.6;
+    opacity: 1;
+    background-color: rgba(25,25,25,1)!important;
 }
 #friends .friends-table .friends-row .friends-column-actions .friends-action::after {
     content: "";
@@ -3164,6 +3172,12 @@ span {
 #friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-accept:active,
 #friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-accept:hover {
     background-color: #b54343!important;
+}
+#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-voice-call {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zd…gsNy45MiA5LjEsOC4zMSA4LjgyLDguNTkgTDcuNSwxMC41IFoiLz4KICA8L2c+Cjwvc3ZnPgo=);
+}
+#friends .friends-table .friends-row .friends-column-actions .friends-action+div {
+    margin-left: 0px;
 }
 #friends .friends-table .friends-row .friends-column-actions {
     margin-left: 0!important;
