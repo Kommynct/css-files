@@ -6280,7 +6280,7 @@ body:active .popout-bottom:not(:active) .popout-menu:not(:active) {
     visibility: visible;
     position: absolute;
     z-index: 0;
-    transition: 100ms ease;
+    transition: all 100ms ease;
     top: 0;
     left: 0;
 }
