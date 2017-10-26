@@ -1110,6 +1110,7 @@ body {
 .channel-members .member.popout-open .avatar-small,
 .channel-members .member .avatar-small {
     transition: all 100ms ease;
+    margin-right: 15px;
 }
 .modal-3HOjGZ,
 .markdown-modal {
