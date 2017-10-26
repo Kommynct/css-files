@@ -755,6 +755,10 @@ body {
     border-radius: 0;
     box-shadow: 0 3px 10px rgba(0, 0, 0, .05);
 }
+#friends .friends-table .friends-row .friends-column-status {
+    font-weight: 400;
+    width: 40%;
+}
 #friends .friends-table .friends-row:active {
     transition: all 50ms ease, z-index 0ms;
     opacity: 1!important;
