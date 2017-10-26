@@ -218,8 +218,6 @@ body {
 .private-channel-recipients-invite .error-state.not-friends .btn:hover,
 .private-channel-recipients-invite .error-state.not-friends .btn,
 #friends .btn,
-.theme-dark #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary,
-.ui-standard-sidebar-view .bda-slist .bda-right button,
 .itemDefaultSelected-1UAWLe,
 .itemDefaultSelected-1UAWLe:active,
 .ui-tab-bar.SIDE .ui-tab-bar-item.selected,
@@ -241,6 +239,11 @@ body {
 .form .btn-primary {
     background: var(--accent-color);
 }
+#friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary {
+    background: var(--accent-color);
+    transition: all 100ms
+}
+
 .cardPrimaryEditable-2IQ7-V[style="background-color: rgb(218, 114, 114);"],
 .theme-dark .ui-card-primary.checked {
     background: var(--accent-color)!important;
