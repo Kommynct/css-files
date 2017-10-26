@@ -2705,6 +2705,7 @@ code:hover .copybutton {
     color: transparent;
     background-position-x: 50%;
 	background-position-y: 90%!important;
+	background-repeat: no-repeat;
     opacity: 0.6;
 }
 /*-----EMBED VIDEO-----*/
