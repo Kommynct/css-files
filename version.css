@@ -779,6 +779,9 @@ margin-bottom: 5px
 #friends .friends-table .friends-row+.friends-row {
     border-top: 0 solid transparent!important;
 }
+a {
+	color: var(--accent-color)	
+}
 #friends .friends-table .friends-row {
     transition: all 200ms ease, z-index 0ms 100ms;
     margin-top: 10px;
