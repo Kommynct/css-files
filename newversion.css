@@ -903,11 +903,6 @@ body {
     border-radius: 50%!important;
     border: 3px;
 }
-.guilds-wrapper .guilds .guild {
-    opacity: 1;
-    transform: translate(0, 0)!important;
-    transition: all 0ms ease!important;
-}
 .guilds-wrapper .guilds .guild.selected {
     opacity: 1;
 }
@@ -933,6 +928,8 @@ body {
 .guilds-wrapper .guilds .guild {
     transition: all 10ms ease;
     margin-bottom: 0px!important;
+    transform: translate(0, 0)!important;
+    transition: all 0ms ease!important;
     z-index: 5;
 }
 .guilds-wrapper .guilds .guild .badge {
@@ -2794,9 +2791,16 @@ code:hover .copybutton {
     opacity: 0.8;
     margin-top: 4px;
     background-size: 50%!important;
+    width: 100%!important;
+    height: 100%!important;
+    background-position: 50%!important;
+    margin-left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .active .friends-icon {
-    background-color: rgba(240, 71, 71, 1);
+    background-color: var(--accent-color);
     opacity: 1;
 }
 .call-avatar .avatar-xxlarge {
@@ -2916,7 +2920,8 @@ code:hover .copybutton {
 .container-iksrDt .accountDetails-15i-_e .discriminator,
 .account .account-details .discriminator {
     color: var(--white10)!important;
-    opacity: 0.3
+    opacity: 0.3;
+    margin-left: 5px;
 }
 /*-----POPOUT-----*/
 
@@ -3174,7 +3179,7 @@ span {
     background-color: #b54343!important;
 }
 #friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-voice-call {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zd…gsNy45MiA5LjEsOC4zMSA4LjgyLDguNTkgTDcuNSwxMC41IFoiLz4KICA8L2c+Cjwvc3ZnPgo=);
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPHBvbHlnb24gcG9pbnRzPSIwIDAgMjQgMCAyNCAyNCAwIDI0Ii8+CiAgICA8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNNy41LDEwLjUgQzguOTQsMTMuMzMgMTAuNjY5MTI4MSwxNS4wNSAxMy40OTkxMjgxLDE2LjUgTDE1LjQxLDE1LjE4IEMxNS42OCwxNC45MSAxNi4wOCwxNC44MiAxNi40MywxNC45NCBDMTcuNTUsMTUuMzEgMTguNzYsMTUuNTEgMjAsMTUuNTEgQzIwLjU1LDE1LjUxIDIxLDE1Ljk2IDIxLDE2LjUxIEwyMSwyMCBDMjEsMjAuNTUgMjAuNTUsMjEgMjAsMjEgQzEwLjYxLDIxIDIuNzkzOTk5MDcsMTMuNjQwNDQ0OSAzLDQgQzMuMDExNzQ5OTQsMy40NTAxMjU3MyAzLjQ1LDMgNCwzIEw3LjUsMyBDOC4wNSwzIDguNSwzLjQ1IDguNSw0IEM4LjUsNS4yNSA4LjcsNi40NSA5LjA3LDcuNTcgQzkuMTgsNy45MiA5LjEsOC4zMSA4LjgyLDguNTkgTDcuNSwxMC41IFoiLz4KICA8L2c+Cjwvc3ZnPgo=);
 }
 #friends .friends-table .friends-row .friends-column-actions .friends-action+div {
     margin-left: 0px;
@@ -3987,7 +3992,7 @@ body:active .status-picker.popout-menu:not(:active) {
     cursor: pointer;
 }
 .status-picker .popout-menu-item:nth-of-type(1) {
-    background-color: #b54343;
+    background-color: #43b581;
     background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNOSAxNi4yTDQuOCAxMmwtMS40IDEuNEw5IDE5IDIxIDdsLTEuNC0xLjRMOSAxNi4yeiIvPjwvc3ZnPg==);
     background-size: 50%;
     background-repeat: no-repeat;
@@ -6241,7 +6246,7 @@ body:active .popout-bottom:not(:active) .popout-menu:not(:active) {
 }
 .guilds-wrapper .guilds .guild.selected .guild-inner .avatar-small:hover::before,
 .guilds-wrapper .guilds .guild.selected .guild-inner .avatar-small::before {
-    background: var(--lvl2);
+    background: var(--accent-color);
     transition: 0ms ease;
 }
 .guilds-wrapper .guilds .guild .guild-inner .avatar-small:hover::before {
@@ -6273,16 +6278,6 @@ body:active .popout-bottom:not(:active) .popout-menu:not(:active) {
     background-color: #b54343!important;
     animation: none!important;
     box-shadow: 0 10px 20px rgba(0, 0, 0, .2) inset;
-}
-.friends-icon {
-    width: 100%!important;
-    height: 100%!important;
-    background-size: 35%!important;
-    background-position: 50%!important;
-    margin-left: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 .guilds-wrapper .guilds .guild:first-of-type .guild-inner {
     height: 64px;
@@ -6501,12 +6496,12 @@ a:active .friends-icon {
     background-color: var(--lvl1);
 }
 .friends-icon:hover {
-    background-color: rgba(240, 71, 71, 1);
+    background-color: var(--accent-color);
     transition: all 200ms ease;
     opacity: 1;
 }
 .active .friends-icon:hover {
-    background-color: rgba(240, 71, 71, 1);
+    background-color: var(--accent-color);
 }
 .theme-dark .messages-popout-wrap .has-more button {
     background: var(--lvl1);
@@ -11137,6 +11132,7 @@ body:active .popout.popout-right.no-arrow[style*="visibility: visible;"]:not(:ac
 }
 .container-iksrDt .avatar-small {
     transition: 200ms ease;
+    margin: 0 8px 0 10px;
 }
 .container-iksrDt .avatar-small:active {
     opacity: 1
