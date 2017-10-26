@@ -2646,7 +2646,7 @@ code:hover .copybutton {
     opacity: 0.6;
 }
 .channel-name.channel-private:hover {
-	opacity: 1:
+	opacity: 1;
 	transition: all 200ms
 }
 .chat>.title-wrap>.title .channel-name.channel-private::before {
@@ -11948,6 +11948,7 @@ body #sort-options.open .item {
 }
 .chat>.title-wrap.call>.title {
     background: transparent!important;
+    opacity: 0.6;
 }
 .theme-dark .tiles-3jKTg9 {
     background: #303030;
