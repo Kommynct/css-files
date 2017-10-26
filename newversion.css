@@ -925,13 +925,6 @@ body {
     transition: 0;
     opacity: 1!important;
 }
-.guilds-wrapper .guilds .guild {
-    transition: all 10ms ease;
-    margin-bottom: 0px!important;
-    transform: translate(0, 0)!important;
-    transition: all 0ms ease!important;
-    z-index: 5;
-}
 .guilds-wrapper .guilds .guild .badge {
     -ms-transform: translate(-12px, -10px)!important;
     transform: translate(-12px, -10px)!important;
@@ -6262,6 +6255,11 @@ body:active .popout-bottom:not(:active) .popout-menu:not(:active) {
     width: 70px;
     height: 64px;
     margin-left: 0!important;
+    transition: all 10ms ease;
+    margin-bottom: 0px!important;
+    transform: translate(0, 0)!important;
+    transition: all 0ms ease!important;
+    z-index: 5;
 }
 .guilds-wrapper .guilds .dms {
     width: auto;
