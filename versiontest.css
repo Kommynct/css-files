@@ -57,7 +57,13 @@ body {
     overflow: hidden;
     padding: 0;
     user-select: none;
+
+
 }
+	.status-online {
+	background-color: rgba(10, 219, 60, 1)!important;
+	opacity: 1!important;
+	}
 .avatar-profile::before,
 .avatar-profile::after,
 .avatar-large+.comment .timestamp::before,
