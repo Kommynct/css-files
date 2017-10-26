@@ -1057,8 +1057,7 @@ body {
 .channel-members .member.popout-open .member-activity,
 .channel-members .member:hover .member-username-inner,
 .channel-members .member.popout-open .member-username-inner {
-    -ms-transform: translate(5px);
-    transform: translate(5px);
+    transition: all 100ms;
 }
 .guild-channels .channel .channel-name {
     transition: all 100ms ease;
