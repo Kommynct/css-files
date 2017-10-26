@@ -6890,6 +6890,9 @@ a:active .friends-icon {
     transition: all 200ms ease;
     border-radius: 4px;
 }
+.bd-pfbtn {
+    background: (--accent-color);
+}
 .button-2t3of8:hover,
 .bd-pfbtn:hover,
 .ui-standard-sidebar-view #editor-detached button:hover,
@@ -8110,7 +8113,9 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
 .user-settings-keybinds .ghost-pill {
     line-height: 25px;
 }
+
 .ui-standard-sidebar-view .bda-slist .bda-right button {
+    background: (--accent-color);
     position: absolute;
     bottom: 5px;
     right: 0;
