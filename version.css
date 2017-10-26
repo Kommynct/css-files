@@ -600,6 +600,7 @@ body {
 .friends-table .messages .message-group .comment .markup,
 .messages-wrapper .messages .message-group .comment .markup {
     color: rgba(225, 225, 225, 0.85);
+    padding-left: 10px;
 }
 .message-group h2 .timestamp {
     color: rgba(225, 225, 225, 0.3)!important;
@@ -645,6 +646,10 @@ body {
 .friends-table .messages .message-group:not(.has-divider),
 .messages-wrapper .messages .message-group:not(.has-divider) {
     background: var(--lvl1)!important;
+}
+.message-group h2 {
+margin: 0;
+margin-bottom: 5px
 }
 .links {
     visibility: hidden;
