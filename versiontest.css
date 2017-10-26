@@ -11948,7 +11948,7 @@ body #sort-options.open .item {
 }
 .chat>.title-wrap.call>.title {
     background: transparent!important;
-    opacity: 0.6;
+    opacity: 1;
 }
 .theme-dark .tiles-3jKTg9 {
     background: #303030;
