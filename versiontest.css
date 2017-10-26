@@ -406,7 +406,7 @@ body {
 #bd-customcss-detach-controls-buttons button:active:last-of-type::after {
     -ms-transform: translate(0, -2px);
     transform: translate(0, -2px);
-    transition: all 50ms ease;
+    transition: all 200ms ease;
 }
 .content-region .CodeMirror,
 .content-region .CodeMirror-scroll {
@@ -771,7 +771,7 @@ body {
     width: 40%;
 }
 #friends .friends-table .friends-row:active {
-    transition: all 50ms ease, z-index 0ms;
+    transition: all 200ms ease, z-index 0ms;
     opacity: 1!important;
     background: #353535;
     z-index: 2;
@@ -1263,11 +1263,11 @@ body {
     opacity: .3;
     background-size: 60%!important;
     background-position: 50%!important;
-    transition: all 50ms ease, background 100ms ease!important;
+    transition: all 200ms ease, background 100ms ease!important;
 }
 .container-3lnMWU .horizontal-2BEEBe div:active,
 .container-iksrDt .horizontal-2BEEBe div:active {
-    transition: all 0ms ease, background 100ms ease!important;
+    transition: all 200ms ease, background 100ms ease!important;
 }
 .container-iksrDt .horizontal-2BEEBe div:nth-of-type(3) {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0iI0ZGRiI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE5LjQgMTN2LTJsMi0xLjZjLjMtLjIuNC0uNS4zLS43bC0yLTMuNGMtLjItLjMtLjQtLjMtLjYtLjNsLTIgMS0yLTEtLjMtMi42YzAtLjItLjMtLjQtLjUtLjRoLTRjLS4yIDAtLjQuMi0uNC40TDkgNSA3LjUgNiA1IDVjLS4zIDAtLjUgMC0uNy4zbC0yIDMuNGMwIC4zIDAgLjUuMi43bDIgMS42djJsLTIgMS42Yy0uMi4yLS4zLjUtLjIuN2wyIDMuNGMuMi4zLjQuMy42LjNsMi0xIDIgMSAuMyAyLjZjMCAuMi4yLjQuNS40aDRjLjIgMCAuNC0uMi40LS40TDE1IDE5bDEuNi0xIDIuNSAxYy44IDAgMSAwIDEtLjNsMi0zLjR2LS43TDIwIDEzek0xMiAxNS41Yy0yIDAtMy41LTEuNi0zLjUtMy41UzEwIDguNSAxMiA4LjVzMy41IDEuNiAzLjUgMy41LTEuNiAzLjUtMy41IDMuNXoiLz48L3N2Zz4=)!important;
@@ -1931,7 +1931,7 @@ body {
     -ms-transform: translate(0, 2px);
     transform: translate(0, 2px);
     box-shadow: 0 0 0 rgba(0, 0, 0, .5);
-    transition: all 50ms ease;
+    transition: all 200ms ease;
     border-radius: 4px;
 }
 .slider {
@@ -3737,7 +3737,7 @@ span {
     border-bottom: 2px solid var(--white4)!important;
 }
 #user-profile-modal .guilds .guild {
-    transition: all 50ms ease;
+    transition: all 200ms ease;
 }
 #user-profile-modal .guilds .guild:hover {
     background: rgba(255, 255, 255, .02)border;
@@ -3975,7 +3975,7 @@ body:active .status-picker.popout-menu:not(:active) {
     color: transparent;
     opacity: 1;
     box-shadow: 0 -10px 20px rgba(0, 0, 0, .15) inset, 0 1px 1px rgba(255, 255, 255, .05) inset, 0 0 0 2px var(--white10) inset, 0 0 15px rgba(0, 0, 0, .1);
-    transition: all 50ms ease;
+    transition: all 200ms ease;
     z-index: 2;
 }
 .status-picker:active .popout-menu-item {
@@ -4353,7 +4353,7 @@ body:active .status-picker.popout-menu:not(:active) {
 .emoji-picker .categories .item {
     opacity: .4;
     border: none!important;
-    transition: all 50ms ease
+    transition: all 200ms ease
 }
 .emoji-picker .categories .item:hover {
     opacity: 1;
@@ -4379,7 +4379,7 @@ body:active .status-picker.popout-menu:not(:active) {
     transition: all 200ms;
 }
 #autocomplete-popout .row {
-    transition: all 50ms ease;
+    transition: all 200ms ease;
 }
 #autocomplete-popout .scroller::-webkit-scrollbar {
     display: none
@@ -4456,7 +4456,7 @@ body:active .status-picker.popout-menu:not(:active) {
     background-size: 22px;
     opacity: .4;
     visibility: visible;
-    transition: all 50ms ease;
+    transition: all 200ms ease;
 }
 #bda-qem-favourite::after {
     content: "";
@@ -4472,7 +4472,7 @@ body:active .status-picker.popout-menu:not(:active) {
     background-size: 24px;
     opacity: .4;
     visibility: visible;
-    transition: all 50ms ease;
+    transition: all 200ms ease;
 }
 #bda-qem-emojis::after {
     content: "";
@@ -4488,7 +4488,7 @@ body:active .status-picker.popout-menu:not(:active) {
     background-size: 24px;
     opacity: .4;
     visibility: visible;
-    transition: all 50ms ease;
+    transition: all 200ms ease;
 }
 #bda-qem-twitch.active::after,
 #bda-qem-favourite.active::after,
@@ -5955,7 +5955,7 @@ div[style="background:#2E3136; color:#ADADAD; height:30px; position:absolute; bo
     background-size: 100%;
     opacity: .6;
     background-position: 0 50%;
-    transition: all 50ms ease;
+    transition: all 200ms ease;
 }
 .region-select:active button {
     background: var(--accent-color);
@@ -6841,7 +6841,7 @@ a:active .friends-icon {
     -ms-transform: translate(0, 2px);
     transform: translate(0, 2px);
     box-shadow: 0 0 0 rgba(0, 0, 0, .5);
-    transition: all 50ms ease;
+    transition: all 200ms ease;
     border-radius: 4px;
 }
 .button-2t3of8:hover,
@@ -6879,7 +6879,7 @@ a:active .friends-icon {
 .user-settings-authorized-apps .authed-app .delete-app:active,
 .user-settings-authorized-apps .authed-app ._2t3of887:active,
 .user-settings-authorized-apps .authed-app .ui-button:active {
-    transition: all 50ms ease;
+    transition: all 200ms ease;
 }
 .theme-dark .ui-standard-sidebar-view .btn-close {
     border: none;
@@ -8496,7 +8496,7 @@ div.platform-win .user-settings-modal .tab-bar.SIDE .tab-bar-item:nth-of-type(15
     color: var(--white5);
 }
 .ui-key-recorder .layout .ui-button:active {
-    transition: all 50ms ease;
+    transition: all 200ms ease;
 }
 .modal-content {
     background-color: transparent!important
@@ -10176,7 +10176,7 @@ html[lang="ko"] .upload-modal-in .upload-drop-modal .bgScale {
 }
 .create-guild-container.deprecated .action:active .action-header {
     color: var(--white10);
-    transition: all 50ms ease;
+    transition: all 200ms ease;
 }
 body .create-guild-container.deprecated .action.join:active .btn,
 body .create-guild-container.deprecated .action.create:active .btn {
@@ -12438,7 +12438,7 @@ textarea:focus + .maxLength-1NjdA0 {
     z-index: 2000;
     background: var(--accent-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    transition: all 50ms ease, z-index 0ms;
+    transition: all 200ms ease, z-index 0ms;
 }
 .theme-dark .cardPrimaryEditable-2IQ7-V[style*="border-color: rgb(218, 114, 114); background-color: rgb(218, 114, 114);"]:hover {
     filter: brightness(1.1);
