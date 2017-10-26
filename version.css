@@ -8953,6 +8953,7 @@ body .citar-btn:active {
 .contentHoveredVoice-3qGNKh:active,
 .contentSelectedVoice-gTtYM9:active {
     background: rgba(255, 255, 255, .05);
+    transition: all 200ms
 }
 /**/
 /*selected channel*/
