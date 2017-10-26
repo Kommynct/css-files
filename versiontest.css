@@ -9260,10 +9260,12 @@ body .citar-btn:active {
 .popout-bottom .popout-menu .popout-menu-item .popout-menu-item-label {
     -webkit-backface-visibility: hidden!important;
 }
+.private-channel-call .action-button, .private-channel-call .static-button, .private-channel-call .toggle-button {
+	transition: all 200ms!important;
+}	
 .theme-dark .private-channel-call.minimum .private-channel-call-actions .center {
     background: var(--lvl2);
     border-color: var(--lvl2);
-    transition: all 200ms
 }
 .theme-dark .ui-quick-select-popout {
     background: var(--lvl1);
