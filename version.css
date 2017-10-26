@@ -779,6 +779,9 @@ margin-bottom: 5px
 #friends .friends-table .friends-row+.friends-row {
     border-top: 0 solid transparent!important;
 }
+.app a, .connecting a {
+	color: var(--accent-color)
+}
 a {
 	color: var(--accent-color)	
 }
