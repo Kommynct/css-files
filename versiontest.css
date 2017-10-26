@@ -1089,6 +1089,8 @@ body {
     visibility: visible;
     transition: all 100ms ease;
     margin-bottom: 0px;
+    padding-left: 5px;
+    transform: translate(0px, +2px);
     
 }
 #friends .friends-table .friends-row .discriminator,
