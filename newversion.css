@@ -6243,7 +6243,7 @@ body:active .popout-bottom:not(:active) .popout-menu:not(:active) {
     transition: all 100ms ease;
 }
 .guilds-wrapper .guilds .guild .guild-inner .avatar-small:hover::before {
-    background: rgba(255, 255, 255, 0.06);
+    background: rgba(240, 71, 71, 0.06);
     transition: all 100ms ease;
 }
 .guilds-wrapper .guilds .guild .guild-inner .avatar-small:active::before {
