@@ -732,6 +732,7 @@ body {
     padding: 16px 10px;
     z-index: 0;
     position: relative;
+    align-items: center;
 }
 #friends .friends-table .friends-row:first-of-type:hover,
 #friends .friends-table .friends-row:first-of-type {
@@ -753,6 +754,18 @@ body {
     z-index: 2;
     border-radius: 0;
     box-shadow: 0 3px 10px rgba(0, 0, 0, .05);
+}
+#friends .friends-table .friends-row .friends-column {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-shrink: 0;
+    min-width: 150px;
+    width: 30%;
+}
+#friends .friends-table .friends-row .friends-column-status {
+    font-weight: 400;
+    width: 40%;
 }
 #friends .friends-table .friends-row:active {
     transition: all 50ms ease, z-index 0ms;
@@ -3116,11 +3129,11 @@ span {
     -webkit-backface-visibility: hidden!important;
 }
 #friends .friends-table .friends-row .friends-column-actions .friends-action {
-    background-color: transparent!important;
     transition: all 200ms cubic-bezier(.33, .01, 0, 1);
-    border-radius: 50%;
+    border-radius: 20%;
     transform: scale(1);
-    opacity: 0.6;
+    opacity: 1;
+    background-color: rgba(25,25,25,1)!important;
 }
 #friends .friends-table .friends-row .friends-column-actions .friends-action::after {
     content: "";
@@ -3160,12 +3173,17 @@ span {
 #friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-accept:hover {
     background-color: #b54343!important;
 }
+#friends .friends-table .friends-row .friends-column-actions .friends-action+div {
+    margin-left: 0px;
+}
 #friends .friends-table .friends-row .friends-column-actions {
     margin-left: 0!important;
     margin-right: 0!important;
     padding-right: 12px;
     visibility: visible;
-    opacity: 0.5;
+    opacity: 0;
+    position: absolute;
+    width: 98%;
     
 }
 #friends .friends-table .friends-row:hover .friends-column-actions {
@@ -3174,7 +3192,7 @@ span {
     opacity: 1;
 }
 #friends .friends-table .friends-column-guilds {
-    width: 0!important;
+    width: auto!important;
 }
 #friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-add {
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiICB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCI+CiAgIDxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0xNSwxNEMxMi4zMywxNCA3LDE1LjMzIDcsMThWMjBIMjNWMThDMjMsMTUuMzMgMTcuNjcsMTQgMTUsMTRNNiwxMFY3SDRWMTBIMVYxMkg0VjE1SDZWMTJIOVYxME0xNSwxMkE0LDQgMCAwLDAgMTksOEE0LDQgMCAwLDAgMTUsNEE0LDQgMCAwLDAgMTEsOEE0LDQgMCAwLDAgMTUsMTJaIiAvPgo8L3N2Zz4K);
