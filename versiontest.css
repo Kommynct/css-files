@@ -2636,16 +2636,17 @@ code:hover .copybutton {
     border-color: var(--lvl2)!important
 }
 .channel-name.channel-private:hover+.status.status-online {
-    -ms-transform: scale(0.90)translate(-2px);
-    transform: scale(0.90)translate(-2px)
+	opacity: 1
 }
 .status.status-online {
     transition: all 200ms ease;
 }
 .channel-name.channel-private {
     transition: all 200ms ease;
+    opacity: 0.6;
 }
 .channel-name.channel-private:hover {
+	opacity: 1:
 	transition: all 200ms
 }
 .chat>.title-wrap>.title .channel-name.channel-private::before {
