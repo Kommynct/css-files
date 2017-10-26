@@ -1087,8 +1087,9 @@ body {
 }
 #friends .friends-table .friends-row .discord-tag .discriminator {
     visibility: visible;
-    color: rgba(225, 225, 225, 0);
     transition: all 100ms ease;
+    margin-bottom: 0px;
+    
 }
 #friends .friends-table .friends-row .discriminator,
 #friends .friends-table .friends-row .friends-column-actions {
