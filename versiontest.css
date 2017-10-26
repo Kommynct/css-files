@@ -903,11 +903,6 @@ body {
     border-radius: 50%!important;
     border: 3px;
 }
-.guilds-wrapper .guilds .guild {
-    opacity: 1;
-    transform: translate(0, 0)!important;
-    transition: all 0ms ease!important;
-}
 .guilds-wrapper .guilds .guild.selected {
     opacity: 1;
 }
@@ -933,6 +928,8 @@ body {
 .guilds-wrapper .guilds .guild {
     transition: all 10ms ease;
     margin-bottom: 0px!important;
+    transform: translate(0, 0)!important;
+    transition: all 0ms ease!important;
     z-index: 5;
 }
 .guilds-wrapper .guilds .guild .badge {
