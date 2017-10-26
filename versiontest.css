@@ -702,12 +702,40 @@ body {
     border: 4px solid var(--lvl1)!important;
     border-radius: 10px;
 }
+	.chat>.title-wrap>.title .channel-name {
+	overflow-y: visible;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    opacity: 0.6;
+    margin-left: 20px;
+    margin-right: 5px;
+}
 .chat .title-wrap .topic {
+	 -webkit-box-flex: 1;
+    flex: 1;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-left: 8px;
+    max-height: 22px;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
     color: rgba(225, 225, 225, 0.3)!important;
     transition: all 300ms ease;
 }
+.chat>.title-wrap.title-wrap-dark .topic:before {
+    background-color: hsla(240,6%,97%,.1);
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
 .chat .title-wrap .topic:hover {
-    color: rgba(225, 225, 225, 0.7)!important;
+    color: rgba(225, 225, 225, 1)!important;
     transition: all 300ms ease;
 }
 .modal-3HOjGZ a,
