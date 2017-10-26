@@ -1085,9 +1085,6 @@ body {
 .private-channels .channel .avatar-small {
     transition: all 100ms cubic-bezier(.43, 0, 0, 1);
 }
-#friends .friends-table .friends-row .discord-tag {
-	overflow-y: visible;
-}
 #friends .friends-table .friends-row .discord-tag .discriminator {
     visibility: visible;
     transition: all 100ms ease;
