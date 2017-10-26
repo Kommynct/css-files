@@ -2789,7 +2789,18 @@ code:hover .copybutton {
 .channel.btn-friends .channel-name {
     margin-right: 30px;
 }
-
+.friends-icon {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGlkPSJDYWxxdWVfMSIgdmlld0JveD0iLTk0NyA1MjkgMjQgMjQiPjxzdHlsZSBpZD0ic3R5bGUyIj4uc3Qwe2ZpbGw6bm9uZTt9IC5zdDF7ZmlsbDojRkZGRkZGO308L3N0eWxlPjxwYXRoIGlkPSJwYXRoNiIgZD0iTS05MjYgNTM1aC0ydjloLTEzdjJjMCAuNS41IDEgMSAxaDExbDQgNHYtMTVjMC0uNS0uNS0xLTEtMXptLTQgNnYtOWMwLS41LS41LTEtMS0xaC0xM2MtLjUgMC0xIC41LTEgMXYxNGw0LTRoMTBjLjUgMCAxLS41IDEtMXoiIGNsYXNzPSJzdDEiLz48L3N2Zz4=)!important;
+    opacity: 0.8;
+    margin-top: 4px;
+    background-size: 50%!important;
+    width: 100%!important;
+    height: 100%!important;
+    background-position: 50%!important;
+    margin-left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .active .friends-icon {
     background-color: rgba(240, 71, 71, 1);
@@ -6270,19 +6281,6 @@ body:active .popout-bottom:not(:active) .popout-menu:not(:active) {
     background-color: #b54343!important;
     animation: none!important;
     box-shadow: 0 10px 20px rgba(0, 0, 0, .2) inset;
-}
-.friends-icon {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGlkPSJDYWxxdWVfMSIgdmlld0JveD0iLTk0NyA1MjkgMjQgMjQiPjxzdHlsZSBpZD0ic3R5bGUyIj4uc3Qwe2ZpbGw6bm9uZTt9IC5zdDF7ZmlsbDojRkZGRkZGO308L3N0eWxlPjxwYXRoIGlkPSJwYXRoNiIgZD0iTS05MjYgNTM1aC0ydjloLTEzdjJjMCAuNS41IDEgMSAxaDExbDQgNHYtMTVjMC0uNS0uNS0xLTEtMXptLTQgNnYtOWMwLS41LS41LTEtMS0xaC0xM2MtLjUgMC0xIC41LTEgMXYxNGw0LTRoMTBjLjUgMCAxLS41IDEtMXoiIGNsYXNzPSJzdDEiLz48L3N2Zz4=)!important;
-    opacity: 0.8;
-    margin-top: 4px;
-    background-size: 50%!important;
-    width: 100%!important;
-    height: 100%!important;
-    background-position: 50%!important;
-    margin-left: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 .guilds-wrapper .guilds .guild:first-of-type .guild-inner {
     height: 64px;
@@ -11484,6 +11482,13 @@ body:active .popout.popout-right.no-arrow[style*="visibility: visible;"]:not(:ac
 div.user-settings-locale div[class*=checked] polyline {
     stroke: var(--white10)!important;
 }
+/*/Made by SuperagiusRobloxian*/
+
+.guilds-wrapper .guilds .friends-online {
+    margin-left: 35px;
+    transform: translate(-50%, 0);
+}
+/*DirectDownload plugin*/
 
 body #files_directDownload {
     left: 70px;
