@@ -756,12 +756,8 @@ body {
     box-shadow: 0 3px 10px rgba(0, 0, 0, .05);
 }
 #friends .friends-table .friends-row .friends-column {
-    -ms-flex-align: center;
-    -ms-flex-negative: 0;
     -webkit-box-align: center;
     align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     flex-shrink: 0;
     min-width: 150px;
@@ -3133,11 +3129,11 @@ span {
     -webkit-backface-visibility: hidden!important;
 }
 #friends .friends-table .friends-row .friends-column-actions .friends-action {
-    background-color: transparent!important;
     transition: all 200ms cubic-bezier(.33, .01, 0, 1);
-    border-radius: 50%;
+    border-radius: 20%;
     transform: scale(1);
-    opacity: 0.6;
+    opacity: 1;
+    background-color: rgba(25,25,25,1)!important;
 }
 #friends .friends-table .friends-row .friends-column-actions .friends-action::after {
     content: "";
@@ -3176,6 +3172,12 @@ span {
 #friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-accept:active,
 #friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-accept:hover {
     background-color: #b54343!important;
+}
+#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-voice-call {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPHBvbHlnb24gcG9pbnRzPSIwIDAgMjQgMCAyNCAyNCAwIDI0Ii8+CiAgICA8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNNy41LDEwLjUgQzguOTQsMTMuMzMgMTAuNjY5MTI4MSwxNS4wNSAxMy40OTkxMjgxLDE2LjUgTDE1LjQxLDE1LjE4IEMxNS42OCwxNC45MSAxNi4wOCwxNC44MiAxNi40MywxNC45NCBDMTcuNTUsMTUuMzEgMTguNzYsMTUuNTEgMjAsMTUuNTEgQzIwLjU1LDE1LjUxIDIxLDE1Ljk2IDIxLDE2LjUxIEwyMSwyMCBDMjEsMjAuNTUgMjAuNTUsMjEgMjAsMjEgQzEwLjYxLDIxIDIuNzkzOTk5MDcsMTMuNjQwNDQ0OSAzLDQgQzMuMDExNzQ5OTQsMy40NTAxMjU3MyAzLjQ1LDMgNCwzIEw3LjUsMyBDOC4wNSwzIDguNSwzLjQ1IDguNSw0IEM4LjUsNS4yNSA4LjcsNi40NSA5LjA3LDcuNTcgQzkuMTgsNy45MiA5LjEsOC4zMSA4LjgyLDguNTkgTDcuNSwxMC41IFoiLz4KICA8L2c+Cjwvc3ZnPgo=);
+}
+#friends .friends-table .friends-row .friends-column-actions .friends-action+div {
+    margin-left: 0px;
 }
 #friends .friends-table .friends-row .friends-column-actions {
     margin-left: 0!important;
