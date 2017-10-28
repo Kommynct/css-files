@@ -454,6 +454,9 @@ body {
 .channel-textarea {
     position: relative;
 }
+.channelTextArea-os01xC {
+	margin: 0;
+}
 .theme-dark .chat form {
     border: none!important;
     margin: 0;
