@@ -320,9 +320,10 @@ body {
     color: var(--white3);
 }
 .title-qAcLxz {
-    background: #000000;
-    border-top-width: 8px;
+    background: #000000!important;
+    border-top-width: 7px;
     border-top-color: #000000;
+    border-top-style: solid;
 }
 /*/color compressions*/
 /*-----GENERAL KEYFRAMES-----*/
