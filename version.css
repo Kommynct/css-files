@@ -508,6 +508,13 @@ body {
 .channel-textarea-inner:hover {
     opacity: 1;
 }
+.headerBar-cxbhPD {
+    border-top-style: solid;
+    border-top-width: 7px;
+    border-top-color: #000000;
+    width: auto;
+    background: #000000!important;
+}
 .channel-textarea-inner .channel-textarea-upload {
     border-radius: 0 !important;
     color: var(--white10)!important;
