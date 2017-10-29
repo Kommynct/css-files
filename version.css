@@ -319,6 +319,11 @@ body {
 .theme-dark .ui-radiogroup .desc {
     color: var(--white3);
 }
+.title-qAcLxz {
+    background: #000000;
+    border-top-width: 8px;
+    border-top-color: #000000;
+}
 /*/color compressions*/
 /*-----GENERAL KEYFRAMES-----*/
 
