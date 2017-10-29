@@ -260,6 +260,9 @@ body {
 .form .btn-primary {
     background: var(--accent-color);
 }
+#friends .tab-bar .tab-bar-item.tab-bar-item-primary {
+	background: var(--accent-color)!important;
+}
 #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary {
     background: var(--accent-color)!important;
     transition: all 200ms
