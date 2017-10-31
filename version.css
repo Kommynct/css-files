@@ -9363,6 +9363,9 @@ body .citar-btn:active {
 .theme-dark .ui-quick-select-popout-option:hover {
     background: var(--lvl2);
 }
+.theme-dark .ui-call-avatar.voice .ui-call-avatar-status{
+border-color: #000000;
+}
 .ui-call-avatar.voice .ui-call-avatar-status.muted {
     animation: scale 500ms cubic-bezier(.65, 0, 0, 1.39);
 }
