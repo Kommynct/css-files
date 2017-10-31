@@ -1336,6 +1336,7 @@ a {
 }
 .flex-spacer {
     background: transparent;
+    overflow: visible;
 }
 .container-3lnMWU .horizontal-2BEEBe div,
 .container-iksrDt .horizontal-2BEEBe div {
@@ -2820,7 +2821,9 @@ code:hover .copybutton {
 .chat .private-channel-call {
     background-color: #000000!important;
     z-index: 0;
-    margin-top: 40px
+    margin-top: 40px;
+	height: 185px;
+	padding-bottom: 10px;
 }
 .title-qAcLxz, .titleCall-3X0yGQ {
     background-color: #000000;
@@ -2830,6 +2833,7 @@ code:hover .copybutton {
 }
 .theme-dark .ui-video {
     background: transparent;
+    min-height: auto;
 }
 .private-channel-call .btn-text {
     border-radius: 100px;
