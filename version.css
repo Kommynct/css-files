@@ -211,6 +211,11 @@ body {
     display: flex;
     flex-direction: column;
 }
+.iconInactive-WWHQEI {
+    opacity: .6;
+    transition: all 200ms;
+}
+
 #bd-settingspane-container .bda-slist::before {
     display: block;
     position: relative;
