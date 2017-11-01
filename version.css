@@ -276,7 +276,7 @@ body {
 	
 }
 #friends .tab-bar .tab-bar-item.tab-bar-item-primary.selected {
-	color: white;
+	color: white!important;
 	opacity: 1;
 }
 #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary {
