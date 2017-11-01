@@ -1217,6 +1217,13 @@ a {
 .content-1Cut5s {
     padding-top: 15px;
 }
+.icon-mr9wAc {
+    transition: all 200ms;
+}
+#friends .tab-bar .tab-bar-item {
+    color: #b59999;
+    transition: all 200ms;
+}
 .context-menu {
     background: var(--lvl2)!important;
     border-radius: 2px;
