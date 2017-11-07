@@ -13161,13 +13161,13 @@ body .form.deprecated .control-group input:focus,
 
 .textArea-20yzAH {
   max-height: 400px!important;
-  overflow-y: scroll!important;
+  overflow-y: visible;
   margin-top: 0;
   margin-bottom: 0;
   padding: 26px 0;
   font-size: 0.875rem;
   line-height: 1.125rem;
-  overflow: hidden;
+  overflow: scroll;
   letter-spacing: normal;
   min-height: 18px;
   transition: all 200ms ease;
