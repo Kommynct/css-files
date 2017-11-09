@@ -13161,22 +13161,19 @@ body .form.deprecated .control-group input:focus,
 }
 
 .textArea-20yzAH {
-  max-height: 400px!important;
-  overflow-y: visible;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 26px 0;
-  font-size: 0.875rem;
-  line-height: 1.125rem;
-  overflow: scroll;
-  letter-spacing: normal;
-  min-height: 18px;
-  transition: all 200ms ease;
-  padding-right: 80px;
-  opacity: 0.64;
-  background: #3a3a3a!important;
-  margin: 0;
-  color: rgba(255, 255, 255, .7);
+    max-height: 400px!important;
+    overflow-y: visible;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-right: 50px;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    letter-spacing: normal;
+    transition: all 200ms ease;
+    padding-right: 80px;
+    opacity: 0.64;
+    background: #3a3a3a!important;
+    color: rgba(255, 255, 255, .7);
 }
 
 .inner-3if5cm:hover .textArea-20yzAH {
