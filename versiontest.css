@@ -10898,7 +10898,7 @@ body .citar-btn:active {
 .message-group .btn-option {
   visibility: visible!important;
   opacity: 0;
-  transition: all 200ms;
+  transition: all 0ms;
 }
 
 .message:hover .btn-option {
