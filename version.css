@@ -699,6 +699,7 @@ body {
 
 .chat .user-name {
   transition: all 200ms ease;
+  font-weight: bolder;
 }
 
 .chat .user-name:hover {
@@ -14983,7 +14984,7 @@ textarea:focus + .maxLength-1NjdA0 {
 }
 
 .theme-dark .inner-3if5cm {
-  background: none;
+  background-color: rgba(58, 58, 58, .3);
 }
 
 .checkbox .checkbox-inner input[type=checkbox]:checked+span:after {
