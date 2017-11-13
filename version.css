@@ -13166,8 +13166,8 @@ body .form.deprecated .control-group input:focus,
 .textArea-20yzAH {
     max-height: 400px!important;
     overflow-y: visible;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding-right: 50px;
     font-size: 0.875rem;
     line-height: 1.125rem;
