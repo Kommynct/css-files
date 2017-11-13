@@ -13175,7 +13175,6 @@ body .form.deprecated .control-group input:focus,
     transition: all 200ms ease;
     padding-right: 80px;
     opacity: 0.64;
-    background: #3a3a3a!important;
     color: rgba(255, 255, 255, .7);
 }
 
