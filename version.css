@@ -14984,7 +14984,7 @@ textarea:focus + .maxLength-1NjdA0 {
 }
 
 .theme-dark .inner-3if5cm {
-  background-color: rgba(58, 58, 58, .3);
+  background-color: rgba(58, 58, 58, .3)!important;
 }
 
 .checkbox .checkbox-inner input[type=checkbox]:checked+span:after {
