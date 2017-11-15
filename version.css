@@ -13886,7 +13886,9 @@ input, textarea {
 .renamer-modal a.modal-reset-text {
   color: var(--white8)!important;
 }
-
+.ui-video.full-screen .ui-video-bottom {
+margin-bottom: 20px;
+}
 .cm-s-material .CodeMirror-guttermarker,
 .cm-s-material .CodeMirror-guttermarker-subtle,
 .cm-s-material .CodeMirror-linenumber {
