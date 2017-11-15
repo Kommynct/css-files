@@ -13887,7 +13887,7 @@ input, textarea {
   color: var(--white8)!important;
 }
 .ui-video.full-screen .ui-video-bottom {
-margin-bottom: 20px;
+margin-bottom: 30px
 }
 .cm-s-material .CodeMirror-guttermarker,
 .cm-s-material .CodeMirror-guttermarker-subtle,
