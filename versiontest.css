@@ -5192,7 +5192,7 @@ body:active .status-picker.popout-menu:not(:active) {
   z-index: 1000
 }
 .chat .messages {
-    word-break: break-all;
+    word-break: break-word;
 }
 .popout:not(.no-shadow) .emoji-picker {
   display: block!important;
