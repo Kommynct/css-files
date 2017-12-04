@@ -10,6 +10,13 @@
     border: 0 !important;
     color: #ffffff !important;
 }
+.res-floater-visibleAfterScroll > ul {
+    background: black!important;
+    height: 20px;
+    width: 45px;
+    border-radius: 200px;
+    justify-content: center;
+}
 .res-show-link {
  background-color: black!important;   
 }
