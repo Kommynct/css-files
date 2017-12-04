@@ -1,9 +1,7 @@
-/* Hide annoying stuff */
 .give-gold-button, .goldvertisement, .embed-comment, .nub, .sr-list > .separator, .sr-list > .separator + .sr-bar, #sr-more-link {
     display: none !important;
 }
 
-/* Reset */
 #RESNotifications {
     background-color: #222222!important;
 }
@@ -90,7 +88,6 @@ html, body {
     background-color: rgb(0, 0, 0)!important;
 }
 
-/* Side bar */
 .listing-chooser-collapsed .grippy {
     width: 1px !important;
 }
@@ -104,7 +101,6 @@ html, body {
     display: none !important;
 }
 
-/* Inputs and buttons */
 input, textarea, .linkinfo .shortlink input, .new-comment .usertext-body, .morelink a, .morelink:hover a, .fancy-toggle-button a, .usertext button {
     background: #111111 !important;
     color: #999999 !important;
@@ -167,29 +163,6 @@ a.edit-btn {
     display: none !important;
 }
 
-/* Comments 
-.link .usertext .md,
-blockquote,
-pre,
-code,
-.gold-accent {
-	background-color: #111111 !important;
-}
-.md blockquote {
-	border-left: solid 4px #999999 !important;
-}
-.md td {
-	border: solid 1px #ffffff !important;
-}
-hr {
-	border-bottom: solid 1px #ff9999 !important;
-}
-.comment .author,
-.morecomments a {
-	font-weight: normal !important;
-} */
-
-/* RES */
 .guider, .guiders_button, .RESDialogSmall, .RESDropdownOptions, .res-fancy-toggle-button, #RESConsoleContainer, #RESShortcutsAddFormContainer {
     background: #222 !important;
 }
