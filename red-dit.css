@@ -1,4 +1,4 @@
-.give-gold-button, .goldvertisement, .embed-comment, .nub, .sr-list > .separator, .sr-list > .separator + .sr-bar, #sr-more-link {
+.res-wheel-media-browse, .give-gold-button, .goldvertisement, .embed-comment, .nub, .sr-list > .separator, .sr-list > .separator + .sr-bar, #sr-more-link {
     display: none !important;
 }
 
@@ -12,9 +12,11 @@
 }
 .res-floater-visibleAfterScroll > ul {
     background: black!important;
-    height: 20px;
-    width: 45px;
-    border-radius: 200px;
+    height: 25px;
+    min-width: 50px;
+    border-radius: 10px;
+    padding-right: 3px;
+    padding-left: 3px;
     justify-content: center;
 }
 .res-show-link {
