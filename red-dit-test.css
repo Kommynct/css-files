@@ -17,6 +17,10 @@
     padding-right: 3px;
     padding-left: 3px;
     justify-content: center;
+    opacity: 0.3;
+}
+.res-floater-visibleAfterScroll > ul:hover {
+opacity: 1;
 }
 .res-show-link {
     background-color: black!important;
