@@ -10,6 +10,9 @@
     border: 0 !important;
     color: #ffffff !important;
 }
+.author-tooltip {
+    display: none!important;
+}
 .res-floater-visibleAfterScroll > ul {
     background: black!important;
     height: 25px;
