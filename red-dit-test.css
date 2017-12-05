@@ -20,7 +20,7 @@
     opacity: 0.3;
 }
 .res-floater-visibleAfterScroll > ul:hover {
-opacity: 1;
+    opacity: 1;
 }
 .res-show-link {
     background-color: black!important;
@@ -104,9 +104,8 @@ input, textarea, .linkinfo .shortlink input, .new-comment .usertext-body, .morel
     font-weight: normal !important;
 }
 .gearIcon::after {
-    content: ""!important;
-    color: rgb(253, 160, 160)!important;
-    text-shadow: rgb(165, 61, 61) 0px 0px 1px, rgb(165, 61, 61) 0px 0px 1px, rgb(165, 61, 61) 0px 0px 1px, rgb(165, 61, 61) 0px 0px 1px, rgb(165, 61, 61) 0px 0px 1px, rgb(165, 61, 61) 0px 0px 1px, rgb(165, 61, 61) 0px 0px 1px, rgb(165, 61, 61) 0px 0px 1px!important;
+    color: #ff5050!important;
+    text-shadow: none!important;
 }
 
 /* Listing */
