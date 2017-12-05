@@ -2772,7 +2772,7 @@ a {
   width: 18px!important;
   height: 18px!important;
   margin-top: 3px;
-  transition: all 200ms ease!important;
+  transition: all 0ms ease!important;
   background-size: 100%!important;
 }
 
@@ -2783,7 +2783,7 @@ a {
   width: 18px!important;
   height: 18px!important;
   margin-top: 3px;
-  transition: 200ms ease!important;
+  transition: all 0ms ease!important;
   background-size: 100%!important;
 }
 
