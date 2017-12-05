@@ -2779,11 +2779,11 @@ a {
 .btn-reaction {
   -ms-transform: scale(1);
   transform: scale(1);
-  opacity: 0.1;
+  opacity: 0.2;
   width: 18px!important;
   height: 18px!important;
   margin-top: 3px;
-  transition: all 0ms ease!important;
+  transition: all 200ms ease!important;
   background-size: 100%!important;
 }
 
