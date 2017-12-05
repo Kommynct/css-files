@@ -2783,14 +2783,14 @@ a {
   width: 18px!important;
   height: 18px!important;
   margin-top: 3px;
-  transition: all 200ms ease!important;
+  transition: all 0ms ease!important;
   background-size: 100%!important;
 }
 
 .btn-option:hover,
 .btn-reaction:hover {
   opacity: 0.7!important;
-  transition: all 0ms ease!important;
+  transition: all 20ms ease!important;
 }
 
 /*embed images*/
@@ -3830,7 +3830,7 @@ code:hover .copybutton {
 .message-group .btn-option {
   visibility: visible!important;
   opacity: 0;
-  transition: 50ms ease;
+  transition: 0ms ease;
 }
 
 .message:hover .btn-option {
