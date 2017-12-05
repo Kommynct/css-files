@@ -1,4 +1,4 @@
-.res-wheel-media-browse, .give-gold-button, .goldvertisement, .embed-comment, .nub, .sr-list > .separator, .sr-list > .separator + .sr-bar, #sr-more-link {
+.search-expando.collapsed:before, .comment-fade, .grippy:after, .author-tooltip, .res-wheel-media-browse, .give-gold-button, .goldvertisement, .embed-comment, .nub, .sr-list > .separator, .sr-list > .separator + .sr-bar, #sr-more-link {
     display: none !important;
 }
 
@@ -9,9 +9,6 @@
     background-color: transparent !important;
     border: 0 !important;
     color: #ffffff !important;
-}
-.author-tooltip {
-    display: none!important;
 }
 .res-floater-visibleAfterScroll > ul {
     background: black!important;
@@ -115,9 +112,6 @@ html, body {
 .listing-chooser li.selected {
     box-shadow: none !important;
 }
-.grippy:after {
-    display: none !important;
-}
 
 input, textarea, .linkinfo .shortlink input, .new-comment .usertext-body, .morelink a, .morelink:hover a, .fancy-toggle-button a, .usertext button {
     background: #111111 !important;
@@ -177,10 +171,6 @@ a.edit-btn {
 .pagename, .tabmenu li, .link .midcol, .buttons a, .subreddit {
     font-weight: normal !important;
 }
-.search-expando.collapsed:before, .comment-fade {
-    display: none !important;
-}
-
 .guider, .guiders_button, .RESDialogSmall, .RESDropdownOptions, .res-fancy-toggle-button, #RESConsoleContainer, #RESShortcutsAddFormContainer {
     background: #222 !important;
 }
