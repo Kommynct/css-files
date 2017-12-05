@@ -2790,7 +2790,7 @@ a {
 .btn-option:hover,
 .btn-reaction:hover {
   opacity: 0.7!important;
-  transition: all 20ms ease!important;
+  transition: all 200ms ease!important;
 }
 
 /*embed images*/
