@@ -1,4 +1,4 @@
-.search-expando.collapsed:before, .infobar.listingsignupbar, .comment-fade, .grippy:after, .author-tooltip, .res-wheel-media-browse, .give-gold-button, .goldvertisement, .embed-comment, .nub, .sr-list > .separator, .sr-list > .separator + .sr-bar, #sr-more-link {
+.search-expando.collapsed:before, .footer-parent, .infobar.listingsignupbar, .comment-fade, .grippy:after, .author-tooltip, .res-wheel-media-browse, .give-gold-button, .goldvertisement, .embed-comment, .nub, .sr-list > .separator, .sr-list > .separator + .sr-bar, #sr-more-link {
     display: none !important;
 }
 #RESNotifications, html, body, #sr-drop-down {
