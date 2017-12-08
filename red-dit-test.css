@@ -84,10 +84,10 @@ a:hover {
     margin-bottom: 10px;
 }
 .res-nightmode .RESUserTagImage::after {
-    color: rgb(168, 117, 117)!important;
+    color: #a87575!important;
 }
 .toggleButton .toggleThumb {
-    background-color: rgb(0, 0, 0)!important;
+    background-color: #000000!important;
 }
 .listing-chooser-collapsed .grippy {
     width: 1px !important;
