@@ -9,6 +9,17 @@
     border: 0 !important;
     color: #ffffff !important;
 }
+.res-gallery .res-gallery-individual-controls[last-piece="true"] .res-gallery-next::after, .res-gallery .res-gallery-individual-controls[first-piece="true"] .res-gallery-previous::after {
+    content: "►"!important;
+}
+.res-step::after {
+    color: #ff5050!important;
+    content: "◄"!important;
+    font-family: "noto sans-serif";
+}
+.res-step:hover::after {
+    color: #ff9999!important;
+}
 .res-floater-visibleAfterScroll > ul {
     background: black!important;
     height: 25px;
