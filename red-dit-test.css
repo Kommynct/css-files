@@ -4,6 +4,9 @@
 #RESNotifications, html, body, #sr-drop-down {
     background-color: #222222!important;
 }
+.guider, .guiders_button, .RESDialogSmall, .RESDropdownOptions, .res-fancy-toggle-button, #RESConsoleContainer, #RESShortcutsAddFormContainer {
+    background: #222 !important;
+}
 * {
     background-color: transparent !important;
     border: 0 !important;
@@ -13,13 +16,10 @@
     content: "►"!important;
 }
 .res-step::after {
-    color: #ff5050!important;
     content: "◄"!important;
     font-family: "noto sans-serif";
 }
-.res-step:hover::after {
-    color: #ff9999!important;
-}
+
 .res-floater-visibleAfterScroll > ul {
     background: black!important;
     height: 25px;
@@ -50,13 +50,13 @@
 }
 
 /* Default links */
-a, a:visited {
+a, a:visited, .res-step::after, .gearIcon::after {
     color: #ff5050 !important;
 }
 #moduleOptionsSave.optionsSaved::before {
     background: #ff5050;
 }
-a:hover {
+a:hover, .res-step:hover::after {
     color: #ff9999 !important;
 }
 
@@ -64,6 +64,16 @@ a:hover {
 #header-img {
     filter: invert(80%) hue-rotate(180deg) !important;
 }
+#header-bottom-right {
+    right: 10px!important;
+    background-color: black!important;
+    padding-right: 8px!important;
+    padding-left: 8px!important;
+    padding-top: 2px!important;
+    padding-bottom: 2px!important;
+    border-radius: 15px!important;
+}
+
 #sr-header-area {
     height: 0 !important;
 }
@@ -97,7 +107,7 @@ a:hover {
 .res-nightmode .RESUserTagImage::after {
     color: #a87575!important;
 }
-.toggleButton .toggleThumb {
+.toggleButton .toggleThumb, .res-filterline-dropdown-container {
     background-color: #000000!important;
 }
 .listing-chooser-collapsed .grippy {
@@ -115,7 +125,6 @@ input, textarea, .linkinfo .shortlink input, .new-comment .usertext-body, .morel
     font-weight: normal !important;
 }
 .gearIcon::after {
-    color: #ff5050!important;
     text-shadow: none!important;
 }
 
@@ -138,7 +147,7 @@ input, textarea, .linkinfo .shortlink input, .new-comment .usertext-body, .morel
 .admin, .nsfw-stamp * {
     color: #a66 !important;
 }
-.pagename a, .trophy-name {
+.pagename a, .trophy-name, .buttons a {
     color: #ff7070 !important;
 }
 .buttons li {
@@ -149,7 +158,6 @@ a.edit-btn {
 }
 .buttons a {
     margin-right: 8px !important;
-    color: #ff7070 !important;
 }
 .buttons a:visited {
     color: #cc7070 !important;
@@ -163,6 +171,4 @@ a.edit-btn {
 .pagename, .tabmenu li, .link .midcol, .buttons a, .subreddit {
     font-weight: normal !important;
 }
-.guider, .guiders_button, .RESDialogSmall, .RESDropdownOptions, .res-fancy-toggle-button, #RESConsoleContainer, #RESShortcutsAddFormContainer {
-    background: #222 !important;
-}
+
