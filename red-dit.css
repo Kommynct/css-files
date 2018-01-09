@@ -165,8 +165,9 @@ input, textarea, .linkinfo .shortlink input, .new-comment .usertext-body, .morel
 .thing .title:hover {
     color: #cccccc !important;
 }
-.arrow {
-    opacity: 1 !important;
+.res-nightmode .arrow.up, .res-nightmode .arrow.upmod, .res-nightmode .arrow.down, .res-nightmode .arrow.downmod {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAcCAMAAADC4sagAAAAElBMV…oJNU/5dz1Z8arIqxcLXk0DeDVp4MUUn90JePX7gL/62S4mkgY2qcLG2gAAAABJRU5ErkJggg==)!important;
+    opacity: 1!important;
 }
 .moderator, .green {
     color: #3a3 !important;
