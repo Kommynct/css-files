@@ -98,13 +98,13 @@ ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed])
 #alientube .vote .arrow.up:hover {
     background-position: -30px 0px!important;
 }
-#search-icon-legacy.ytd-searchbox, #alientube .options .sortContainer::before, yt-icon.ytd-badge-supported-renderer, .badge-style-type-collection.ytd-badge-supported-renderer {
+#search-icon-legacy.ytd-searchbox, #alientube .options .sortContainer::before, yt-icon.ytd-badge-supported-renderer, .badge-style-type-collection.ytd-badge-supported-renderer, #links-holder.ytd-c4-tabbed-header-renderer {
     display:none
 }
 #alientube header span.report {
     margin-right: calc(100% - 328px);
 }
-#alientube .options .sortContainer, #at_switchtogplus.noresults, #at_switchtoreddit.noresults {
+#alientube .options .sortContainer, #at_switchtogplus.noresults, #at_switchtoreddit.noresults, ytd-button-renderer #button.ytd-button-renderer {
     pointer-events: none;
 }
 #alientube .options .sortContainer::after {
@@ -118,6 +118,12 @@ ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed])
     cursor: pointer;
     pointer-events: all!important;
 }
+#items.ytd-grid-renderer > ytd-grid-video-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-channel-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-playlist-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-movie-playlist-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-movie-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-show-renderer.ytd-grid-renderer {
+    margin-right: 4px;
+    display: inline-block;
+    width: 210px;
+    margin-bottom: 20px;
+}
 #alientube .options select:hover, #alientube .options:hover > span:hover, #alientube .options:hover > a:hover, .more-button.ytd-comment-replies-renderer {
     color: rgb(200,200,200)!important;
 }
@@ -130,13 +136,28 @@ ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed])
     border-image: initial;
     border-radius: 5px;
 }
-a.yt-simple-endpoint.yt-formatted-string:hover,  .sbqs_c, #alientube textarea.at_textarea, paper-button[subscribed].ytd-subscribe-button-renderer, .deemphasize.yt-formatted-string, button.yt-icon-button > yt-icon:hover, .more-button.ytd-video-secondary-info-renderer:hover, .less-button.ytd-video-secondary-info-renderer:hover, #label-icon.yt-dropdown-menu:hover, #icon-label.yt-dropdown-menu:hover, .more-button.ytd-comment-replies-renderer:hover {
+a.yt-simple-endpoint.yt-formatted-string:hover,  .sbqs_c, #alientube textarea.at_textarea, paper-button[subscribed].ytd-subscribe-button-renderer, .deemphasize.yt-formatted-string, button.yt-icon-button > yt-icon:hover, .more-button.ytd-video-secondary-info-renderer:hover, .less-button.ytd-video-secondary-info-renderer:hover, .more-button.ytd-comment-replies-renderer:hover, [button-renderer].ytd-menu-renderer:hover {
     color: white!important;
 }
 ytd-button-renderer.style-primary[disabled][is-paper-button] {
     background-color: 	purple!important;
     border-radius:2000000px;
     border-style:solid;
+}
+#container.ytd-masthead {
+    height: 40px!important;
+}
+ytd-browse.style-scope.ytd-page-manager {
+    padding-top: 40px;
+}
+#masthead-container.ytd-app, app-drawer {
+    position: absolute;
+}
+app-drawer {
+    top: -136px;
+}
+#page-manager.ytd-app {
+	margin-top: 0px!important;
 }
 paper-button.ytd-button-renderer {
     font-weight: bold!important;
@@ -153,4 +174,59 @@ ytd-searchbox[mode=legacy] #container.ytd-searchbox, ytd-searchbox[mode=legacy-c
 }
 .sbdd_b {
     border: 0px!important;
+}
+#button.ytd-menu-renderer yt-icon.ytd-menu-renderer {
+    margin-left: 4px;
+}
+/*tests*/
+ytd-c4-tabbed-header-renderer[has-channel-art][guide-visible] .banner-visible-area.ytd-c4-tabbed-header-renderer {
+    position: absolute!important;
+    height: calc((100vw - 240px) / 6.2 - 1px);
+}
+app-header::before {
+    position: absolute;
+    width: 100%;
+    height: calc((100vw - 240px) / 6.2 - 1px);
+    opacity: 1;
+    box-shadow: inset 0px 5px 6px -3px rgba(0, 0, 0, 0.4);
+    background-image: var(--yt-channel-banner);
+    background-repeat: no-repeat!important;
+    background-position: center top!important;
+}
+ytd-browse[page-subtype="channels"] {
+    padding-top: 200px!important;
+}
+
+#wrapper.app-header-layout > [slot=header] {
+    position: absolute!important;
+    top: 0;
+    left: 0!important;
+    right: 0px!important;
+    transform: none!important;
+    z-index: 1;
+}
+#contentContainer.app-header {
+    position: absolute;
+    height: 100%;
+}
+app-toolbar {
+    position: absolute;
+    width: 100%;
+    height: 40px!important;
+}
+ytd-browse[page-subtype~="channels"] ytd-two-column-browse-results-renderer.ytd-browse {
+	margin-top: 200px!important;
+}
+#channel-header.ytd-c4-tabbed-header-renderer {
+    background-color: var(--yt-lightsource-section1-color);
+    padding-top: 16px;
+    padding-right: 107px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    position: absolute;
+    z-index: 1;
+    min-width: 0;
+}
+ytd-browse.style-scope.ytd-page-manager ytd-browse[page-subtype="channels"]{
+    padding-top: 400px!important
 }
