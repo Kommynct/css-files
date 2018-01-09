@@ -102,7 +102,7 @@ ytd-button-renderer.style-primary[disabled][is-paper-button]:hover {
 #alientube .vote .arrow.up:hover {
 	background-position: -30px 0px!important;
 }
-#search-icon-legacy.ytd-searchbox, #alientube .options .sortContainer::before, yt-icon.ytd-badge-supported-renderer, .badge-style-type-collection.ytd-badge-supported-renderer, #links-holder.ytd-c4-tabbed-header-renderer {
+#search-icon-legacy.ytd-searchbox, #alientube .options .sortContainer::before, yt-icon.ytd-badge-supported-renderer, .badge-style-type-collection.ytd-badge-supported-renderer, #links-holder.ytd-c4-tabbed-header-renderer, #alientube .at_commentfield .at_writingauthor {
 	display: none
 }
 #alientube header span.report {
