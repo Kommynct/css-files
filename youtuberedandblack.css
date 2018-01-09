@@ -1,244 +1,235 @@
 body, input, textarea, select, button {
-    font-family: Noto sans, Roboto, Arial, sans-serif!important;
+	font-family: Noto sans, Roboto, Arial, sans-serif!important;
 }
 yt-page-navigation-progress {
-    background-color: transparent!important;
+	background-color: transparent!important;
 }
 #alientube a, #alientube .button, .description.ytd-video-secondary-info-renderer yt-formatted-string.ytd-video-secondary-info-renderer .yt-simple-endpoint, #content-text.ytd-comment-renderer a.yt-simple-endpoint.yt-formatted-string {
-    color: #ff5050!important;
+	color: #ff5050!important;
 }
-
 ytd-searchbox[mode=legacy][has-focus] #container.ytd-searchbox, ytd-searchbox[mode=legacy-centered][has-focus] #container.ytd-searchbox {
-    border-color: #ff5050!important;
-    border-width: 1px;
+	border-color: #ff5050!important;
+	border-width: 1px;
 }
-#container.ytd-sentiment-bar-renderer, ytd-button-renderer.style-primary[is-paper-button], .sbsb_d  {
-    background-color: red!important;
+#container.ytd-sentiment-bar-renderer, ytd-button-renderer.style-primary[is-paper-button], .sbsb_d {
+	background-color: red!important;
 }
 .description.ytd-video-secondary-info-renderer yt-formatted-string.ytd-video-secondary-info-renderer a.yt-simple-endpoint.yt-formatted-string:hover, #alientube a:hover, #content-text.ytd-comment-renderer a.yt-simple-endpoint.yt-formatted-string:hover {
 	color: #ff9090!important
 }
-
 span.sortContainer:hover, #alientube .at_commentfield .at_textarea:active {
-    border-color: #ff9090!important;
+	border-color: #ff9090!important;
 }
 .sbsb_a, #alientube .button, #alientube .at_flair, .sbsb_d {
-    border-color: black!important;
+	border-color: black!important;
 }
 .sbsb_a, #alientube .button, button.at_tab.active, #alientube textarea.at_textarea, #alientube .at_flair, ytd-compact-video-renderer:hover, ytd-compact-radio-renderer:hover, ytd-grid-video-renderer:hover, paper-button[subscribed].ytd-subscribe-button-renderer {
-    background-color: black!important;
+	background-color: black!important;
 }
 #alientube textarea.at_textarea {
-    border-color: transparent!important;
+	border-color: transparent!important;
 }
 paper-button:not([raised]).keyboard-focus, #icon-label.yt-dropdown-menu {
 	font-weight: 500!important;
 }
 ytd-compact-video-renderer:hover, ytd-compact-radio-renderer:hover, #alientube .button, ytd-grid-video-renderer:hover {
-    border-radius: 8px;
+	border-radius: 8px;
 }
 ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]):hover {
-    opacity: 1;
+	opacity: 1;
 }
 paper-button.ytd-subscribe-button-renderer:focus {
-    border-color: red;
-    border-width: 2px;
-    border-style: solid;
+	border-color: red;
+	border-width: 2px;
+	border-style: solid;
 }
 paper-button.ytd-subscribe-button-renderer {
-    border-color: black;
-    border-width: 2px;
-    border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	border-style: solid;
 }
 #details.ytd-grid-video-renderer a.ytd-grid-video-renderer {
 	height: 32px!important;
 }
-
 ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]), #at_switchtogplus.noresults, #at_switchtoreddit.noresults {
-    opacity: .5;
+	opacity: .5;
 }
 ytd-button-renderer.style-primary[disabled][is-paper-button] {
-    background-color: 	red!important;
-    border-style:solid;
-    border-color: red!important;
-    color: white!important;
-    opacity: .5;
+	background-color: red!important;
+	border-style: solid;
+	border-color: red!important;
+	color: white!important;
+	opacity: .5;
 }
 ytd-button-renderer.style-primary[disabled][is-paper-button]:hover {
-    opacity: 1;
+	opacity: 1;
 }
 #meta.ytd-grid-video-renderer {
-    height: 84px;
+	height: 84px;
 }
 #alientube article .at_commentcontent {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    line-height: 1.5;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	line-height: 1.5;
 }
 #alientube .vote .arrow {
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAcCAMAAADC4sagAAAAD1BMVEUAAAAiIiJAQECoqKj/UFDP173xAAAAAXRSTlMAQObYZgAAAHpJREFUeNrN1EEKgDAMRFE7zf3PLMHAZEQcu5H+XeAttDQ9qjgkvI4RwjEgIyA463h0jkxw1nDnuCKuiBsHhAcr3DlYYVaYHL3CDMhSPrV2Jrvr7D7+08zcl6jWv9xdT83cKuXuxgp32yDcbZpws8XLZ0LuXh/hn162E6bGBNL1v9tzAAAAAElFTkSuQmCC)!important;
 }
 #alientube header {
-    padding-right: 21px;
+	padding-right: 21px;
 }
 #alientube .vote.disliked .arrow.down, #alientube .vote.disliked .arrow.down:hover {
-    background-position: 0px -14px!important;
+	background-position: 0px -14px!important;
 }
-
 #alientube .vote.liked .arrow.up, #alientube .vote.liked .arrow.up:hover {
-    background-position: 0px 0px!important;
+	background-position: 0px 0px!important;
 }
-
-
 #alientube article .vote .arrow {
-    height: 8px!important;
+	height: 8px!important;
 }
 #alientube .vote .score, #alientube .vote .score, #meta.ytd-grid-video-renderer {
-    padding-right: 1px;
+	padding-right: 1px;
 }
 #alientube .vote .arrow.down {
-   background-position: -15px -14px!important;
+	background-position: -15px -14px!important;
 }
 #alientube .vote .arrow.up {
-    background-position: -15px 0px!important;
+	background-position: -15px 0px!important;
 }
 #alientube .vote .arrow.down:hover {
-    background-position: -30px -14px!important;
+	background-position: -30px -14px!important;
 }
 #alientube .vote .arrow.up:hover {
-    background-position: -30px 0px!important;
+	background-position: -30px 0px!important;
 }
 #search-icon-legacy.ytd-searchbox, #alientube .options .sortContainer::before, yt-icon.ytd-badge-supported-renderer, .badge-style-type-collection.ytd-badge-supported-renderer, #links-holder.ytd-c4-tabbed-header-renderer {
-    display:none
+	display: none
 }
 #alientube header span.report {
-    margin-right: calc(100% - 328px);
+	margin-right: calc(100% - 328px);
 }
 #alientube .options .sortContainer, #at_switchtogplus.noresults, #at_switchtoreddit.noresults, ytd-button-renderer #button.ytd-button-renderer {
-    pointer-events: none;
+	pointer-events: none;
 }
 #alientube .options .sortContainer::after {
-    content: "▼";
-    margin-left: -15px;
+	content: "▼";
+	margin-left: -15px;
 }
 #alientube .options select {
-    background: #111111!important;
-    direction: rtl!important;
-    padding-right: 15px;
-    cursor: pointer;
-    pointer-events: all!important;
+	background: #111111!important;
+	direction: rtl!important;
+	padding-right: 15px;
+	cursor: pointer;
+	pointer-events: all!important;
 }
 #items.ytd-grid-renderer > ytd-grid-video-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-channel-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-playlist-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-movie-playlist-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-movie-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-show-renderer.ytd-grid-renderer {
-    margin-right: 4px;
-    display: inline-block;
-    width: 210px;
-    margin-bottom: 20px;
+	margin-right: 4px;
+	display: inline-block;
+	width: 210px;
+	margin-bottom: 20px;
 }
 #alientube .options select:hover, #alientube .options:hover > span:hover, #alientube .options:hover > a:hover, .more-button.ytd-comment-replies-renderer, span.ytd-comment-renderer {
-    color: rgb(200,200,200)!important;
+	color: rgb(200, 200, 200)!important;
 }
 span.ytd-comment-renderer {
-    color: rgb(230,230,230)!important;
+	color: rgb(230, 230, 230)!important;
 }
 #alientube .options > span, #alientube .options select, #alientube a:hover {
-    text-decoration: none!important;
+	text-decoration: none!important;
 }
-
 #alientube .at_flair {
-    color: #d0d0d0!important;
-    border-image: initial;
-    border-radius: 5px;
+	color: #d0d0d0!important;
+	border-image: initial;
+	border-radius: 5px;
 }
 span.ytd-comment-renderer:hover, .sbqs_c, #alientube textarea.at_textarea, paper-button[subscribed].ytd-subscribe-button-renderer, .deemphasize.yt-formatted-string, button.yt-icon-button > yt-icon:hover, .more-button.ytd-video-secondary-info-renderer:hover, .less-button.ytd-video-secondary-info-renderer:hover, .more-button.ytd-comment-replies-renderer:hover, [button-renderer].ytd-menu-renderer:hover {
-    color: white!important;
+	color: white!important;
 }
-
 #container.ytd-masthead {
-    height: 40px!important;
+	height: 40px!important;
 }
 ytd-browse.style-scope.ytd-page-manager {
-    padding-top: 40px;
+	padding-top: 40px;
 }
 #masthead-container.ytd-app, app-drawer {
-    position: absolute;
+	position: absolute;
 }
 app-drawer {
-    top: -136px;
+	top: -136px;
 }
 #page-manager.ytd-app {
 	margin-top: 0px!important;
 }
 paper-button.ytd-button-renderer {
-    font-weight: bold!important;
+	font-weight: bold!important;
 }
 ytd-searchbox[mode=legacy] #container.ytd-searchbox, ytd-searchbox[mode=legacy-centered] #container.ytd-searchbox {
-    box-shadow: none;
+	box-shadow: none;
 }
 a[is="yt-endpoint"].ytd-button-renderer {
 	cursor: pointer!important;
 }
-
 #like-bar.ytd-sentiment-bar-renderer {
-    background: green;
+	background: green;
 }
 #search-form.ytd-searchbox {
- max-width: none!important;
+	max-width: none!important;
 }
 .sbdd_b {
-    border: 0px!important;
+	border: 0px!important;
 }
 #button.ytd-menu-renderer yt-icon.ytd-menu-renderer {
-    margin-left: 4px;
-}
-/*tests*/
-ytd-c4-tabbed-header-renderer[has-channel-art][guide-visible] .banner-visible-area.ytd-c4-tabbed-header-renderer {
-    position: absolute!important;
-    height: calc((100vw - 240px) / 6.2 - 1px);
-}
-app-header::before {
-    position: absolute;
-    width: 100%;
-    height: calc((100vw - 240px) / 6.2 - 1px);
-    opacity: 1;
-    box-shadow: inset 0px 5px 6px -3px rgba(0, 0, 0, 0.4);
-    background-image: var(--yt-channel-banner);
-    background-repeat: no-repeat!important;
-    background-position: center top!important;
-}
-ytd-browse[page-subtype="channels"] {
-    padding-top: 200px!important;
+	margin-left: 4px;
 }
 
+/*tests*/
+ytd-c4-tabbed-header-renderer[has-channel-art][guide-visible] .banner-visible-area.ytd-c4-tabbed-header-renderer {
+	position: absolute!important;
+	height: calc((100vw - 240px) / 6.2 - 1px);
+}
+app-header::before {
+	position: absolute;
+	width: 100%;
+	height: calc((100vw - 240px) / 6.2 - 1px);
+	opacity: 1;
+	box-shadow: inset 0px 5px 6px -3px rgba(0, 0, 0, 0.4);
+	background-image: var(--yt-channel-banner);
+	background-repeat: no-repeat!important;
+	background-position: center top!important;
+}
+ytd-browse[page-subtype="channels"] {
+	padding-top: 200px!important;
+}
 #wrapper.app-header-layout > [slot=header] {
-    position: absolute!important;
-    top: 0;
-    left: 0!important;
-    right: 0px!important;
-    transform: none!important;
-    z-index: 1;
+	position: absolute!important;
+	top: 0;
+	left: 0!important;
+	right: 0px!important;
+	transform: none!important;
+	z-index: 1;
 }
 #contentContainer.app-header {
-    position: absolute;
-    height: 100%;
+	position: absolute;
+	height: 100%;
 }
 app-toolbar {
-    position: absolute;
-    width: 100%;
-    height: 40px!important;
+	position: absolute;
+	width: 100%;
+	height: 40px!important;
 }
-ytd-browse[page-subtype~="channels"] ytd-two-column-browse-results-renderer.ytd-browse {
+ytd-browse[page-subtype ~ ="channels"] ytd-two-column-browse-results-renderer.ytd-browse {
 	margin-top: 200px!important;
 }
 #channel-header.ytd-c4-tabbed-header-renderer {
-    background-color: var(--yt-lightsource-section1-color);
-    padding-top: 16px;
-    padding-right: 107px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    position: absolute;
-    z-index: 1;
-    min-width: 0;
+	background-color: var(--yt-lightsource-section1-color);
+	padding-top: 16px;
+	padding-right: 107px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	position: absolute;
+	z-index: 1;
+	min-width: 0;
 }
-ytd-browse.style-scope.ytd-page-manager ytd-browse[page-subtype="channels"]{
-    padding-top: 400px!important
+ytd-browse.style-scope.ytd-page-manager ytd-browse[page-subtype="channels"] {
+	padding-top: 400px!important
 }
