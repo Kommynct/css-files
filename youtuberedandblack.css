@@ -264,6 +264,13 @@ ytd-browse.style-scope.ytd-page-manager ytd-browse[page-subtype="channels"] {
 	padding-top: 400px!important
 }
 /*tests*/
+#alientube .at_replies article {
+    border-left: 1px solid #888888!important;
+	padding-top: 6px;
+}
+#alientube .at_replies {
+		padding-top: 0px!important;
+}
 blockquote {
     border-left: 1px solid #909090!important;
     -webkit-margin-before: 1em;
