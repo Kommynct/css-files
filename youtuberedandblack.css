@@ -4,7 +4,6 @@ body, input, textarea, select, button, #alientube, #alientube article {
 #alientube article .info {
 	font-size: 10px!important;
 }
-
 yt-page-navigation-progress {
 	background-color: transparent!important;
 }
@@ -12,7 +11,6 @@ button.button.at_submit {
     background-color: red!important;
 	border-color: red!important;
 	opacity: .5;
-	
 }
 #alientube .button {
     color: white!important;
@@ -25,7 +23,7 @@ button.button.at_submit {
 	border-radius: 2px!important;
 }
 #alientube .button:focus{
-    outline: -webkit-focus-ring-color auto 5px!important;
+    outline: -webkit-focus-ring-color auto 1px!important;
 }
 #alientube .button:hover{
     opacity: 1!important;
@@ -72,11 +70,9 @@ ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed])
 }
 paper-button.ytd-subscribe-button-renderer:focus {
 	border-color: red;
-	border-width: 2px;
-	border-style: solid;
 }
 paper-button.ytd-subscribe-button-renderer {
-	border-color: black;
+	border-color: red;
 	border-width: 2px;
 	border-style: solid;
 }
@@ -111,6 +107,9 @@ ytd-button-renderer.style-primary[disabled][is-paper-button]:hover {
 #alientube header {
 	padding-right: 21px;
 }
+#alientube header .info {
+    width: calc(100% - 70px)!important;
+}
 #alientube .vote.disliked .arrow.down, #alientube .vote.disliked .arrow.down:hover {
 	background-position: 0px -14px!important;
 }
@@ -139,7 +138,7 @@ ytd-button-renderer.style-primary[disabled][is-paper-button]:hover {
 	display: none
 }
 #alientube header span.report {
-	margin-right: calc(100% - 328px);
+	margin-right: calc(100% - 331px)!important;
 }
 #alientube .options .sortContainer, #at_switchtogplus.noresults, #at_switchtoreddit.noresults, ytd-button-renderer #button.ytd-button-renderer {
 	pointer-events: none;
@@ -155,11 +154,9 @@ ytd-button-renderer.style-primary[disabled][is-paper-button]:hover {
 	cursor: pointer;
 	pointer-events: all!important;
 }
-#items.ytd-grid-renderer > ytd-grid-video-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-channel-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-playlist-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-movie-playlist-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-movie-renderer.ytd-grid-renderer, #items.ytd-grid-renderer > ytd-grid-show-renderer.ytd-grid-renderer {
-	margin-right: 4px;
-	display: inline-block;
-	width: 210px;
-	margin-bottom: 20px;
+#items.ytd-grid-renderer > ytd-grid-video-renderer.ytd-grid-renderer {
+    margin-bottom: 20px;
+    margin-right: 4px;
 }
 #alientube .options select:hover, #alientube .options:hover > span:hover, #alientube .options:hover > a:hover, .more-button.ytd-comment-replies-renderer, span.ytd-comment-renderer {
 	color: rgb(200, 200, 200)!important;
@@ -265,4 +262,38 @@ ytd-browse[page-subtype ~ ="channels"] ytd-two-column-browse-results-renderer.yt
 }
 ytd-browse.style-scope.ytd-page-manager ytd-browse[page-subtype="channels"] {
 	padding-top: 400px!important
+}
+/*tests*/
+blockquote {
+    border-left: 1px solid #909090!important;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 1px;
+    -webkit-margin-end: 0px;
+    background-color: black!important;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 0px;
+}
+#at_overflow {
+    margin: 0px;
+    width: 30px;
+}
+#at_overflow ul li {
+    display: block;
+}
+#at_overflow ul {
+    margin-left: -116px;
+    border: none!important;
+    top: 13px;
+	background: rgb(36, 36, 36) !important;
+}
+.at_tab {
+    padding-right: 0px!important;
+    padding-left: 0px!important;
+    margin: 0px!important;
+}
+#at_overflow img {
+    filter: invert(100%) hue-rotate(180deg) brightness(400%)!important;
 }
