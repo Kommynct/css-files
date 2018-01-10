@@ -76,11 +76,32 @@ paper-button.ytd-subscribe-button-renderer {
 	border-width: 2px;
 	border-style: solid;
 }
+paper-button[subscribed].ytd-subscribe-button-renderer {
+    border-color: black!important;
+}
 #details.ytd-grid-video-renderer a.ytd-grid-video-renderer {
 	height: 32px!important;
+	width: 196px!important;
 }
 ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]), #at_switchtogplus.noresults, #at_switchtoreddit.noresults {
 	opacity: .5;
+}
+ytd-badge-supported-renderer.ytd-grid-video-renderer {
+    direction: rtl!important;
+    margin-right: 8px!important;
+    margin-top: -32px!important;
+}
+.badge-style-type-live-now.ytd-badge-supported-renderer {
+    font-size: 9px;
+    border: none!important;
+}
+.badge-style-type-live-now.ytd-badge-supported-renderer:before {
+content: "⏺"
+}
+.badge.ytd-badge-supported-renderer {
+    border-radius: 2px;
+    display: var(--ytd-badge-display, block);
+    padding: 0;
 }
 ytd-button-renderer.style-primary[disabled][is-paper-button] {
 	background-color: red!important;
@@ -92,9 +113,7 @@ ytd-button-renderer.style-primary[disabled][is-paper-button] {
 ytd-button-renderer.style-primary[disabled][is-paper-button]:hover {
 	opacity: 1;
 }
-#meta.ytd-grid-video-renderer {
-	height: 84px;
-}
+
 #alientube article .at_commentcontent {
 	margin-top: 5px;
 	margin-bottom: 5px;
@@ -178,9 +197,6 @@ span.ytd-comment-renderer:hover, .sbqs_c, #alientube textarea.at_textarea, paper
 #container.ytd-masthead {
 	height: 40px!important;
 }
-ytd-browse.style-scope.ytd-page-manager {
-	padding-top: 40px;
-}
 #masthead-container.ytd-app, app-drawer {
 	position: absolute;
 }
@@ -215,20 +231,42 @@ a[is="yt-endpoint"].ytd-button-renderer {
 /*tests*/
 ytd-c4-tabbed-header-renderer[has-channel-art][guide-visible] .banner-visible-area.ytd-c4-tabbed-header-renderer {
 	position: absolute!important;
-	height: calc((100vw - 240px) / 6.2 - 1px);
+	height: calc((100vw - 725px) / 6.2 - 15px)!important;
+}
+#label.yt-dropdown-menu {
+    direction: ltr;
 }
 app-header::before {
-	position: absolute;
-	width: 100%;
-	height: calc((100vw - 240px) / 6.2 - 1px);
-	opacity: 1;
-	box-shadow: inset 0px 5px 6px -3px rgba(0, 0, 0, 0.4);
-	background-image: var(--yt-channel-banner);
-	background-repeat: no-repeat!important;
-	background-position: center top!important;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    opacity: 1;
+    box-shadow: none!important;
+    background-image: var(--yt-channel-banner);
+    background-repeat: no-repeat!important;
+    background-position: center top!important;
+}
+ytd-channel-sub-menu-renderer {
+    height: 56px;
+    margin: 8px 0 8px;
+    margin-bottom: -5px!important;
+	margin-top: 200px!important;
+    display: block!important;
+    position: static;
+}
+div#sort-menu {
+    direction: rtl;
+    margin-top: -33px;
+}
+ytd-newspaper-renderer {
+    display: block!important;
+    margin-top: 240px;
+}
+ytd-browse-secondary-contents-renderer {
+    margin-top: 200px;
 }
 ytd-browse[page-subtype="channels"] {
-	padding-top: 200px!important;
+	padding-top: 300px!important;
 }
 #wrapper.app-header-layout > [slot=header] {
 	position: absolute!important;
@@ -303,4 +341,7 @@ blockquote {
 }
 #at_overflow img {
     filter: invert(100%) hue-rotate(180deg) brightness(400%)!important;
+}
+#page-manager.ytd-app {
+    margin-top: 40px!important;
 }
