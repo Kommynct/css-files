@@ -1,10 +1,45 @@
-body, input, textarea, select, button {
+body, input, textarea, select, button, #alientube, #alientube article {
 	font-family: Noto sans, Roboto, Arial, sans-serif!important;
 }
+#alientube article .info {
+	font-size: 10px!important;
+}
+
 yt-page-navigation-progress {
 	background-color: transparent!important;
 }
-#alientube a, #alientube .button, .description.ytd-video-secondary-info-renderer yt-formatted-string.ytd-video-secondary-info-renderer .yt-simple-endpoint, #content-text.ytd-comment-renderer a.yt-simple-endpoint.yt-formatted-string {
+button.button.at_submit {
+    background-color: red!important;
+	border-color: red!important;
+	opacity: .5;
+	
+}
+#alientube .button {
+    color: white!important;
+	font-weight: 700!important;
+	text-transform: uppercase!important;
+	font-size: 14px!important;
+    letter-spacing: .007px!important;
+	justify-content: center!important;
+	padding: 10px 16px!important;
+	border-radius: 2px!important;
+}
+#alientube .button:focus{
+    outline: -webkit-focus-ring-color auto 5px!important;
+}
+#alientube .button:hover{
+    opacity: 1!important;
+}
+
+.at_comment_lowercontrols {
+    direction: rtl;
+}
+button.button.at_cancel {
+    background-color: transparent!important;
+    border-color: transparent!important;
+	opacity: .5;
+}
+#alientube a, .description.ytd-video-secondary-info-renderer yt-formatted-string.ytd-video-secondary-info-renderer .yt-simple-endpoint, #content-text.ytd-comment-renderer a.yt-simple-endpoint.yt-formatted-string {
 	color: #ff5050!important;
 }
 ytd-searchbox[mode=legacy][has-focus] #container.ytd-searchbox, ytd-searchbox[mode=legacy-centered][has-focus] #container.ytd-searchbox {
@@ -17,13 +52,10 @@ ytd-searchbox[mode=legacy][has-focus] #container.ytd-searchbox, ytd-searchbox[mo
 .description.ytd-video-secondary-info-renderer yt-formatted-string.ytd-video-secondary-info-renderer a.yt-simple-endpoint.yt-formatted-string:hover, #alientube a:hover, #content-text.ytd-comment-renderer a.yt-simple-endpoint.yt-formatted-string:hover {
 	color: #ff9090!important
 }
-span.sortContainer:hover, #alientube .at_commentfield .at_textarea:active {
-	border-color: #ff9090!important;
-}
-.sbsb_a, #alientube .button, #alientube .at_flair, .sbsb_d {
+.sbsb_a, #alientube .at_flair, .sbsb_d {
 	border-color: black!important;
 }
-.sbsb_a, #alientube .button, button.at_tab.active, #alientube textarea.at_textarea, #alientube .at_flair, ytd-compact-video-renderer:hover, ytd-compact-radio-renderer:hover, ytd-grid-video-renderer:hover, paper-button[subscribed].ytd-subscribe-button-renderer {
+.sbsb_a, button.at_tab.active, #alientube textarea.at_textarea, #alientube .at_flair, ytd-compact-video-renderer:hover, ytd-compact-radio-renderer:hover, ytd-grid-video-renderer:hover, paper-button[subscribed].ytd-subscribe-button-renderer {
 	background-color: black!important;
 }
 #alientube textarea.at_textarea {
@@ -32,7 +64,7 @@ span.sortContainer:hover, #alientube .at_commentfield .at_textarea:active {
 paper-button:not([raised]).keyboard-focus, #icon-label.yt-dropdown-menu {
 	font-weight: 500!important;
 }
-ytd-compact-video-renderer:hover, ytd-compact-radio-renderer:hover, #alientube .button, ytd-grid-video-renderer:hover {
+ytd-compact-video-renderer:hover, ytd-compact-radio-renderer:hover, ytd-grid-video-renderer:hover {
 	border-radius: 8px;
 }
 ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]):hover {
@@ -71,6 +103,7 @@ ytd-button-renderer.style-primary[disabled][is-paper-button]:hover {
 	margin-top: 5px;
 	margin-bottom: 5px;
 	line-height: 1.5;
+	font-size: 1.4rem;
 }
 #alientube .vote .arrow {
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAcCAMAAADC4sagAAAAD1BMVEUAAAAiIiJAQECoqKj/UFDP173xAAAAAXRSTlMAQObYZgAAAHpJREFUeNrN1EEKgDAMRFE7zf3PLMHAZEQcu5H+XeAttDQ9qjgkvI4RwjEgIyA463h0jkxw1nDnuCKuiBsHhAcr3DlYYVaYHL3CDMhSPrV2Jrvr7D7+08zcl6jWv9xdT83cKuXuxgp32yDcbZpws8XLZ0LuXh/hn162E6bGBNL1v9tzAAAAAElFTkSuQmCC)!important;
