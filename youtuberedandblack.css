@@ -37,7 +37,10 @@ button.button.at_cancel {
     border-color: transparent!important;
 	opacity: .5;
 }
-#alientube a, .description.ytd-video-secondary-info-renderer yt-formatted-string.ytd-video-secondary-info-renderer .yt-simple-endpoint, #content-text.ytd-comment-renderer a.yt-simple-endpoint.yt-formatted-string {
+#alientube .at_load:hover {
+text-decoration: none!important
+}
+#alientube a, .description.ytd-video-secondary-info-renderer yt-formatted-string.ytd-video-secondary-info-renderer .yt-simple-endpoint, #content-text.ytd-comment-renderer a.yt-simple-endpoint.yt-formatted-string, #alientube .at_load {
 	color: #ff5050!important;
 }
 ytd-searchbox[mode=legacy][has-focus] #container.ytd-searchbox, ytd-searchbox[mode=legacy-centered][has-focus] #container.ytd-searchbox {
@@ -47,7 +50,7 @@ ytd-searchbox[mode=legacy][has-focus] #container.ytd-searchbox, ytd-searchbox[mo
 #container.ytd-sentiment-bar-renderer, ytd-button-renderer.style-primary[is-paper-button], .sbsb_d {
 	background-color: red!important;
 }
-.description.ytd-video-secondary-info-renderer yt-formatted-string.ytd-video-secondary-info-renderer a.yt-simple-endpoint.yt-formatted-string:hover, #alientube a:hover, #content-text.ytd-comment-renderer a.yt-simple-endpoint.yt-formatted-string:hover {
+.description.ytd-video-secondary-info-renderer yt-formatted-string.ytd-video-secondary-info-renderer a.yt-simple-endpoint.yt-formatted-string:hover, #alientube a:hover, #content-text.ytd-comment-renderer a.yt-simple-endpoint.yt-formatted-string:hover, #alientube[service="YouTube"] .at_tab.active > a:hover, #alientube .at_load:hover {
 	color: #ff9090!important
 }
 .sbsb_a, #alientube .at_flair, .sbsb_d {
@@ -86,11 +89,6 @@ paper-button[subscribed].ytd-subscribe-button-renderer {
 ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]) {
 	opacity: .5;
 }
-/*ytd-badge-supported-renderer.ytd-grid-video-renderer {
-    direction: rtl!important;
-    margin-right: 8px!important;
-    margin-top: -32px!important;
-}*/
 .badge-style-type-live-now.ytd-badge-supported-renderer {
     font-size: 9px;
     border: none!important;
@@ -157,7 +155,7 @@ ytd-button-renderer.style-primary[disabled][is-paper-button]:hover {
 #alientube .vote .arrow.up:hover {
 	background-position: -30px 0px!important;
 }
-#search-icon-legacy.ytd-searchbox, #alientube .options .sortContainer::before, yt-icon.ytd-badge-supported-renderer, .badge-style-type-collection.ytd-badge-supported-renderer, #links-holder.ytd-c4-tabbed-header-renderer, #alientube .at_commentfield .at_writingauthor, span.ytd-badge-supported-renderer {
+#search-icon-legacy.ytd-searchbox, #alientube .options .sortContainer::before, yt-icon.ytd-badge-supported-renderer, .badge-style-type-collection.ytd-badge-supported-renderer, #links-holder.ytd-c4-tabbed-header-renderer, #alientube .at_commentfield .at_writingauthor, span.ytd-badge-supported-renderer, #banner.ytd-pla-shelf-renderer {
 	display: none
 }
 #alientube header span.report {
@@ -179,6 +177,10 @@ ytd-button-renderer.style-primary[disabled][is-paper-button]:hover {
 	padding-right: 15px;
 	cursor: pointer;
 	pointer-events: all!important;
+}
+#alientube article.deleted > .at_commentmain > .at_commentcontent {
+    filter: brightness(50%);
+    background-color: #222222!important;
 }
 #items.ytd-grid-renderer > ytd-grid-video-renderer.ytd-grid-renderer {
     margin-bottom: 20px;
