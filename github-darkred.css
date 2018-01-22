@@ -863,7 +863,7 @@ background-position: left top !important;
 .Header .header-search-wrapper.focus .header-search-scope {
     border-right-color: black!important;
 }
-a.js-selected-navigation-item.selected.menu-item:hover, a.btn.btn-sm:hover, a.subnav-item.js-subnav-item:hover {
+a.js-selected-navigation-item.selected.menu-item:hover, a.btn.btn-sm:hover, a.subnav-item.js-subnav-item:hover, button.btn-link.no-underline.text-gray.dropdown-toggle.js-menu-target:hover {
     color: white!important;
 }
 /*hover color for others*/
