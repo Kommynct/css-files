@@ -1,10 +1,8 @@
-@-moz-document domain("githubusercontent.com"), domain("graphql-explorer.githubapp.com"), regexp("^https?://((gist|guides|help|raw|status|developer)\\.)?github\\.com((?!generated_pages/preview).)*$") {
-/*! Github Dark v1.19.11 (2017-11-04) */
-  /* Repository: https://github.com/StylishThemes/GitHub-Dark    */
-  /* Userstyle:  http://userstyles.org/styles/37035              */
-  /* License:    https://creativecommons.org/licenses/by-sa/4.0/ */
-  /* begin auto-generated rules - use tools/generate.js to generate them */
-  /* auto-generated rule for "background-color: #2cbe4e" */
+body, html {
+    font-family: Noto sans, Roboto, Arial, sans-serif!important;
+}
+
+/* auto-generated rule for "background-color: #2cbe4e" */
   .State--green, .block-diff-added, .block-diff-neutral,
   .discussion-item-reopened .discussion-item-icon,
   .discussion-item-review.is-approved.is-writer .discussion-item-icon,
@@ -12,6 +10,9 @@
   .completeness-indicator-success {
     background: #163 !important;
   }
+.UnderlineNav-item.selected {
+    border-bottom-color: #ff5050!important;
+}
   /* auto-generated rule for "background-color: #d1d5da" */
   .block-diff-neutral {
     background: #444 !important;
@@ -23,8 +24,12 @@
   .branch-action-state-merged .branch-action-icon {
     background: #6e5494 !important;
   }
+input[type="checkbox"]:checked {
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiB2ZXJzaW9uPSIxIj48cGF0aCBkPSJNMCAwaDUxMnY1MTJIMHoiLz48cGF0aCBmaWxsPSIjZmZmZmY5IiBkPSJNOTkgMjEzbC0xIDg5IDEwNCAxMDIgMjA1LTIwMXYtOTFMMjAzIDMxNSA5OSAyMTN6Ii8+PC9zdmc+) !important;
+}
+
   /* auto-generated rule for "background-color: #cb2431" */
-  .btn-danger:hover, .State--red, .block-diff-deleted,
+  .State--red, .block-diff-deleted,
   .text-red .block-diff-neutral, .discussion-item-closed .discussion-item-icon,
   .discussion-item-review.is-rejected.is-writer .discussion-item-icon,
   .completeness-indicator-error,
@@ -53,10 +58,7 @@
   .commit-sha, .signed-commit-header,
   .semantic-toc-symbol:not(.last-visible):after,
   .select-menu-item+.semantic-toc-file:after, .copyable-terminal,
-  .timeline-comment-header, .facebox .facebox-staff-links,
-  .ajax-pagination-form .ajax-pagination-btn:hover,
-  .ajax-pagination-form .ajax-pagination-btn:focus,
-  .ajax-pagination-form.loading .ajax-pagination-btn, .protip code,
+  .timeline-comment-header, .facebox .facebox-staff-links, .protip code,
   .render-notice, .select-menu-filters, .community-checklist .progress,
   .layout-reorder-menu .dropdown-toggle:hover,
   .layout-reorder-menu .dropdown-toggle.selected,
@@ -69,14 +71,20 @@
   .review-thread-reply {
     background-color: #181818 !important;
   }
+.table-fixed {
+    background-color: #151515!important;
+}
+
+.table-fixed:hover {
+    background-color: black!important;
+}
   /* auto-generated rule for "background-color: #fafbfc" */
   .Box-row.navigation-focus.sortable-chosen, .btn-danger, .input-contrast,
   .form-group .form-control, .drag-and-drop, .bg-gray-light, .blankslate,
   .markdown-body kbd, .boxed-group-table th, .blob-expanded .blob-num,
   .blob-expanded .blob-code, .file-diff-split .empty-cell,
   .gh-header-edit .edit-issue-title, .discussion-item-review .file-header,
-  .linejump .linejump-input, kbd, .list-group-item.closed,
-  .repohead.experiment-repo-nav, .pagination .gap, .pagination .disabled,
+  .linejump .linejump-input, kbd, .list-group-item.closed, .pagination .gap, .pagination .disabled,
   .pagination .gap:hover, .pagination .disabled:hover, .steps li,
   .simple-box-footer, .listgroup-item.disabled,
   .billing-addon-items tr:nth-child(even), .plan-choice, .blog-feedback,
@@ -120,7 +128,7 @@
   .btn-blue .Counter, .btn-outline, .btn-outline:hover .Counter,
   .btn-outline:active .Counter, .btn-outline.selected .Counter,
   [open]>.btn-outline .Counter, .btn-outline:disabled, .btn-outline.disabled,
-  .social-count, .form-control, .form-select, .input-contrast:focus,
+  .social-count, .form-select,
   .form-group .form-control:focus, .menu, .menu-item.selected,
   .tabnav-tab.selected, .bg-white, .avatar-child, .avatar-stack .avatar,
   .CircleBadge, .markdown-body table tr, .markdown-body img,
@@ -190,7 +198,7 @@
     background: #181818 !important;
   }
   /* auto-generated rule for "border: 1px solid #e1e4e8" */
-  .subnav-item, .blankslate, .table-list-header, .list-group-item, .pagination a,
+  .subnav-item, .blankslate, .list-group-item, .pagination a,
   .pagination span, .pagination em, .ajax-pagination-form .ajax-pagination-btn,
   .range-editor, .project-column, .project-card {
     border-color: #343434 !important;
@@ -338,7 +346,7 @@
     border-right: 0 !important;
   }
   /* auto-generated rule for "border-top: 0" */
-  .drag-and-drop, .menu-item:first-child, .border-top-0,
+  .menu-item:first-child, .border-top-0,
   .markdown-body .csv-data tr, .markdown-body .csv-data th,
   .boxed-group .tabnav.heading .tabnav-tab.selected, .boxed-group .tabnav-tab,
   .boxed-group.dangerzone .boxed-group-inner,
@@ -499,6 +507,12 @@
   .subheader-nav .nav-item.selected {
     color: #c0c0c0 !important;
   }
+
+.subnav-search-context .btn:hover, .subnav-search-context .btn.selected:hover, a.js-selected-navigation-item.subnav-item:hover, .subnav-item:hover, .subnav-item:focus {
+    background-color: #ff3030!important;
+    color: white!important;
+	opacity: 1!important;
+}
   /* auto-generated rule for "color: #444d56" */
   .hidden-text-expander a, .ellipsis-expander, .subnav-search-context .btn,
   .markdown-body kbd, .email-format .email-hidden-toggle a,
@@ -773,7 +787,7 @@ background-position: left top !important;
   .timeline-comment-action:hover, .discussion-sidebar-toggle:hover,
   .sidebar-assignee .assignee:hover, .timeline-commits .commit-message a:hover,
   .timeline-commits .commit-id:hover, #markdown-toc li a:hover,
-  .sidebar-module ul ul li a:hover, .btn.btn-outline,
+  .sidebar-module ul ul li a:hover,
   .org-teams-list .team:hover .team-name, .gh-header-back:hover span:before,
   .org-header .edit-org:hover .octicon, .team-info-card .stats-group .stat:hover,
   .team-info-card .stats-group .stat:hover .stat-number, .btn-octicon:hover,
@@ -825,12 +839,33 @@ background-position: left top !important;
   .project-header-link:hover, a.project-header-link:hover,
   td.icon .octicon-file-directory, td.icon .octicon-file-symlink-directory,
   td.icon .octicon-file-submodule, .pl-corl, .header-nav-link:hover,
-  .header-nav-link:focus, .header-navlink:hover, .header-navlink:focus,
-  .HeaderNavlink:hover, .HeaderNavlink:focus, a.notification-indicator:hover,
+  .header-nav-link:focus, .header-navlink:focus, .HeaderNavlink:focus, a.notification-indicator:hover,
   table.files td.message a:hover, .link-gray:hover, .news .link-gray-dark:hover,
   .news a.link-gray-dark:hover, table.files td.icon {
     color: #ff5050 !important;
   }
+
+.HeaderNavlink:hover {
+	color: #ff9090!important;
+}
+.HeaderNavlink:hover .dropdown-caret {
+    border-top-color: #ff9090!important;
+}
+.Header .header-search-wrapper {
+    outline: 1px solid!important;
+	outline-color: black!important;
+    border: none!important;
+	box-shadow: none!important;
+}
+.Header .header-search-wrapper.focus {
+	outline-color: black!important;
+}
+.Header .header-search-wrapper.focus .header-search-scope {
+    border-right-color: black!important;
+}
+a.js-selected-navigation-item.selected.menu-item:hover, a.btn.btn-sm:hover, a.subnav-item.js-subnav-item:hover {
+    color: white!important;
+}
 /*hover color for others*/
 
 a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-item:hover, .comment-reactions .add-reaction-btn:hover, .btn:hover, .btn:active {
@@ -839,6 +874,7 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
 }  
 .reponav svg.octicon, .numbers-summary .octicon {
     color: inherit!important;
+	vertical-align: text-top!important
 }
 /* Base color panel */
   .btn:active, option:hover, .listings-layout .nav li a:hover, .state-merged,
@@ -876,17 +912,27 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
     border-color: #ff5050 transparent transparent !important;
   }
   .octofication .message, .panel-nav:not(.disabled):active,
-  .diagram-icon:not(.active), .btn.btn-outline:hover:not(.ajax-pagination-btn),
+  .diagram-icon:not(.active),
   .btn.btn-outline.zeroclipboard-is-hover, :checked + .radio-label,
   .gist-snippet .file-box:hover .file, .octofication .message,
   .reaction-sort-item.selected, .pull-request-link,
-  .timeline-progressive-disclosure-button:hover, .upload-enabled textarea:focus {
+  .timeline-progressive-disclosure-button:hover {
     border-color: #ff5050 !important;
   }
+button.btn.btn-sm.btn-outline.js-details-target {
+	border-color: #ff2020!important;
+	background-color: #ff2020!important;
+	opacity: 0.25!important;
+	color: white!important
+}
+button.btn.btn-sm.btn-outline.js-details-target:hover {
+	opacity: 1!important;	
+		border-color: #ff5050!important;
+	background-color: #ff5050!important;
+}
   #com #header .top-nav .dropdown-button:hover .dropdown-caret,
   .header-nav-link:hover .dropdown-caret, .header-nav-link:focus .dropdown-caret,
-  .header-navlink:hover .dropdown-caret, .header-navlink:focus .dropdown-caret,
-  .HeaderNavlink:hover .dropdown-caret, .HeaderNavlink:focus .dropdown-caret {
+  .header-navlink:hover .dropdown-caret, .header-navlink:focus .dropdown-caret, .HeaderNavlink:focus .dropdown-caret {
     border-top-color: #ff5050 !important;
   }
   .table-list .table-list-item.unread .table-list-cell-checkbox,
@@ -918,28 +964,11 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
     background: rgba(255, 255, 255, .12) !important;
   }
   /* placeholder */
-  ::-webkit-input-placeholder {
+  ::-webkit-input-placeholder, ::-moz-placeholder, ::placeholder {
     color: #666 !important;
     opacity: 1 !important;
   }
-  ::-moz-placeholder {
-    color: #666 !important;
-    opacity: 1 !important;
-  }
-  ::placeholder {
-    color: #666 !important;
-    opacity: 1 !important;
-  }
-  .select-menu-text-filter input::-webkit-input-placeholder {
-    color: #555 !important;
-  }
-  .select-menu-text-filter input::-moz-placeholder {
-    color: #555 !important;
-  }
-  .select-menu-text-filter input:-ms-input-placeholder {
-    color: #555 !important;
-  }
-  .select-menu-text-filter input::placeholder {
+  .select-menu-text-filter input::-webkit-input-placeholder, .select-menu-text-filter input::-moz-placeholder, .select-menu-text-filter input:-ms-input-placeholder, .select-menu-text-filter input::placeholder {
     color: #555 !important;
   }
   /* focus hightlight */
@@ -956,14 +985,14 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
   input.focus[type="email"], input[type="email"]:focus,
   input.focus[type="number"], input[type="number"]:focus,
   input.focus[type="tel"], input[type="tel"]:focus, input.focus[type="url"],
-  input[type="url"]:focus, textarea.focus, textarea:focus, #q:focus ~ button,
+  input[type="url"]:focus, #q:focus ~ button,
   input.color-editor-input:focus, #ghd-settings select:focus,
   #ghd-settings input:focus, .intgrs-lstng-item:hover,
-  .ajax-pagination-btn:focus, .select-menu-item:focus, .form-control.focus,
+  .ajax-pagination-btn:focus, .select-menu-item:focus,
   .form-select.focus, .form-select:focus, input[type="checkbox"]:focus,
   .upload-enabled.focused {
     border-color: #ff5050 !important;
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .075), 0 0 2px #ff5050 !important;
+    box-shadow: none!important;
     outline-color: #ff5050 !important;
   }
   /* inputs */
@@ -1098,11 +1127,8 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
   img[src$="/notices/context_button.png"] {
     display: none !important;
   }
-  .intgrs-lstng-item-description:after {
+  .intgrs-lstng-item-description:after, .marketplace-product-callout-bg {
     background-image: linear-gradient(to right, rgba(24, 24, 24, 0), #181818 80%) !important;
-  }
-  .marketplace-product-callout-bg {
-    background-image: linear-gradient(to right, rgba(24, 24, 24, 0), #181818) !important;
   }
   .markdown-body a:hover * {
     text-decoration: inherit !important;
@@ -1164,8 +1190,7 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
   .labels .label, .octotree_views .octotree_view .octotree_view_header,
   .fullscreen-overlay textarea, .avatar-child, .discussion-item .label-color,
   .coupons .coupon-form-body, .label-private, .repo-file-upload-progress,
-  .more-repos, .header .header-search-wrapper.focus,
-  .blame-commit .blame-commit-info, .label, .Label {
+  .more-repos, .blame-commit .blame-commit-info, .label, .Label {
     box-shadow: none !important;
   }
   a, button, p, ul, li, dl.form label, .formbody label, .js-context-button,
@@ -1420,7 +1445,7 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
   .progress-bar-inline .progress-bar, .menu-heading, body .border-gray-dark,
   .discussion-item-review .blob-wrapper, .bot-identifier, .blame-commit,
   .counter, .Counter, div.marketplace-product-callout {
-    border-color: #484848 !important;
+    border-color: black!important;
   }
   pre, h1, h2, h3, .header, table, table tr, table td, table th, blockquote,
   .pulse-graph, .btn:not(img), .minibutton, .social-count,
@@ -1443,7 +1468,7 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
   .table-of-contents li, .commit-group,
   .table-list-bordered .table-list-cell:first-child,
   .table-list-bordered .table-list-cell:last-child, .table-list-cell,
-  .table-list, .table-list-header, .blankslate, .labels-list-item,
+  .table-list, .blankslate, .labels-list-item,
   .subnav-divider-right, .subnav-bordered, .content table tr th,
   #search-results li, .subhead, #pages-composer, .render-bar,
   #gollum-editor-help, #gollum-editor-help-parent, #gollum-editor-help-list,
@@ -1497,11 +1522,20 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
   .team-list-footer, .Box-header,
   .profile-rollup-summarized + .profile-rollup-summarized, .Subhead,
   .dashboard-notice .coupon, .Box-body, .listgroup-header, .merge-status-item,
-  .pending-team-invitations-link, .discussion-item + .discussion-item-review,
-  .Header, .profile-timeline-card-wrapper,
+  .pending-team-invitations-link, .discussion-item + .discussion-item-review .profile-timeline-card-wrapper,
   .profile-rollup-wrapper + .profile-rollup-wrapper {
-    border-color: #343434 !important;
+    border-color: transparent!important;
   }
+body.intent-mouse button:focus, body.intent-mouse summary:focus {
+outline: none!important;
+}
+.Header .header-search-scope {
+	color: #cccccc!important;
+}
+.header {
+ border: none!important;
+}
+
   .discussion-item-icon, .date:after, ul.color-label-list .color,
   .facebox-header {
     border-color: #222 !important;
@@ -1510,9 +1544,12 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
     border: 1px solid #444 !important;
     border-bottom: 1px solid #343434 !important;
   }
-  .header, .summary-stats, .follow-list .follow-list-item, .Header {
+  .summary-stats, .follow-list .follow-list-item {
     border-bottom: 1px solid #343434 !important;
   }
+.table-list-header {
+    border: none!important;
+}
   .simple-conversation-list > li, .site-footer, .blame .section-first td,
   .wiki-list .wiki-list-item + .wiki-list-item {
     border-top: 1px solid #343434 !important;
@@ -1643,11 +1680,10 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
   .plan-choice, .date-selector td, .user-profile-sticky-bar:after,
   .review-thread, .card, .tutorial, .overview .card > div[style*="background"],
   .Box:not([style*="background"]), .Box-footer, .Box-row, .ScreenshotCarousel {
-    background: #181818 !important;
-    border-color: #343434 !important;
+    background: black!important;
+    border-color: transparent!important;
   }
-  #readme .plain, .readme .markdown-body, .readme .plain, .pull-request-composer,
-  .drag-and-drop, .octofication .broadcast-icon-mask, .file .image,
+  #readme .plain, .readme .markdown-body, .readme .plain, .pull-request-composer, .octofication .broadcast-icon-mask, .file .image,
   .merge-pr-more-commits, .release-timeline-tags .expander-dots,
   .coupons .coupon-form-body, .manage-repo-access-group, .saved-reply-form,
   .orghead .edit-org:hover, .octotree_views, .simple-box,
@@ -1693,12 +1729,12 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
   .protected-branch-orgs-and-repo-admins, .listgroup-overflow, .Header,
   .project-column, .btn.btn-outline, .js-notice > .border,
   .news .issues_labeled .border {
-    background: #181818 !important;
+    background: black!important;
   }
-  .sidebar-module, .form-control,
+  .sidebar-module,
   input[type="text"]:not(.tree-finder-input):not(.js-site-search-focus) {
     background-color: #181818 !important;
-    border-color: #343434 !important;
+    border-color: transparent!important;
   }
   .markdown-body table tr, .blob-num-context, #user-content-toc td {
     background: #141414 !important;
@@ -1715,7 +1751,7 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
     background: #1c1c1c !important;
   }
   /* headers */
-  .table-list-header, .timeline-comment-header, .boxed-group > h3,
+  .timeline-comment-header, .boxed-group > h3,
   .boxed-group .heading, .file-header, .capped-card h3, .select-menu-header,
   #gist-form .file .meta, .file .meta, .file-box .meta, .menu-heading,
   .audit-results-header, .branches .branch-group-heading, .auth-form-header,
@@ -1740,19 +1776,25 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
   .notifications .navigation-focus, .sidebar-module ul ul li a:hover,
   .typeahead-result, .no-results, .link-overlay .link, #gollum-editor-help-list,
   .owner-select-target, .divider .blob-code div.highlight,
-  .oauth-org-access-details .boxed-group-list > li.on:hover, pre div:hover,
-  table.files tr.navigation-focus td, .summary-stats li a:hover,
+  .oauth-org-access-details .boxed-group-list > li.on:hover, pre div:hover, .summary-stats li a:hover,
   .select-menu-item-parent.navigation-focus,
   .select-menu-item-parent.navigation-focus.selected,
   .pinned-repos-selection-list-item.selected,
   .Box-body-row--highlight.navigation-focus, .Box-body-row--highlight:hover,
   div.label-select-menu .select-menu-item.navigation-focus,
   div.label-select-menu .select-menu-item.navigation-focus.selected,
-  .js-current .standalone a, .menu-item:hover,
-  .Box-row--focus-gray.navigation-focus, .team-listing .is-open.root-team,
-  .Box-row--hover-gray:hover {
+  .js-current .standalone a, .menu-item:hover, .team-listing .is-open.root-team,
+  .Box-row--hover-gray:hover, table.files tr:hover {
     background: #242424 !important;
   }
+.Box-row--focus-gray.navigation-focus {
+background-color: black!important
+}
+table.files tr.navigation-focus td {background-color: transparent!important;
+}
+ .numbers-summary a:hover .num {
+ color: #ff9090!important;
+}
   #main, .capped-box, .unread_count, #browser table th,
   .markdown-format table th, table.upgrades tr.current td, .definitions,
   .discussion-topic-header, .timeline-commits-minimal .commit-icon .octicon,
@@ -1763,8 +1805,6 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
   .filter-bar, .audit-search-clear, .country-info, .tabnav-tab.selected,
   .file-diff-split .empty-cell, .composer-infobar, .completeness-indicator-blank,
   .leaflet-control-zoom, .pagehead-tabs-item.selected, .reponav-item.selected,
-  .ajax-pagination-form .ajax-pagination-btn:hover,
-  .ajax-pagination-form .ajax-pagination-btn:focus,
   .manage-repo-access-not-active, .header-search-scope, .reverse-progress-bar,
   .featurette.py-5, .payment-history .refunded, .payment-history .failed,
   .profile-timeline-month-heading.bg-white, .project-card {
@@ -1843,7 +1883,7 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
   .context-loader.large-format-loader, #graphs .loader, .org-header,
   .render-shell .slider, .illflow-item:not(.selected):hover,
   .leaflet-control-attribution, .orghead, .repohead.experiment-repo-nav {
-    background: rgba(24, 24, 24, .4) !important;
+    background: rgba(18, 18, 18, .4) !important;
   }
   .explore-signup-entice-inner {
     background: rgba(24, 24, 24, .9) !important;
@@ -1887,9 +1927,8 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
   .status-box h4, .line_numbers, #files span.icon, #issues_list .actions,
   #repos .public, .inset-callout, #repo-message, .repo-private-label,
   .label-admin, a.team-member-ellipsis, .code-list em, .user-list em,
-  .credit-card.normal .signature, .credit-card.amex .gladiator,
-  .subnav-item:hover, .subnav-item:focus, .wiki-list em,
-  .progress-bar:not(.anim-grow-x), .header-search-scope:hover,
+  .credit-card.normal .signature, .credit-card.amex .gladiator, .wiki-list em,
+  .progress-bar:not(.anim-grow-x),
   .CommunityTemplate-highlight--focus {
     background: #333 !important;
   }
@@ -2103,6 +2142,15 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
   line, rect, path {
     shape-rendering: geometricPrecision !important;
   }
+svg.octicon.octicon-check:hover {
+    filter: brightness(150%)!important;
+    color: #6cc644!important;
+}
+.pagehead ul.pagehead-actions .octicon {
+    height: 17px!important;
+    width: 17px!important;
+    vertical-align: text-bottom;
+}
   .js-graph-punchcard svg.viz {
     background: transparent !important;
     border: none !important;
@@ -2247,6 +2295,7 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
   .repo-file-upload-progress .repo-file-upload-meter, .btn.btn-blue:hover,
   .topic-tag-link:hover, .delete-topic-button:hover {
     background: #453030 !important;
+	border-color: #453030!important
   }
   .bg-blue, .discussion-item-changes-marker.is-unread .discussion-item-icon {
     background: #ff5050 !important;
@@ -2273,7 +2322,8 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
   .recently-touched-branches, .timeline-progressive-disclosure-items button,
   .pr-toolbar .subset-files-tab, article.full .alert, .btn.btn-blue, .topic-tag,
   .RecentBranches, .js-tag-input-tag, ul.search-results li .label {
-    border: 1px solid #662222!important;
+     border: 1px solid #301818!important;
+     border-radius: 8px;
   }
   .repo-file-upload-progress, .project-updated-message, .delete-topic-button,
   .topic-tag-action .add-topic-button, .topic-tag-action .remove-topic-button,
@@ -2291,12 +2341,12 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
     border-right-color: #662222!important;
   }
   .timeline-comment.current-user:after {
-    border-right-color: #301818 !important;
+    border-right-color: #662222 !important;
   }
   .flash, .markdown-format .alert a, .api .alert, a.branch-name, .branch-name,
   article.full .alert {
-    border-color: #662222 !important;
-    color: #c8d0e1 !important;
+    border-color: #301818 !important;
+    color: #cccccc !important;
   }
   .social-count:before {
     border-right-color: #333 !important;
@@ -2337,10 +2387,16 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
   button.button:hover, a.button:hover, span.button:hover,
   button.minibutton:hover, a.minibutton:hover, span.minibutton:hover,
   .clone-url-button.selected > .clone-url-link,
-  .clone-url-button.selected > .clone-url-link:hover, ul#bootcamp li a:hover h4 {
-    background: #292929 !important;
-    border-color: #484848 !important;
+  .clone-url-button.selected > .clone-url-link:hover, ul#bootcamp li a:hover h4, a.btn.btn-sm.btn-with-count.select-menu-button.js-menu-target:hover {
+    background: #ff5050!important;
+    border-color: transparent!important;
+	opacity: 1!important;
+	color: white!important
   }
+.previewable-comment-form textarea {
+	resize: none!important
+}
+
   /* dark grey gradient */
   .btn, input.btn, header.nav-bar, .bubble .bubble-title, kbd, a.feed,
   .list-browser-filterbar, .gobutton, .comment-header, .pagehead ul.tabs li a,
@@ -2352,8 +2408,8 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
   .gist .gist-file .gist-meta, .octotree_toggle, ul.comparison-list > li.title,
   button.button, a.button, span.button, button.minibutton, a.minibutton,
   span.minibutton, .clone-url-button > .clone-url-link {
-    background: #191919 !important;
-    border-color: #383838 !important;
+    background: black !important;
+    border-color: transparent !important;
   }
   .search-form button, .issues-list-actions, a.gollum-minibutton,
   a.gollum-minibutton:visited {
@@ -2417,8 +2473,7 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
   .toc-select .navigation-focus *, .markdown-body strong {
     color: #efefef !important;
   }
-  .btn, a.btn, .btn.btn-primary, .button.primary, .minibutton.primary,
-  .btn-danger:hover, ul.repo-stats li a:hover, .text-emphasized,
+  .btn, a.btn, .btn.btn-primary, .button.primary, .minibutton.primary, ul.repo-stats li a:hover, .text-emphasized,
   .minibutton.danger:hover, #gist-form label, .subnav li a:hover,
   .filters li.selected a, .filters li a:hover, .code-list em, a.header-anchor,
   .commandbar .choice .command, .search-term, .codesearch-cols em, .image,
@@ -2500,6 +2555,9 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
   .site-header-dark .site-header .site-header-link {
     color: #e2e2e2 !important;
   }
+.link-gray-dark:hover, a.link-gray-dark:hover {
+	color:white!important
+}
   pre, body, a.social-count, span.social-count, #languages a.bar, .lineoption p,
   a.blog-title, table.notifications th, .usagestats dl dt.numbers,
   .commit-preview p.name .date, .download-list h4,
@@ -2574,11 +2632,10 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
   .api .text-gamma, .api h1, .api h2, .api h3, .api h4, .api h5,
   .octokit-language span, .lead, .merge-branch-heading,
   .org-user-notice-content strong, .timeline-comment-label.owner-comment,
-  .Box-row-link, a.Box-row-link, .form-control, .form-select,
+  .Box-row-link, a.Box-row-link, .form-select,
   .header .header-search-scope, .discussion-item-private,
   .label-select-menu div.labelstyle-000000.selected, .marketplace-plan-emphasis,
-  .header-nav-link, a.header-nav-link, .header-navlink, a.header-navlink,
-  .Header .header-search-scope, a.notification-indicator, .news .link-gray-dark,
+  .header-nav-link, a.header-nav-link, .header-navlink, a.header-navlink, a.notification-indicator, .news .link-gray-dark,
   .news a.link-gray-dark, .HeaderNavlink, a.HeaderNavlink, a.text-gray-dark {
     color: #c0c0c0 !important;
   }
@@ -2639,7 +2696,7 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
   .calendar-graph .contrib-details div, .tabnav-tabs a, .time,
   .gist-item .metadata .datetime, .list-group-item-meta, a.keyboard-shortcuts,
   button.keyboard-shortcuts, .simple-conversation-list,
-  .simple-conversation-list > li .title .num, .drag-and-drop,
+  .simple-conversation-list > li .title .num,
   .starred-repo .sort-info, .org-stats, .commandbar .choice,
   .commandbar .loading, .commandbar .description, ul.summary-stats li a,
   .authorship, .sha-block, .gh-header-meta, #last-edit, .setup-header .lead a,
@@ -2793,9 +2850,11 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
     border-color: #383838 !important;
   }
   .btn-close-issue:hover, .btn-danger:hover, .minibutton.danger:hover,
-  .remove-topic-button:hover {
-    background: #911 !important;
-    border-color: #b00 !important;
+  .remove-topic-button:hover, a.btn.btn-block.btn-danger:hover {
+    background: #ff5050 !important;
+    border-color: #ff5050 !important;
+	color:white!important;
+	opacity:1!important;
   }
   .mergeable-dirty .bubble, .mergeable-dirty .merge-status-icon,
   .completeness-indicator-error, .dangerzone > h3 {
@@ -2981,9 +3040,9 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
   }
   /* interactive button - bright border */
   .btn-primary:not(.compare-button), .button.primary, .btn-theme-green {
-    background: #356038 !important;
-	  
-    border-color: #083 !important;
+    background: #008833 !important;
+    border-color: #008833 !important;
+	  opacity: .6 !important;
   }
   .button.primary:disabled, .button.primary:disabled:hover,
   .button.primary.disabled, .button.primary.disabled:hover,
@@ -3004,7 +3063,9 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
   }
   .btn-primary:not(:disabled):not(.compare-button):hover,
   .button.primary:not(:disabled):hover, .btn-theme-green:hover {
-    background: linear-gradient(#508055, #407045) !important;
+    background: #008833 !important;
+    border-color: #008833 !important;
+	  opacity: 1 !important;
   }
   /* orange */
   #user-links .unread_count, .minorproblem .pageheader_wrap {
@@ -3072,8 +3133,16 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
     background-position: center -95px !important;
   }
   .upload-enabled textarea {
-    border-bottom: 1px dashed #444 !important;
-  }
+    border-bottom: 0px!important;
+    background-color: black!important;
+}
+p.drag-and-drop.position-relative {
+    border: none!important;
+    border-radius: 6px;
+    margin-left: 75px;
+    margin-right: 75px;
+    text-align: center;
+}
   /* history expand buttons */
   .commit .minibutton.expander-minibutton span {
     background-position: 50% -45px !important;
@@ -3097,6 +3166,21 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
   .profile-picture-spinner, .more-repos-link.is-loading {
     background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+PHBhdGggZmlsbD0iIzMzMyIgZD0iTTM2NCAyOC42QzQyMC43IDU3IDQ1OS42IDk0LjQgNDg1IDE1MWwtMzEuNCAxNWMtMjAtNDEtNjMtODQtMTA0LjYtMTA0LjUiPjxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9ImZpbGwiIHZhbHVlcz0iIzMzMzsjZWVlOyMzMzM7IzMzMyIgYmVnaW49IjBzIiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIvPjwvcGF0aD48cGF0aCBmaWxsPSIjMzMzIiBkPSJNNDk0IDE2OWMyMCA2MCAyMSAxMTQtMSAxNzJsLTMyLjgtMTEuNGMxNS00My4zIDE1LTEwNCAwLTE0OCI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iZmlsbCIgdmFsdWVzPSIjMzMzOyNlZWU7IzMzMzsjMzMzIiBiZWdpbj0iMC4xMjVzIiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIvPjwvcGF0aD48cGF0aCBmaWxsPSIjMzMzIiBkPSJNNDg1LjQgMzU5LjJjLTI4LjMgNTYuNi02NS44IDk1LjUtMTIyLjQgMTIxbC0xNS4yLTMxLjRjNDEuMy0yMCA4NC4yLTYzIDEwNC43LTEwNC42Ij48YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSJmaWxsIiB2YWx1ZXM9IiMzMzM7I2VlZTsjMzMzOyMzMzMiIGJlZ2luPSIwLjI1MHMiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIi8+PC9wYXRoPjxwYXRoIGZpbGw9IiMzMzMiIGQ9Ik0zNDQuNSA0ODguNWMtNjAgMjAtMTE0IDIxLTE3Mi0xbDExLjQtMzNjNDMuMiAxNSAxMDQgMTUgMTQ4IDAiPjxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9ImZpbGwiIHZhbHVlcz0iIzMzMzsjZWVlOyMzMzM7IzMzMyIgYmVnaW49IjAuMzc1cyIgZHVyPSIxcyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiLz48L3BhdGg+PHBhdGggZmlsbD0iIzMzMyIgZD0iTTE1NC4zIDQ4Mi44Yy01Ni42LTI4LjQtOTUuNS02NS44LTEyMS0xMjIuNGwzMS40LTE1LjJjMjAgNDEuMyA2MyA4NC4yIDEwNC42IDEwNC43Ij48YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSJmaWxsIiB2YWx1ZXM9IiMzMzM7I2VlZTsjMzMzOyMzMzMiIGJlZ2luPSIwLjUwMHMiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIi8+PC9wYXRoPjxwYXRoIGZpbGw9IiMzMzMiIGQ9Ik0yMy43IDM0Mi43Yy0yMC02MC0yMS0xMTQgMS0xNzJsMzMgMTEuNGMtMTUgNDMuNS0xNSAxMDQgMCAxNDgiPjxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9ImZpbGwiIHZhbHVlcz0iIzMzMzsjZWVlOyMzMzM7IzMzMyIgYmVnaW49IjAuNjI1cyIgZHVyPSIxcyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiLz48L3BhdGg+PHBhdGggZmlsbD0iIzMzMyIgZD0iTTMxLjggMTUxQzYwIDk0LjIgOTcuNSA1NS4zIDE1NCAzMGwxNS4zIDMxLjNjLTQxLjIgMjAtODQgNjMtMTA0LjYgMTA0LjYiPjxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9ImZpbGwiIHZhbHVlcz0iIzMzMzsjZWVlOyMzMzM7IzMzMyIgYmVnaW49IjAuNzUwcyIgZHVyPSIxcyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiLz48L3BhdGg+PHBhdGggZmlsbD0iIzMzMyIgZD0iTTE3MyAyMWM2MC0yMCAxMTQtMjEgMTcyIDFsLTExLjUgMzIuOGMtNDMuMy0xNS0xMDQtMTUtMTQ4IDAiPjxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9ImZpbGwiIHZhbHVlcz0iIzMzMzsjZWVlOyMzMzM7IzMzMyIgYmVnaW49IjAuODc1cyIgZHVyPSIxcyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiLz48L3BhdGg+PHBhdGggZmlsbD0iI2VlZSIgZD0iTTE5NyA0NTl2LTQ4cy00LTQtMzMtMWMtMjggMy02Mi02Ni02NS02OSAyNC0xMCA0MyAyNiA2NSAzOGgzMXMzLTQ0IDIwLTM3YzE3IDYtNzIgMS05Ny02MXMxOS0xMjYgMjAtMTE1YzAgOS0xNy0zNS0xMC00NiAyMC0yNCA1MCAxMSA2OSAxNSA1IDAgMTgtOCA1OS03IDQxIDAgNTUgOCA2MCA2IDIyLTEwIDUxLTMyIDY1LTE3IDEwIDEyLTEgNjEtMSA0OXM0MyA4MSA2IDEzMmMtMjkgNDYtOTUgNDMtODQgNDYgMjEgMTUgMTQgOTEgMTQgMTE1bC0yMiA0di03NGMwLTktOS0xMC05LTl2ODVsLTIxIDF2LTg2aC0xMHY4NmwtMjAtMXYtODNzLTgtMS04IDEwdjcyIi8+PC9zdmc+") !important;
     background-size: contain !important;
+  }
+    /* front page: 'more' spinner */
+  .ajax-pagination-form.loading .ajax-pagination-btn {
+    position: relative !important;
+    border-color: #343434 !important;
+    background: #181818 !important;
+  }
+  .ajax-pagination-form.loading .ajax-pagination-btn:after {
+    content: "" !important;
+    position: absolute !important;
+    width: 16px !important;
+    height: 16px !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
   }
   .more-repos-link.is-loading {
     background-repeat: no-repeat !important;
@@ -3142,21 +3226,7 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
     background-repeat: no-repeat !important;
     background-position: 8px center !important;
   }
-  /* front page: 'more' spinner */
-  .ajax-pagination-form.loading .ajax-pagination-btn {
-    position: relative !important;
-    border-color: #343434 !important;
-    background: #181818 !important;
-  }
-  .ajax-pagination-form.loading .ajax-pagination-btn:after {
-    content: "" !important;
-    position: absolute !important;
-    width: 16px !important;
-    height: 16px !important;
-    left: 50% !important;
-    top: 50% !important;
-    transform: translate(-50%, -50%) !important;
-  }
+
   .branch-action-body .spinner, div.facebox-loading, .status-indicator-loading {
     background-position: center center !important;
     width: 100% !important;
@@ -3241,8 +3311,7 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
   #user-content-toc {
     border-collapse: separate !important;
   }
-  #facebox pre, #contributors-master svg.viz, #com .dropdown-menu,
-  .header-search-wrapper {
+  #facebox pre, #contributors-master svg.viz, #com .dropdown-menu {
     border: 1px solid #343434 !important;
   }
   /* orange rss icon */
@@ -3356,21 +3425,6 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
     background: #300 !important;
     border-color: #500 !important;
   }
-  /* scroll bar */
-  ::-webkit-scrollbar {
-    max-width: 10px !important;
-    max-height: 10px !important;
-    background: #1d1d1d !important;
-  }
-  ::-webkit-scrollbar-track, ::-webkit-scrollbar-corner {
-    background: #1d1d1d !important;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: rgba(175, 175, 175, .5) !important;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgba(65, 131, 196, .8) !important;
-}
   /* GitHub Enterprise Only
    *                                 _____..---========+*+==========---.._____
    *    ______________________ __,-='=====____  =================== _____=====`=
@@ -3607,16 +3661,16 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
   .zh-split-button-right-side, .zhu-blankslate, .zh-reports .zhc-btn,
   .zhc-dependency-header__status__controls .zhc-btn,
   .zhc-issue-selector .zhc-btn {
-    background: linear-gradient(#282828, #181818) !important;
+    background: #383838!important;
     border-color: #383838 !important;
   }
   .zh-delete-epic-button {
     background: #911 !important;
-    border-color: #383838 !important;
+    border-color: #911!important;
   }
   .zh-delete-epic-button:hover {
     background: #b22 !important;
-    border-color: #b00 !important;
+    border-color: #b22 !important;
   }
   .zhc-toggle-button:not(.zhc-btn--minimal):hover,
   .zhc-selection-button:not(.zhc-toggleable--is-disabled):hover,
@@ -3822,5 +3876,4 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
 a.lines-changed:hover {
  color: #b5b5b5!important;
 	filter: brightness(122%);
-}
 }
