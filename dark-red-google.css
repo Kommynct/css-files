@@ -192,20 +192,20 @@ a._Gs:hover, ._HR a, #swml a:hover, .hdtbItm label:hover, .hdtbItm a:hover, #hdt
 }
 /* Button Shadow */
 .jhp input[type="submit"], .sbdd_a input, .gbqfba {
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#222), to(#222));
-	background-image: -webkit-linear-gradient(top, #222, #222);
-	background-image: -moz-linear-gradient(center top, #222, #222);
-	background-image: -o-linear-gradient(top, #222, #222);
+	background-image: linear-gradient(to top,#222,#222) !important;
 	background-color: #222;
 	border-color: #242424;
 	color: #acacac;
 	box-shadow: 0 0 5px #0F0F0F;
 }
+.jhp input[type="submit"], .sbdd_a input, .gbqfba {
+
+    border: 1px solid rgba(62, 62, 62, 0) !important;
+    color: #909090 !important;
+}
 /* Button Shadow Hover */
 .jhp input[type="submit"]:hover, .sbdd_a input:hover, .gbqfba:hover {
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#2E2E2E), to(#2E2E2E));
-	background-image: -webkit-linear-gradient(top, #2E2E2E, #2E2E2E);
-	background-image: -moz-linear-gradient(center top, #2E2E2E, #2E2E2E);
+	background-image: #2E2E2E;
 	background-color: #2E2E2E;
 	border-color: #2d2d2d;
 	color: #ccc;
@@ -213,10 +213,7 @@ a._Gs:hover, ._HR a, #swml a:hover, .hdtbItm label:hover, .hdtbItm a:hover, #hdt
 }
 /* Button */
 .ab_button, #hdtb-tls:hover, .ksb {
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#222), to(#222));
-	background-image: -webkit-linear-gradient(top, #222, #222);
-	background-image: -moz-linear-gradient(center top, #222, #222);
-	background-image: -o-linear-gradient(top, #222, #222);
+	background-image: #222;
 	background-color: #222;
 	border-color: #262626;
 	color: #acacac !important;
@@ -232,10 +229,7 @@ a._Gs:hover, ._HR a, #swml a:hover, .hdtbItm label:hover, .hdtbItm a:hover, #hdt
 }
 /* Button Hover */
 .ab_button:hover, .ksb:hover {
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#282828), to(#282828));
-	background-image: -webkit-linear-gradient(top, #282828, #282828);
-	background-image: -moz-linear-gradient(center top, #282828, #282828);
-	background-image: -o-linear-gradient(top, #282828, #282828);
+	background-image: #282828;
 	background-color: #282828;
 	border-color: #2C2C2C;
 	color: #ccc;
@@ -243,9 +237,7 @@ a._Gs:hover, ._HR a, #swml a:hover, .hdtbItm label:hover, .hdtbItm a:hover, #hdt
 /* Selected button */
 .ksb.ksbs, .ksb.ksbs:hover {
 	background-color: #222;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#101010), to(#1E1E1E));
-	background-image: -webkit-linear-gradient(top, #101010, #1E1E1E);
-	background-image: -moz-linear-gradient(center top, #101010, #1E1E1E);
+	background-image: #171717;
 	border: 1px solid #262626;
 	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
 	box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
