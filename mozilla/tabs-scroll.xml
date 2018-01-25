@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bindings>
+<bindings xmlns="http://www.mozilla.org/xbl">
+    <binding id="tabs-scroll" extends="chrome://global/content/bindings/scrollbox.xml#scrollbox">
+        <handlers>
+            <handler event="wheel"><![CDATA[
+                const tabs = gBrowser.tabContainer;
+                this._deltaY += event.deltaY;
+
+                if (tabs.hasAttribute("overflow")) return;
+                if (Math.abs(this._deltaY) < Math.abs(event.deltaY * 2)) return;
+
+                tabs.advanceSelectedTab(event.deltaY > 0 ? 1 : -1, true);
+
+                this._deltaY = 0;
+            ]]></handler>
+        </handlers>
+    </binding>
+</bindings>

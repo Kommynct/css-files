@@ -1,0 +1,254 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+ .tabbrowser-arrowscrollbox > .arrowscrollbox-scrollbox {
+     -moz-binding: url("file:///home/anarchist/.mozilla/firefox/yzfdamog.default/chrome/tabs-scroll.xml#tabs-scroll") !important;
+}
+ :root {
+    /* TAB VARIABLES */
+    /*--bg-light: #524C59;
+     --bg-dark: #282333;
+     --fg-light: #D6CCDC;
+     --fg-dark: #AAA5AD;
+    */
+     --toolbarbutton-hover-background: black!important;
+     --bg-light: rgb(50,50,50)!important;
+     --bg-dark: rgb(0,0,0)!important;
+     --fg-light: rgb(254,254,254)!important;
+     --fg-dark: rgb(254,254,254)!important;
+     --tab-triangle-correction: -1px!important;
+     --tab-height: 18px!important;
+     --tab-icon-size: 10px!important;
+     --tab-strip-margin: -11px!important;
+     --tab-overlap: -5px;
+     --tab-fonts: "Noto Mono",monospace,"Noto Sans"!important;
+     --tab-font-size: 8pt!important;
+     --tab-triangle: none!important;
+     --tab-loading-fill: #d32f2f !important;
+    /* URL VARIABLES */
+     --url-background: var(--bg-dark);
+     --url-color: var(--fg-dark);
+     --url-height: 18px;
+     --url-right-margin: 5px;
+     --url-fonts: "Noto Mono",monospace,"Dejavu Sans";
+     --url-font-size: 7pt;
+     --url-text-align: center;
+     --url-position: relative;
+     --arrowpanel-dimmed: rgb(0,0,0)!important;
+     --arrowpanel-dimmed-further: #d32f2f!important;
+     --arrowpanel-dimmed-even-further: #ff0000!important;
+     margin-bottom: 0
+}
+/* TABS */
+ .tabbrowser-tab[fadein]:not([pinned]) {
+     min-width: 50px !important;
+     max-width:
+    /*180px*/
+     100% !important;
+}
+
+ tab {
+     font-family: var(--tab-fonts) !important;
+     height: var(--tab-height) !important;
+     min-height: var(--tab-height) !important;
+     background: var(--bg-dark) !important;
+     color: var(--fg-dark) !important;
+     font-size: var(--tab-font-size);
+     text-shadow: none !important;
+     text-align: left!important;
+}
+
+ .tabbrowser-tab label {
+     padding: 0 14px 0 14px !important;
+}
+ #tabbrowser-tabs .tabbrowser-tab[pinned] {
+     width: 30px !important;
+}
+ #tabbrowser-tabs .tabbrowser-tab[pinned] label {
+     display: none !important;
+}
+ .tab-throbber::before {
+     fill: #d32f2f !important;
+     opacity: 1 !important;
+}
+ #tabbrowser-tabs .tabbrowser-tab .tab-icon-image {
+     margin: 0 -10px 0 14px !important;
+     margin-left: 5px !important;
+     width: var(--tab-icon-size) !important;
+     height: var(--tab-icon-size) !important;
+}
+ panel[type="autocomplete"], panel[type="autocomplete-richlistbox"], .autocomplete-history-popup {
+     background-color: #000000!important;
+}
+ .tabbrowser-tab *, .tabs-newtab-button * {
+     background: none !important;
+     list-style-image: none !important;
+     margin: 0 0 0 0 !important;
+     padding: 0 0 0 0 !important;
+     -moz-appearance: none !important;
+}
+ #tabbrowser-tabs .tabbrowser-tab[pinned] .tab-stack {
+     height: var(--tab-height) !important;
+     width: 100% !important;
+}
+ #tabbrowser-tabs .tabbrowser-arrowscrollbox {
+     max-height: var(--tab-height) !important;
+}
+ .box-inherit.scrollbox-innerbox {
+     max-height: 19px
+}
+ .scrollbutton-up, .scrollbutton-down {
+     border: none !important;
+}
+ #tabbrowser-tabs[overflow]:not([positionpinnedtabs]) {
+     -moz-padding-start: 20px !important;
+}
+ .tabbrowser-tab[selected="true"] .tab-stack {
+     background: var(--bg-light) !important;
+     color: var(--fg-light) !important;
+     border-radius: 0px !important;
+     position: relative !important;
+}
+ #TabsToolbar, #tabbrowser-tabs {
+     -moz-appearance: none !important;
+     height: var(--tab-height) !important;
+     min-height: var(--tab-height)!important;
+     background: var(--bg-dark) !important;
+     margin-top: 0px !important;
+}
+ #TabsToolbar::after {
+     display: none !important;
+}
+ .tabbrowser-tab::before, .tabbrowser-tab::after {
+     background: none !important;
+}
+/****** highlights/notifications *********/
+ .tabbrowser-tab[pinned][titlechanged]:not([selected="true"]) > .tab-stack > .tab-content {
+     background-image: none;
+    /*remove the default glow notification*/
+}
+ .tabbrowser-tab[pinned][titlechanged]:not([selected="true"]) .tab-background {
+     background-image: radial-gradient(35% 100% at 50% 110%, rgba(255,255,255,1) 10%, rgba(250,185,185,0.75) 30%, rgba(255,117,117,1) 40%, rgba(255,97,97,1) 50%, rgba(255,97,97,0) 120%) !important;
+     background-position: center bottom 1px;
+     background-repeat: no-repeat;
+     background-size: 85% 100%;
+}
+/* Find Bar */
+ @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+ @keyframes scale-in {
+     0% {
+         transform: scaleY(0);
+    }
+     100% {
+         transform: scaleY(1);
+    }
+}
+ @keyframes scale-out {
+     0% {
+         transform: scaleY(1);
+    }
+     100% {
+         transform: scaleY(0);
+    }
+}
+ .browserContainer {
+     position: relative;
+}
+ findbar {
+     animation: 0.1s scale-in;
+     transform-origin: top center;
+     background-color: var(--toolbar-bgcolor) !important;
+     padding: 4px 2px 6px 6px;
+     border: 1px solid var(--toolbox-border-bottom-color);
+     border-top-width: 0;
+     border-radius: 0 0 2px 2px;
+     position: absolute;
+     top: -2px;
+     right: 20px;
+}
+ findbar[hidden="true"] {
+     animation: 0.1s scale-out;
+}
+ findbar .findbar-container {
+     padding: 0 !important;
+     padding-inline-start: 0 !important;
+     padding-inline-end: 0 !important;
+}
+ findbar .findbar-container .findbar-textbox {
+     padding: 6px 8px !important;
+     background-color: var(--url-and-searchbar-background-color) !important;
+     color: var(--lwt-text-color) !important;
+     border-color: var(--backbutton-border-color) !important;
+}
+ findbar .findbar-container .findbar-textbox[status="notfound"] {
+     background-color: #E74C3C !important;
+     color: white !important;
+}
+ findbar .findbar-container .findbar-find-previous, findbar .findbar-container .findbar-find-next {
+     background: transparent !important;
+     border-color: var(--backbutton-border-color) !important;
+}
+ findbar .findbar-container .findbar-find-previous:hover, findbar .findbar-container .findbar-find-previous:focus, findbar .findbar-container .findbar-find-next:hover, findbar .findbar-container .findbar-find-next:focus {
+     background-color: var(--toolbarbutton-hover-background) !important;
+}
+ findbar .findbar-button {
+     border: 1px solid var(--backbutton-border-color);
+     border-radius: var(--toolbarbutton-border-radius) !important;
+}
+ findbar .findbar-closebutton {
+     margin-right: 4px !important;
+     padding-inline-end: 0 !important;
+     position: relative;
+     top: 6px;
+}
+/* Find Bar */
+ @namespace "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+ @-moz-document url("chrome://browser/content/browser.xul") {
+     #PopupAutoCompleteRichResult {
+        /* bindings.xml in the same folder as userChrome.css */
+         -moz-binding: url("bindings.xml#urlbar-popup") !important;
+    }
+     #navigator-toolbox {
+         display: contents !important;
+    }
+     #nav-bar {
+         -moz-box-ordinal-group: 2 !important;
+    }
+}
+ #PanelUI-button, #bookmarks-menu-button, #downloads-button, #home-button, #stylish-toolbar-button, #abp-toolbarbutton, #back-button, #forward-button, #identity-box, #urlbar-reload-button, #urlbar-stop-button, #urlbar-go-button, #notification-popup-box, #new-tab-button, #private-browsing-indicator, #search-container, #nav-bar-overflow-button, .tabs-newtab-button, .tab-close-button, .tab-close, .tab-throbber, .tab-background-start, .tab-background-end, #alltabs-button, #tabview-button {
+     display: none !important;
+}
+ #titlebar-content {
+     margin-top: -10px !important;
+     background-color: #000000 !important;
+}
+ #nav-bar {
+     bottom: 0 !important;
+     width: 100% !important;
+     height: var(--url-height) !important;
+     min-height: var(--url-height) !important;
+     max-height: var(--url-height) !important;
+     margin: 0 0 0 0 !important;
+}
+ #urlbar {
+     border: none !important;
+     border-radius: 0 !important;
+     margin: 0 0 0 0 !important;
+     padding: 0 0px 0 9px !important;
+     height: var(--url-height) !important;
+     min-height: var(--url-height) !important;
+     background: var(--url-background) !important;
+     color: var(--url-color) !important;
+     font-family: var(--url-fonts) !important;
+     font-size: var(--url-font-size) !important;
+     text-align: var(--url-text-align) !important;
+     margin-left: 2px !important;
+     width: 40%!important2;
+}
+ #urlbar:hover{
+     -moz-appearance: none !important;
+     box-shadow: none !important;
+}
+ #urlbar[focused="true"]{
+     -moz-appearance: none !important;
+     box-shadow: none !important;
+}
+
