@@ -148,7 +148,7 @@ a:hover, .res-step:hover::after, .buttons a:hover {
     background-color: rgba(255, 0, 0, 0.10)!important;
     background-image: none!important;
 }
-.drop-choices, .hover-bubble, .md pre code {
+.drop-choices, .hover-bubble, .md code, .md pre {
     background: #333333 !important;
 }
 .tabmenu .selected a {
