@@ -1,6 +1,9 @@
 body, input, textarea, select, button, #alientube, #alientube article {
 	font-family: Noto sans, Roboto, Arial, sans-serif!important;
 }
+html {
+	background-color: #282828!important
+}
 #alientube article .info {
 	font-size: 10px!important;
 }
