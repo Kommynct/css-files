@@ -37,7 +37,7 @@ a {
 }
 .res-step::after {
 	content: "◄"!important;
-	font-family: "noto sans-serif";
+	font-family: "noto sans-serif"!important;
 }
 .res-floater-visibleAfterScroll > ul {
 	background: black!important;
@@ -152,7 +152,7 @@ a:hover, .res-step:hover::after, .buttons a:hover {
 	background: #333333!important;
 }
 .md code {
-font-family:"Noto Mono",Consolas,"Liberation Mono",Menlo,Courier,monospace!important
+font-family:"Noto Mono",Consolas,"Liberation Mono",Menlo,Courier,monospace!important;
 }
 .tabmenu .selected a {
 	color: #999999!important;
