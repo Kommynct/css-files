@@ -1,11 +1,11 @@
 .giftgold, .recommended-link, .debuginfo, .search-expando.collapsed:before, .footer-parent, .infobar.listingsignupbar, .comment-fade, .grippy:after, .author-tooltip, .res-wheel-media-browse, .give-gold-button, .goldvertisement, .embed-comment, .nub, .sr-list > .separator, .sr-list > .separator + .sr-bar, #sr-more-link, span#RESSearchMenuItem {
-	display: none !important;
+	display: none!important;
 }
 #RESNotifications, html, body, #sr-drop-down {
 	background-color: #222222!important;
 }
 .guider, .guiders_button, .RESDialogSmall, .RESDropdownOptions, .res-fancy-toggle-button, #RESConsoleContainer, #RESShortcutsAddFormContainer {
-	background: #222 !important;
+	background: #222!important;
 }
 .toggleButton .toggleThumb, .toggleButton .toggleThumb::before {
 	border-radius: 15px;
@@ -21,9 +21,9 @@
 	transform: translateX(18px);
 }
 * {
-	background-color: transparent !important;
-	border: 0 !important;
-	color: #ffffff !important;
+	background-color: transparent!important;
+	border: 0!important;
+	color: #ffffff!important;
 }
 a.author {
 	font-weight: bold!important;
@@ -81,18 +81,18 @@ a {
 
 /* Default links */
 a, a:visited, .res-step::after, .gearIcon::after {
-	color: #ff5050 !important;
+	color: #ff5050!important;
 }
 #moduleOptionsSave.optionsSaved::before {
 	background: #ff5050;
 }
 a:hover, .res-step:hover::after, .buttons a:hover {
-	color: #ffbbbb !important;
+	color: #ffbbbb!important;
 }
 
 /* Top bar */
 #header-img {
-	filter: invert(80%) hue-rotate(180deg) !important;
+	filter: invert(80%) hue-rotate(180deg)!important;
 }
 #header-bottom-right {
 	right: 10px!important;
@@ -105,10 +105,10 @@ a:hover, .res-step:hover::after, .buttons a:hover {
 	font-weight: bold!important;
 }
 #sr-header-area {
-	height: 0 !important;
+	height: 0!important;
 }
 .sr-bar, .dropdown.srdrop {
-	float: right !important;
+	float: right!important;
 	margin-left: 1em;
 }
 .RES-donate, #SettingsConsole, #RESTipsMenuItem {
@@ -148,10 +148,10 @@ a:hover, .res-step:hover::after, .buttons a:hover {
 	background-image: none!important;
 }
 .drop-choices, .hover-bubble, .md code, .md pre {
-	background: #333333 !important;
+	background: #333333!important;
 }
 .tabmenu .selected a {
-	color: #999999 !important;
+	color: #999999!important;
 }
 .entry {
 	margin-top: 5px;
@@ -164,18 +164,18 @@ a:hover, .res-step:hover::after, .buttons a:hover {
 	color: inherit!important;
 }
 .listing-chooser-collapsed .grippy {
-	width: 1px !important;
+	width: 1px!important;
 }
 .listing-chooser-collapsed .listing-chooser {
-	padding-right: 1px !important;
+	padding-right: 1px!important;
 }
 .listing-chooser li.selected {
-	box-shadow: none !important;
+	box-shadow: none!important;
 }
 input, textarea, .linkinfo .shortlink input, .new-comment .usertext-body, .morelink a, .morelink:hover a, .fancy-toggle-button a, .usertext button {
-	background: #111111 !important;
-	color: #999999 !important;
-	font-weight: normal !important;
+	background: #111111!important;
+	color: #999999!important;
+	font-weight: normal!important;
 }
 .gearIcon::after {
 	text-shadow: none!important;
@@ -183,42 +183,42 @@ input, textarea, .linkinfo .shortlink input, .new-comment .usertext-body, .morel
 
 /* Listing */
 .thing .title, .md textarea, .md .-text, .md p, .md pre > code, .md th, .md td, .md li {
-	color: #ffffff !important;
+	color: #ffffff!important;
 }
 .title:visited {
-	color: #999999 !important;
+	color: #999999!important;
 }
 .thing .title:hover {
-	color: #cccccc !important;
+	color: #cccccc!important;
 }
 .res-nightmode .arrow.up, .res-nightmode .arrow.upmod, .res-nightmode .arrow.down, .res-nightmode .arrow.downmod {
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAcCAMAAADC4sagAAAAD1BMVEUAAAAiIiJAQECoqKj/UFDP173xAAAAAXRSTlMAQObYZgAAAHpJREFUeNrN1EEKgDAMRFE7zf3PLMHAZEQcu5H+XeAttDQ9qjgkvI4RwjEgIyA463h0jkxw1nDnuCKuiBsHhAcr3DlYYVaYHL3CDMhSPrV2Jrvr7D7+08zcl6jWv9xdT83cKuXuxgp32yDcbZpws8XLZ0LuXh/hn162E6bGBNL1v9tzAAAAAElFTkSuQmCC)!important;
 	opacity: 1!important;
 }
 .moderator, .green {
-	color: #3a3 !important;
+	color: #3a3!important;
 }
 .admin, .nsfw-stamp * {
-	color: #a66 !important;
+	color: #a66!important;
 }
 .pagename a, .trophy-name, .buttons a {
-	color: #ff7070 !important;
+	color: #ff7070!important;
 }
 .buttons li {
-	padding: 0 !important;
+	padding: 0!important;
 }
 a.edit-btn {
 	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAADECAYAAACWXKFYAAAABHNCSVQICAgIfAhkiAAABvFJREFUaIHtmn9sVWcZxz/PbTcGkxVklpaZa2igWTMmq//gFXUN4vbH0mCXsRB2sTBkhCVmyaZ2TYiMQDRAiRmQUuKU/UjGD9tOU0Kc4jLiYisZoLYkDghLW4IZGlNGEAvr/frHeQ879/Sc+6MSM+b9Jid93vc8z/d9n7fnfs/740AJFixIug/YGOP7d2CDmV0MViay2MxOAe1AmbteMLPHgE6gClgUZi2PaOkfwG2hBhKuLhF2jiKwAME2ScF7p8LO4xgdwe3u+gnQArzuys9LmpKPIBEguGhmfwL6XTkJ3Jsvhc8Dk0INBOs+DHcXAEmTga8AP48g9bEX2AP8y8wuRRF8ho8HMA4KEpRQwqcEFncjRh83ONkrDJLmSXpDUlucT5SghO/fBrwyUYIvAx+ZWf9ECZYAb+ZyiCWQ9CVgGtA3IQLgWTwdLMtFENXy1yQNhq6HJc2UNCnsP+45kHQncFfEvTFgxMxGi+pRCSX8TxApaZK+CqwFJruqU8B9wLNmNhT0jfs1Pg18ADzlrgRQFg6G6CkOLrjMzP7perQLmJcrlXAKMyXtlLRV0sxcvuGp7pFCGjCzxYX2pErSi5J+Kqm6oCAX+EgwQNJeSXujfOMGcTNwQtLzrnwH3iQzN4Gb6s0D7gaqgRPu1hWgTdJngQ/N7CM/JjyIk/H0ME6J/x0mKKGETwlyzRN3A5jZOlfeiCesp8xsg+8XKaqSvgBcA6qcjQvagbeGvoE4VV4M/BFvjrjYkT4BPAr8sBCCB4FeR/Kgq5sP1AGvSprvO45TJEk1wHWgAhgGFkmqMbMfRLUUNcn6LrAsVL3fzHbG9HYcQY+kOYHyVkk9hQTeKemgmxcelDTLzQ8HA3WTJWXJXXDtHDc/FN4c8RowClwzs7GC0inhVoGl0+l866acKAcws1hhKYggHxoaGuY3NTUtOnfu3HBHR8evRkdHrwNIkqXT6USuHmzevPmpZDK5wzUm4Ddr1qz5lk+SM/9NmzatSSaTO4Gzhw4d+ibeCvahdDr9UN4UKisrKy5cuHBxZGSkuaen553Tp0+fnzFjRkUqlVqZTCar/BQiCVpbW9N1dXU78Xa2Ro4ePbpwwYIF96ZSqR3Alc7OzrfAG/xxBOvXr2+ura3tAM7j7avdP3v27OrGxsZXgLuPHTuW7u/vf9/vQdYYtLa2rqitrd0DDHd1da0EFgJDjY2NrwGVx48f//auXbu6ff+sHtTX18+pq6vrAIa2bdv2sKv+HNAMXOzr63uivb39jXCPbxAsWbLk68Ck3t7e7/f3979fX18/Z3Bw8MfDw8Mf7Nu378jly5evhoOzBvHMmTNDNTU1SqVSywFLpVLbgVmXLl16MirYT+HGGOzfv/8t4BfAo6lUqhOoHBgYWN3W1rYvKtjvQdaTWF5eXrZ06dKGuXPnJnt6en5/8uTJs3HBkQQTwY0UFNhA9u24uqj7JZRwcyGpamxs7HeZTKY5qpwXmUymJZPJvB5XDmOcrEt6BPhtXDmMcb/CTCbjb/+dSCQST4fLYf8oWfd37FIx5SwEf85lkirMrAuYambdkmaZWXegPD38LglO88rwXiRTolJzuApcLi19S/h/gaTHJbUHyu2SHi80eJmkPZIqA3WVri68HBwXvFzSS1FbgG6L8CVJy+OC05JezrV/6EhelpQO33hA0hFJD+TJMN5X0ipJB3LtG0qqdj6r4hxWS+qOInHB3ZJW5+viWkmHJd0TqLvH1a3NFVguaaobqI2SeiXdJanC2S/I2yKtCAprUFTL8Taip+Cp9XW89bLhyf/teAuOq8CVkrCWMA5OgToLVp0A/Edy2ZYtW5paWloSwEFH2on3FPpXImQPmFmL34Nlkn6ZV7I+uZC0QtKbklYUG+sPYvPu3S9+Y926Z8qA1xzpYT4esMjLzBb6PVgl6e1YrfvkwwnpuzlFMw/BewcOdEjSe648TdI7kv4gqU/SMUnHJQ1IOivpvHu5TDcX8BzwHLDdzLZLmoYnrvkQuaov4daEext3SppebGzw7dwNfCdwUFuQJgYXUOEvBR8rpAcJ19qPnP29YlO4OZB3hvBrSVuLjQ0O4iLgSTNLu3JRmrhSUoekKoqEP/L1eCc4ByTVF0vyX8FXpN1458zVZragGAL/QfoZ3vdXTY5wGnCI7EErw9sKuMNdfwWWBv8LTcAzZtZQtCZK6pL0NyeuJdxy8J9E/0C2UGQd3Pp6OCE7EfpbtO2nEDzR7Afuz2NjZo3BFA5P1Pa7EjwGLcr2Uwh+g/MX4It57OzvcSS9PVHbTyH4hirK9o0ySb3OPlmAnQ1J707U9lOYGuAryi6XlATOSboQaCGf/WdJSTMbMkkVeKv2Yk4+M8DVm/Ll+H8AnKRjjLAgx8EAAAAASUVORK5CYII=')!important;
 }
 .buttons a {
-	margin-right: 8px !important;
+	margin-right: 8px!important;
 }
 .buttons a:visited {
-	color: #cc7070 !important;
+	color: #cc7070!important;
 }
 .md blockquote {
 	border-left: 2px solid #909090!important
 }
 .pagename, .tabmenu li, .link .midcol, .buttons a, .subreddit {
-	font-weight: normal !important;
+	font-weight: normal!important;
 }
