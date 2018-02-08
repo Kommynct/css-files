@@ -3,7 +3,7 @@
 }
 #RESNotifications, html, body, #sr-drop-down {
 	background-color: #222222!important;
-	font-family: Noto sans, Roboto, Arial, sans-serif!important;
+	font-family: "Noto Sans", Roboto, Arial, sans-serif!important;
 }
 .guider, .guiders_button, .RESDialogSmall, .RESDropdownOptions, .res-fancy-toggle-button, #RESConsoleContainer, #RESShortcutsAddFormContainer {
 	background: #222!important;
