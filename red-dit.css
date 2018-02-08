@@ -1,6 +1,9 @@
 .server-seconds, .giftgold, .recommended-link, .debuginfo, .search-expando.collapsed:before, .footer-parent, .infobar.listingsignupbar, .comment-fade, .grippy:after, .author-tooltip, .res-wheel-media-browse, .give-gold-button, .goldvertisement, .embed-comment, .nub, .sr-list > .separator, .sr-list > .separator + .sr-bar, #sr-more-link, span#RESSearchMenuItem {
 	display: none!important;
 }
+.md textarea, .md .-text, .md p, .md pre>code, .md th, .md td, .md li {
+	font-size: 1.15em!important;
+}
 #RESNotifications, html, body, #sr-drop-down {
 	background-color: #222!important;
 }
@@ -12,6 +15,9 @@ input, textarea, select, button, #RESNotifications, html, body, #sr-drop-down {
 }
 .res-show-link, #desktop-onboarding-browse, .RESDropdownList li, .preftable select, .toggleButton .toggleThumb, #header-bottom-right, .RESDialogSmall {
 	background-color: #000!important;
+}
+.moduleButton.active {
+    box-shadow: rgb(255, 80, 80) 5px 0px 0px 0px inset!important;
 }
 .toggleButton .toggleThumb, .toggleButton .toggleThumb::before, #header-bottom-right {
 	border-radius: 15px;
@@ -191,9 +197,6 @@ input[type="checkbox"], input[type="checkbox"]:focus, input[type="radio"], input
 	height: 0.65em!important;
 	width: 0.65em!important;
 }
-input[type="checkbox"]:checked, input[type="checkbox"]:indeterminate, input[type=radio]:checked {
-	background-size: cover!important;
-}
 input[type=radio] {
 	border-radius: 100%!important;
 }
@@ -205,6 +208,9 @@ input[type="checkbox"]:indeterminate {
 }
 input[type=radio]:checked {
 	background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIj48Zz48cmVjdCBoZWlnaHQ9IjUxMiIgd2lkdGg9IjUxMiIgeT0iMCIgeD0iMCIgZmlsbD0iIzAwMDAwMCIvPjxjaXJjbGUgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMTI4IiBmaWxsPSIjZGRkZGRkIi8+PC9nPjwvc3ZnPg==")!important;
+}
+input[type="checkbox"]:checked, input[type="checkbox"]:indeterminate, input[type=radio]:checked {
+	background-size: cover!important;
 }
 .pagename a, .trophy-name, .buttons a {
 	color: #ff7070!important;
