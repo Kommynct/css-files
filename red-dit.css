@@ -1,4 +1,4 @@
-.giftgold, .recommended-link, .debuginfo, .search-expando.collapsed:before, .footer-parent, .infobar.listingsignupbar, .comment-fade, .grippy:after, .author-tooltip, .res-wheel-media-browse, .give-gold-button, .goldvertisement, .embed-comment, .nub, .sr-list > .separator, .sr-list > .separator + .sr-bar, #sr-more-link, span#RESSearchMenuItem {
+.server-seconds, .giftgold, .recommended-link, .debuginfo, .search-expando.collapsed:before, .footer-parent, .infobar.listingsignupbar, .comment-fade, .grippy:after, .author-tooltip, .res-wheel-media-browse, .give-gold-button, .goldvertisement, .embed-comment, .nub, .sr-list > .separator, .sr-list > .separator + .sr-bar, #sr-more-link, span#RESSearchMenuItem {
 	display: none!important;
 }
 #RESNotifications, html, body, #sr-drop-down  {
@@ -11,13 +11,13 @@ input, textarea, select, button, #RESNotifications, html, body, #sr-drop-down {
 	background: #222!important;
 }
 .res-show-link, #desktop-onboarding-browse, .RESDropdownList li, .preftable select, .toggleButton .toggleThumb, #header-bottom-right {
-	background-color: black!important;
+	background-color: #000!important;
 }
 .toggleButton .toggleThumb, .toggleButton .toggleThumb::before, #header-bottom-right {
 	border-radius: 15px;
 }
 .toggleButton.enabled .toggleThumb {
-	background-color: green!important;
+	background-color: #0f0!important;
 }
 .moderator, .green {
 	color: #3a3!important;
@@ -53,7 +53,7 @@ a, .hover a:hover  {
 	font-family: "noto sans-serif"!important;
 }
 .res-floater-visibleAfterScroll > ul {
-	background: black!important;
+	background: #000!important;
 	height: 25px!important;
 	min-width: 50px!important;
 	border-radius: 10px!important;
@@ -143,7 +143,7 @@ a:hover, .res-step:hover::after, .buttons a:hover {
 .md code {
 font-family:"Noto Mono",Consolas,"Liberation Mono",Menlo,Courier,monospace!important;
 }
-.tabmenu .selected a {
+.tabmenu .selected a, .preftable .details, .title:visited {
 	color: #999!important;
 }
 .entry {
@@ -173,11 +173,7 @@ input, textarea, .linkinfo .shortlink input, .new-comment .usertext-body, .morel
 .gearIcon::after {
 	text-shadow: none!important;
 }
-
 /* Listing */
-.preftable .details, .title:visited {
-	color: #999!important;
-}
 .thing .title:hover {
 	color: #ccc!important;
 }
