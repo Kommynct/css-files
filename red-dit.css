@@ -51,7 +51,7 @@ a {
 .res-floater-visibleAfterScroll > ul:hover {
     opacity: 1;
 }
-.res-show-link {
+.res-show-link, #desktop-onboarding-browse {
     background-color: black!important;
 }
 #NREMail.nohavemail, #mail.nohavemail {
