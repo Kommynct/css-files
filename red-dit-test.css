@@ -33,7 +33,7 @@
 .res-floater-visibleAfterScroll > ul:hover {
     opacity: 1;
 }
-.res-show-link {
+.res-show-link, #desktop-onboarding-browse {
     background-color: black!important;
 }
 #NREMail.nohavemail, #mail.nohavemail {
@@ -171,4 +171,3 @@ a.edit-btn {
 .pagename, .tabmenu li, .link .midcol, .buttons a, .subreddit {
     font-weight: normal !important;
 }
-
