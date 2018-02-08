@@ -1,8 +1,11 @@
 .giftgold, .recommended-link, .debuginfo, .search-expando.collapsed:before, .footer-parent, .infobar.listingsignupbar, .comment-fade, .grippy:after, .author-tooltip, .res-wheel-media-browse, .give-gold-button, .goldvertisement, .embed-comment, .nub, .sr-list > .separator, .sr-list > .separator + .sr-bar, #sr-more-link, span#RESSearchMenuItem {
 	display: none!important;
 }
-#RESNotifications, html, body, #sr-drop-down {
+#RESNotifications, html, body, #sr-drop-down,  {
 	background-color: #222222!important;
+	font-family: "Noto Sans", Roboto, Arial, sans-serif!important;
+}
+input, textarea, select, button {
 	font-family: "Noto Sans", Roboto, Arial, sans-serif!important;
 }
 .guider, .guiders_button, .RESDialogSmall, .RESDropdownOptions, .res-fancy-toggle-button, #RESConsoleContainer, #RESShortcutsAddFormContainer {
