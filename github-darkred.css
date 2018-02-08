@@ -1,3 +1,6 @@
+a:not(.IssueLabel) {
+	color: #ff5050!important;
+}
 body, html {
     font-family: Noto sans, Roboto, Arial, sans-serif!important;
 }
@@ -52,7 +55,7 @@ input[type="checkbox"]:checked {
   /* auto-generated rule for "background-color: #f6f8fa" */
   .Box-header, .Box-row.navigation-focus.sortable-ghost,
   .Box-row--focus-gray.navigation-focus, .Box-row--hover-gray:hover,
-  .Box-row--gray, .menu-item:hover, .subnav-item:hover, .subnav-item:focus,
+  .Box-row--gray, .menu-item:hover,
   .bg-gray, .markdown-body table tr:nth-child(2n), .markdown-body .highlight pre,
   .markdown-body pre, .table-list-header, .boxed-group>h3, .boxed-group .heading,
   .commit-sha, .signed-commit-header,
@@ -198,7 +201,7 @@ input[type="checkbox"]:checked {
     background: #181818 !important;
   }
   /* auto-generated rule for "border: 1px solid #e1e4e8" */
-  .subnav-item, .blankslate, .list-group-item, .pagination a,
+  .blankslate, .list-group-item, .pagination a,
   .pagination span, .pagination em, .ajax-pagination-form .ajax-pagination-btn,
   .range-editor, .project-column, .project-card {
     border-color: #343434 !important;
@@ -437,6 +440,9 @@ input[type="checkbox"]:checked {
   .ContributingCallout--prior:after {
     border-right-color: #181818 !important;
   }
+.dropdown-caret {
+    vertical-align: bottom!important;
+}
   /* auto-generated rule for "border-top: 7px solid #fff" */
   .dropdown-menu-ne:after {
     border-top: 7px solid #181818 !important;
@@ -508,11 +514,18 @@ input[type="checkbox"]:checked {
     color: #c0c0c0 !important;
   }
 
-.subnav-search-context .btn:hover, .subnav-search-context .btn.selected:hover, a.js-selected-navigation-item.subnav-item:hover, .subnav-item:hover, .subnav-item:focus {
-    background-color: #ff3030!important;
-    color: white!important;
+.subnav-item, a.subnav-item {
+	background-color: black!important;
+	border: 0px!important;
+	color: #cccc!important;
+}
+
+ a.subnav-item:hover, .subnav-item:hover, .subnav-item.selected, .subnav-item.selected:hover {
+	background-color:#ff5050!important;
+	color: #fff!important;
 	opacity: 1!important;
 }
+
   /* auto-generated rule for "color: #444d56" */
   .hidden-text-expander a, .ellipsis-expander, .subnav-search-context .btn,
   .markdown-body kbd, .email-format .email-hidden-toggle a,
@@ -533,7 +546,7 @@ input[type="checkbox"]:checked {
   .pl-ba, .btn .Counter, .form-checkbox .note, .hfields .form-group dt label,
   .note, .drag-and-drop, .drag-and-drop-error-info, h2.account, p.explain,
   .menu-heading, .tabnav-tab, .tabnav-extra,
-  .filter-list.pjax-active .filter-item, .filter-item, .subnav-item,
+  .filter-list.pjax-active .filter-item, .filter-item,
   .subnav-search-input, .text-gray, .link-gray, .muted-link, .lead, .Label--gray,
   .Label--outline, .Counter, .table-list-header-meta,
   .table-list-header-toggle .btn-link, .suggester li small,
@@ -770,7 +783,7 @@ background-position: left top !important;
     font-family: "Noto Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
   }
   /* Base link/panel colors - text */
-  a:not([href*="/labels/"]), input[type="text"]:focus + .header-search-scope,
+input[type="text"]:focus + .header-search-scope,
   .plans-row .plan, .filters li.selected, .vcard-stat, .zeroclipboard-button,
   .creator a, button#logout:hover, #user-links .sign-out-button:hover,
   .numbers-summary a:hover, .numbers-summary a:hover span, .tag-info a:hover,
@@ -845,9 +858,6 @@ background-position: left top !important;
     color: #ff5050 !important;
   }
 
-.HeaderNavlink:hover {
-	color: #ff9090!important;
-}
 .HeaderNavlink:hover .dropdown-caret {
     border-top-color: #ff9090!important;
 }
@@ -863,18 +873,25 @@ background-position: left top !important;
 .Header .header-search-wrapper.focus .header-search-scope {
     border-right-color: black!important;
 }
-a.js-selected-navigation-item.selected.menu-item:hover, a.btn.btn-sm:hover, a.subnav-item.js-subnav-item:hover, button.btn-link.no-underline.text-gray.dropdown-toggle.js-menu-target:hover {
+a.js-selected-navigation-item.selected.menu-item:hover, a.btn.btn-sm:hover, a.subnav-item.js-subnav-item:hover, button.btn-link.no-underline.text-gray.dropdown-toggle.js-menu-target:hover,   .btn.btn-outline:hover {
     color: white!important;
 }
 /*hover color for others*/
 
-a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-item:hover, .comment-reactions .add-reaction-btn:hover, .btn:hover, .btn:active {
+a:not([href*="/labels/"]):not(.subnav-item):hover, .comment-reactions-options .reaction-summary-item:hover, .comment-reactions .add-reaction-btn:hover, .btn:hover, .btn:active, .HeaderNavlink:hover, .numbers-summary a:hover .num {
     color: #ff9090!important;
     text-decoration: none!important;
-}  
+}
+a:not([href*="/labels/"]):not(.subnav-item):hover .text-emphasized {
+    color: #ff7575!important
+}
 .reponav svg.octicon, .numbers-summary .octicon {
     color: inherit!important;
-	vertical-align: text-top!important
+}
+.numbers-summary .octicon {
+    vertical-align: text-top;
+    height: 20px!important;
+    width: auto!important;
 }
 /* Base color panel */
   .btn:active, option:hover, .listings-layout .nav li a:hover, .state-merged,
@@ -882,9 +899,7 @@ a:not([href*="/labels/"]):hover, .comment-reactions-options .reaction-summary-it
   table.upgrades tr:hover td, .email-format .email-hidden-toggle:hover a,
   .dashboard-tabs a:hover, .dropdown-menu > li > a:hover,
   .documentation-results a:hover, .hidden-text-expander a:hover,
-  .dropdown-item:hover, .dropdown-item.zeroclipboard-is-hover,
-  .subnav-item.selected, .subnav-item.selected:hover,
-  .subnav-item.selected:focus, .example-nav li a.selected,
+  .dropdown-item:hover, .dropdown-item.zeroclipboard-is-hover, .example-nav li a.selected,
   .typeahead-result.navigation-focus, .typeahead-result:hover,
   .issues-reset-query:hover .octicon-x, .segmented-nav li.active,
   .diff-expander:hover, .pagination .current, .owner-select-target:hover,
@@ -1429,7 +1444,7 @@ button.btn.btn-sm.btn-outline.js-details-target:hover {
   .setup-form .tos-info, .setup-form .setup-organization-next,
   .collection-page .other-content, .bubble-wrap, .release-show, .file-wrap,
   .branches .branch-summary, .branches .no-results-message,
-  .branch-a-b-count .count-half:last-child, .tabnav-tab.selected, .panel-nav,
+  .branch-a-b-count .count-half:last-child, .panel-nav,
   .file, .full-commit .sha-block > a, .theme-selector-thumbnail,
   .segmented-nav li, .overall-summary, .boxed-group-inner, .search-form button,
   .branches .branch-group-heading, .boxed-group > h3, .boxed-group .heading,
@@ -1444,8 +1459,8 @@ button.btn.btn-sm.btn-outline.js-details-target:hover {
   .listgroup-item + .listgroup-item, .user-key-badge, .newsfeed-placeholder,
   .progress-bar-inline .progress-bar, .menu-heading, body .border-gray-dark,
   .discussion-item-review .blob-wrapper, .bot-identifier, .blame-commit,
-  .counter, .Counter, div.marketplace-product-callout {
-    border-color: black!important;
+  .counter, .Counter, div.marketplace-product-callout,  .tabnav-tab.selected {
+    border-color: #000!important;
   }
   pre, h1, h2, h3, .header, table, table tr, table td, table th, blockquote,
   .pulse-graph, .btn:not(img), .minibutton, .social-count,
@@ -1655,7 +1670,7 @@ outline: none!important;
   .search-result-header, .accessibility-aid:focus, .file-data, .signup-plans th,
   .signup-plans td, .signup-plans-orgs th, .signup-plans-orgs td, .commits td,
   .featured-callout, .sidebar-module ul ul li, .native-download,
-  .setup-info-module, div#common-issues ul, #gist-form .name, .subnav-item,
+  .setup-info-module, div#common-issues ul, #gist-form .name
   .render-notice,
   .label-edit.edit-color-label-form .color-editor .color-editor-input,
   .date_selector td, .new-label, .range-editor .range, .range-editor .flag,
@@ -1728,7 +1743,7 @@ outline: none!important;
   .review-summary-form-wrapper, #projects-results, .listgroup,
   .protected-branch-orgs-and-repo-admins, .listgroup-overflow, .Header,
   .project-column, .btn.btn-outline, .js-notice > .border,
-  .news .issues_labeled .border {
+  .news .issues_labeled .border, .newsfeed-placeholder, .border.rounded-1.p-3.mb-3 {
     background: black!important;
   }
   .sidebar-module,
@@ -1736,6 +1751,57 @@ outline: none!important;
     background-color: #181818 !important;
     border-color: transparent!important;
   }
+.d-flex.flex-justify-between.border-bottom.pb-3, .repo-list-item.d-flex.flex-justify-start.py-4.public.source, .code-list-item.col-12.py-4.code-list-item-public {
+	border: 5px solid #000!important;
+	border-radius: 20px!important;
+	padding: 2em!important;
+	background-color: #000!important;
+}
+
+.d-flex.flex-justify-between.border-bottom.pb-3 {
+    padding-bottom: 30px!important;
+    margin-bottom: -50px!important;
+	margin-top: 0px!important;
+    padding-top: 10px!important;
+}
+
+.repo-list-item.d-flex.flex-justify-start.py-4.public.source, .code-list-item.col-12.py-4.code-list-item-public {
+	padding-top: 5px!important;
+	margin-top: 1em!important;
+}
+.menu-item:first-child::before {
+	border-top-left-radius: 0px!important;
+}
+a.menu-item:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    content: "";
+	background-color: #ff5050!important;
+	height: 38px!important;
+}
+nav.menu.border, .border.rounded-1.p-3.mb-3 {
+	border: 5px solid #000!important;
+	border-radius: 20px!important;
+	border-top-width: 25px!important;
+	border-bottom-width: 20px!important;
+	padding-left: 10px!important;
+	padding-right: 10px!important;
+}
+nav.menu.border {
+	border-top-width: 20px!important;
+	border-bottom-width: 20px!important;
+	padding-left: 10px!important;
+	padding-right: 10px!important;
+}
+.border.rounded-1.p-3.mb-3 {
+	border-top-width: 5px!important;
+	border-bottom-width: 5px!important;
+	padding-left: 10px!important;
+	padding-right: 10px!important;
+}
   .markdown-body table tr, .blob-num-context, #user-content-toc td {
     background: #141414 !important;
   }
@@ -1792,9 +1858,6 @@ background-color: black!important
 }
 table.files tr.navigation-focus td {background-color: transparent!important;
 }
- .numbers-summary a:hover .num {
- color: #ff9090!important;
-}
   #main, .capped-box, .unread_count, #browser table th,
   .markdown-format table th, table.upgrades tr.current td, .definitions,
   .discussion-topic-header, .timeline-commits-minimal .commit-icon .octicon,
@@ -1802,7 +1865,7 @@ table.files tr.navigation-focus td {background-color: transparent!important;
   .search-results-listing em, .discussion-bubble-inner, #wiki-history table td,
   .gist .gist-file .gist-data, .logo-box, .markdown-example .rendered,
   .team-grid .team-members, .diagram-icon:not(.active), table.capped-list th,
-  .filter-bar, .audit-search-clear, .country-info, .tabnav-tab.selected,
+  .filter-bar, .audit-search-clear, .country-info,
   .file-diff-split .empty-cell, .composer-infobar, .completeness-indicator-blank,
   .leaflet-control-zoom, .pagehead-tabs-item.selected, .reponav-item.selected,
   .manage-repo-access-not-active, .header-search-scope, .reverse-progress-bar,
@@ -2387,12 +2450,18 @@ svg.octicon.octicon-check:hover {
   button.button:hover, a.button:hover, span.button:hover,
   button.minibutton:hover, a.minibutton:hover, span.minibutton:hover,
   .clone-url-button.selected > .clone-url-link,
-  .clone-url-button.selected > .clone-url-link:hover, ul#bootcamp li a:hover h4, a.btn.btn-sm.btn-with-count.select-menu-button.js-menu-target:hover {
+  .clone-url-button.selected > .clone-url-link:hover, ul#bootcamp li a:hover h4, a.btn.btn-sm.btn-with-count.select-menu-button.js-menu-target:hover, a.btn.btn-outline.mt-2:hover {
     background: #ff5050!important;
     border-color: transparent!important;
 	opacity: 1!important;
 	color: white!important
   }
+ {
+background-color: #ff5050	
+}
+a.btn.btn-outline.mt-2 {
+background-color: rgba(255, 50, 50, 0.5)!important;
+}
 .previewable-comment-form textarea {
 	resize: none!important
 }
@@ -2458,12 +2527,10 @@ svg.octicon.octicon-check:hover {
   .select-menu-item.navigation-focus .description-inline,
   .gist-snippet-meta .gist-count-links > li > a:hover,
   .team-member-list .manage-team-member .navigation-focus .btn-link,
-  .dangerzone > h3, .gcr-ext-editor-close .select-menu-title,
-  .btn.btn-outline:hover, .btn.btn-outline:active, .btn.btn-outline.selected,
+  .dangerzone > h3, .gcr-ext-editor-close .select-menu-title .btn.btn-outline:active, .btn.btn-outline.selected,
   .btn.btn-outline.zeroclipboard-is-hover,
   .btn.btn-outline.zeroclipboard-is-active, a.filter-item.selected,
-  .date-selector td.selected, .date-selector td.selectable-day:hover,
-  .subnav-item:hover, .subnav-item:focus, .owner-select-target:hover,
+  .date-selector td.selected, .date-selector td.selectable-day:hover, .owner-select-target:hover,
   .owner-select-target:focus, .suggester li.navigation-focus,
   .suggester li.navigation-focus small, .intgrs-lstng-categories a:hover,
   .text-white, a.text-white, .blame-next-container .reblame-link:hover,
@@ -2509,8 +2576,7 @@ svg.octicon.octicon-check:hover {
   .explore-page .see-more-link, .mute, .pull-request-link:hover,
   .expandable:hover:before, .follow-list .follow-list-name a,
   a.comment-header-author, .wiki-edit-link:hover, .infotip p, .form-actions .tip,
-  dl.form.warn dd.warning, .page-notice, .subnav-item.selected,
-  .subnav-item.selected:hover, .subnav-item.selected:focus, ol.toc > li a.active,
+  dl.form.warn dd.warning, .page-notice, ol.toc > li a.active,
   .example-nav li a.selected, .facebox-alert, .typeahead-result, .no-results,
   #user-links > li * button, .timeline-commits .hidden-text-expander a:hover,
   .color-editor-input, #user-links .sign-out-button, .table-list-item label,
@@ -2674,7 +2740,7 @@ svg.octicon.octicon-check:hover {
   .news .alert .branch-link, .release .release-authorship a,
   .wiki-wrapper .wiki-empty-box:hover,
   .select-menu.is-showing-clear-item .select-menu-clear-item .octicon,
-  .diffstat-summary a, a.subnav-item,
+  .diffstat-summary a,
   .branches .branch-group-heading .branch-group-name, .render-notice,
   .table-list-milestones .stat,
   .commits-listing .commit-group-title .octicon-git-commit,
@@ -3039,18 +3105,23 @@ svg.octicon.octicon-check:hover {
     border-color: #6cc644 !important;
   }
   /* interactive button - bright border */
-  .btn-primary:not(.compare-button), .button.primary, .btn-theme-green {
-    background: #008833 !important;
-    border-color: #008833 !important;
-	  opacity: .6 !important;
+  .btn-primary:not(:disabled):not(.compare-button), .btn-primary:not(.compare-button), .button.primary, .btn-theme-green {
+    background: rgba(0, 136, 51, 0.6)!important;
+    border-color:transparent!important;
+  }
+  .btn-primary:not(:disabled):not(.compare-button):hover,
+  .button.primary:not(:disabled):hover, .btn-theme-green:hover {
+    background: rgba(0, 136, 51, 1) !important;
+    border-color: rgba(0, 136, 51, 1)  !important;
+	color: #fff!important
   }
   .button.primary:disabled, .button.primary:disabled:hover,
   .button.primary.disabled, .button.primary.disabled:hover,
   .btn-primary:disabled, .btn-primary:disabled:hover, .btn-primary.disabled,
   .btn-primary.disabled:hover, .btn-theme-green:disabled,
   .btn-theme-green:disabled:hover {
-    background: linear-gradient(#203522, #152715) !important;
-    border-color: #041 !important;
+    background: #173118!important;
+    border-color: #173118 !important;
   }
   /* New additions */
   .repo-owner-tag .tag, .gist-owner-tag .tag {
@@ -3061,12 +3132,7 @@ svg.octicon.octicon-check:hover {
   .noproblems .pageheader_wrap, a.new-repo:hover {
     background: #373 !important;
   }
-  .btn-primary:not(:disabled):not(.compare-button):hover,
-  .button.primary:not(:disabled):hover, .btn-theme-green:hover {
-    background: #008833 !important;
-    border-color: #008833 !important;
-	  opacity: 1 !important;
-  }
+
   /* orange */
   #user-links .unread_count, .minorproblem .pageheader_wrap {
     background: rgba(203, 108, 0, .8) !important;
@@ -3792,7 +3858,7 @@ p.drag-and-drop.position-relative {
   .awesome-autocomplete .tt-suggestion.tt-cursor {
     background: #333 !important;
   }
-  .awesome-autocomplete .tt-suggestion:hover .aa-name {
+  .awesome-autocomplete .tt-suggestion:hover .aa-name, .mini-repo-list-item .owner, .mini-repo-list-item .repo {
     text-decoration: none !important;
   }
   .awesome-autocomplete .tt-suggestion em {
@@ -3827,7 +3893,7 @@ p.drag-and-drop.position-relative {
     background: #222 !important;
     border-color: #343434 !important;
   }
-  .graphiql-ide.signed-out:after {
+  .graphiql-ide.signed-out:after,  .tabnav-tab.selected {
     background: #000 !important;
   }
   .graphiql-container, .timeline-comment-header .author:hover {
