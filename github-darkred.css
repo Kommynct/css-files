@@ -4,7 +4,9 @@ a:not(.IssueLabel) {
 body, html {
     font-family: Noto sans, Roboto, Arial, sans-serif!important;
 }
-
+.col-lg-4.col-md-6.col-sm-12.p-4.float-left.text-center img {
+    filter: hue-rotate(151deg) brightness(80%);
+}
 /* auto-generated rule for "background-color: #2cbe4e" */
   .State--green, .block-diff-added, .block-diff-neutral,
   .discussion-item-reopened .discussion-item-icon,
