@@ -1,13 +1,17 @@
+:root {
+--ytd-masthead-height: 40px!important;	
+}
+
 body, input, textarea, select, button, #alientube, #alientube article, html {
 	font-family: Noto sans, Roboto, Arial, sans-serif!important;
 }
-html {
+html, ytd-masthead#masthead {
 background-color: #282828!important
 }
 #alientube article .info {
 	font-size: 10px!important;
 }
-yt-page-navigation-progress {
+yt-page-navigation-progress, #guide-content.ytd-app {
 	background-color: transparent!important;
 }
 button.button.at_submit {
@@ -31,7 +35,6 @@ button.button.at_submit {
 #alientube .button:hover{
     opacity: 1!important;
 }
-
 .at_comment_lowercontrols {
     direction: rtl;
 }
@@ -49,6 +52,9 @@ text-decoration: none!important
 ytd-searchbox[mode=legacy][has-focus] #container.ytd-searchbox, ytd-searchbox[mode=legacy-centered][has-focus] #container.ytd-searchbox {
 	border-color: #ff5050!important;
 	border-width: 1px;
+}
+#container.ytd-searchbox {
+	border-right: 1px solid var(--ytd-searchbox-legacy-border-color)!important;
 }
 #container.ytd-sentiment-bar-renderer, ytd-button-renderer.style-primary[is-paper-button], .sbsb_d {
 	background-color: red!important;
@@ -71,16 +77,15 @@ paper-button:not([raised]).keyboard-focus, #icon-label.yt-dropdown-menu {
 ytd-compact-video-renderer:hover, ytd-compact-radio-renderer:hover, ytd-grid-video-renderer:hover {
 	border-radius: 8px;
 }
-ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]):hover {
-	opacity: 1;
+ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]):hover, paper-button.ytd-subscribe-button-renderer:not([subscribed]):hover {
+	background-color: red!important;
 }
-paper-button.ytd-subscribe-button-renderer:focus {
-	border-color: red;
+ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]), paper-button.ytd-subscribe-button-renderer {
+	background-color: rgba(255, 0, 0, 0.5)!important;
 }
 paper-button.ytd-subscribe-button-renderer {
-	border-color: red;
 	border-width: 2px;
-	border-style: solid;
+	border-style: none!important;
 }
 paper-button[subscribed].ytd-subscribe-button-renderer {
     border-color: black!important;
@@ -89,9 +94,7 @@ paper-button[subscribed].ytd-subscribe-button-renderer {
 	height: 32px!important;
 	width: 196px!important;
 }
-ytd-subscribe-button-renderer:not([button-style]) paper-button:not([subscribed]) {
-	opacity: .5;
-}
+
 .badge-style-type-live-now.ytd-badge-supported-renderer {
     font-size: 9px;
     border: none!important;
@@ -158,11 +161,8 @@ ytd-button-renderer.style-primary[disabled][is-paper-button]:hover {
 #alientube .vote .arrow.up:hover {
 	background-position: -30px 0px!important;
 }
-#search-icon-legacy.ytd-searchbox, #alientube .options .sortContainer::before, yt-icon.ytd-badge-supported-renderer, .badge-style-type-collection.ytd-badge-supported-renderer, #links-holder.ytd-c4-tabbed-header-renderer, #alientube .at_commentfield .at_writingauthor, span.ytd-badge-supported-renderer, #banner.ytd-pla-shelf-renderer {
+#search-icon-legacy.ytd-searchbox, #alientube .options .sortContainer::before, yt-icon.ytd-badge-supported-renderer, .badge-style-type-collection.ytd-badge-supported-renderer, #links-holder.ytd-c4-tabbed-header-renderer, #alientube .at_commentfield .at_writingauthor, span.ytd-badge-supported-renderer, #banner.ytd-pla-shelf-renderer, #masthead-container.ytd-app::after {
 	display: none
-}
-#alientube header span.report {
-	margin-right: calc(100% - 331px)!important;
 }
 #alientube .options .sortContainer, ytd-button-renderer #button.ytd-button-renderer {
 	pointer-events: none;
@@ -172,14 +172,16 @@ ytd-button-renderer.style-primary[disabled][is-paper-button]:hover {
 }
 #alientube .options .sortContainer::after {
 	content: "▼";
-	margin-left: -15px;
+	margin-left: -18px;
 }
-#alientube .options select {
+#alientube .options select.sort {
 	background: #111111!important;
-	direction: rtl!important;
-	padding-right: 15px;
+	padding-right: 0px;
+	margin-top: 10px!important;
 	cursor: pointer;
 	pointer-events: all!important;
+	margin-left: calc(100% - 69px)!important;
+	margin-right: -62px!important;
 }
 #alientube article.deleted > .at_commentmain > .at_commentcontent {
     filter: brightness(50%);
@@ -207,27 +209,29 @@ app-drawer[persistent][position=left] {
     position: absolute;
     margin-top: -16px;
 }
+
 #guide-links-primary.ytd-guide-renderer, #footer.ytd-guide-renderer > #copyright, #guide-links-secondary.ytd-guide-renderer {
     display: none!important;
 }
-span.ytd-comment-renderer:hover, .sbqs_c, #alientube textarea.at_textarea, paper-button[subscribed].ytd-subscribe-button-renderer, .deemphasize.yt-formatted-string, button.yt-icon-button > yt-icon:hover, .more-button.ytd-video-secondary-info-renderer:hover, .less-button.ytd-video-secondary-info-renderer:hover, .more-button.ytd-comment-replies-renderer:hover, [button-renderer].ytd-menu-renderer:hover {
+span.ytd-comment-renderer:hover, .sbqs_c, #alientube textarea.at_textarea, paper-button[subscribed].ytd-subscribe-button-renderer, .deemphasize.yt-formatted-string, button.yt-icon-button > yt-icon:hover, .more-button.ytd-video-secondary-info-renderer:hover, .less-button.ytd-video-secondary-info-renderer:hover, .more-button.ytd-comment-replies-renderer:hover, [button-renderer].ytd-menu-renderer:hover, ytd-subscribe-button-renderer[button-style="COMPACT_GRAY"] paper-button.ytd-subscribe-button-renderer {
 	color: white!important;
 }
 #container.ytd-masthead {
 	height: 40px!important;
-}
-#masthead-container.ytd-app {
-	position: absolute;
+	background-color: #171717!important;
 }
 #page-manager.ytd-app {
-	margin-top: 0px!important;
+    --ytd-toolbar-offset: var(--ytd-masthead-height, 40px);
+    overflow-x: auto;
+    margin-top: var(--ytd-masthead-height, 40px);
 }
 paper-button.ytd-button-renderer {
 	font-weight: bold!important;
 }
 ytd-searchbox[mode=legacy] #container.ytd-searchbox, ytd-searchbox[mode=legacy-centered] #container.ytd-searchbox {
-	box-shadow: none;
+	box-shadow: none!important;
 }
+
 a[is="yt-endpoint"].ytd-button-renderer {
 	cursor: pointer!important;
 }
@@ -245,85 +249,12 @@ a[is="yt-endpoint"].ytd-button-renderer {
 }
 
 /*tests*/
-ytd-c4-tabbed-header-renderer[has-channel-art][guide-visible] .banner-visible-area.ytd-c4-tabbed-header-renderer {
-	position: absolute!important;
-	height: calc((100vw - 725px) / 6.2 - 15px)!important;
-}
-#label.yt-dropdown-menu {
-    direction: ltr;
-}
-app-header::before {
-    position: absolute;
-    width: 100%;
-    height: 300px;
-    opacity: 1;
-    box-shadow: none!important;
-    background-image: var(--yt-channel-banner);
-    background-repeat: no-repeat!important;
-    background-position: center top!important;
-}
-ytd-channel-sub-menu-renderer {
-    height: 56px;
-    margin: 8px 0 8px;
-    margin-bottom: -5px!important;
-	margin-top: 200px!important;
-    display: block!important;
-    position: static;
-}
-div#sort-menu {
-    direction: rtl;
-    margin-top: -33px;
-}
-ytd-newspaper-renderer {
-    display: block!important;
-    margin-top: 240px;
-}
-ytd-browse-secondary-contents-renderer {
-    margin-top: 200px;
-}
-ytd-browse[page-subtype="channels"] {
-	padding-top: 300px!important;
-}
-#wrapper.app-header-layout > [slot=header] {
-	position: absolute!important;
-	top: 0;
-	left: 0!important;
-	right: 0px!important;
-	transform: none!important;
-	z-index: 1;
-}
-#contentContainer.app-header {
-	position: absolute;
-	height: 100%;
-}
-app-toolbar {
-	position: absolute;
-	width: 100%;
-	height: 40px!important;
-}
-ytd-browse[page-subtype ~ ="channels"] ytd-two-column-browse-results-renderer.ytd-browse {
-	margin-top: 200px!important;
-}
-#channel-header.ytd-c4-tabbed-header-renderer {
-	background-color: var(--yt-lightsource-section1-color);
-	padding-top: 16px;
-	padding-right: 107px;
-	padding-bottom: 0px;
-	padding-left: 0px;
-	position: absolute;
-	z-index: 1;
-	min-width: 0;
-}
-ytd-browse.style-scope.ytd-page-manager ytd-browse[page-subtype="channels"] {
-	padding-top: 400px!important
-}
-/*tests*/
-#alientube .at_replies article {
+#alientube article.at_comment {
     border-left: 1px solid #888888!important;
-	padding-top: 6px;
 }
-#alientube .at_replies {
-		padding-top: 0px!important;
+#alientube article {
+    padding-left: 10px!important;
+    margin-top: 5px!important;
 }
 blockquote {
     border-left: 1px solid #909090!important;
@@ -332,10 +263,6 @@ blockquote {
     -webkit-margin-start: 1px;
     -webkit-margin-end: 0px;
     background-color: black!important;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 0px;
 }
 #at_overflow {
     margin: 0px;
@@ -344,20 +271,16 @@ blockquote {
 #at_overflow ul li {
     display: block;
 }
+.yt-uix-form-input-checkbox-element {
+border: none!important;	
+}
 #at_overflow ul {
     margin-left: -116px;
     border: none!important;
     top: 13px;
 	background: rgb(36, 36, 36) !important;
 }
-.at_tab {
-    padding-right: 0px!important;
-    padding-left: 0px!important;
-    margin: 0px!important;
-}
+
 #at_overflow img {
     filter: invert(100%) hue-rotate(180deg) brightness(400%)!important;
-}
-#page-manager.ytd-app {
-    margin-top: 40px!important;
 }
