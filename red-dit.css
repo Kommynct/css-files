@@ -13,7 +13,7 @@ input, textarea, select, button, #RESNotifications, html, body, #sr-drop-down {
 .guider, .guiders_button, .RESDialogSmall, .RESDropdownOptions, .res-fancy-toggle-button, #RESConsoleContainer, #RESShortcutsAddFormContainer {
 	background: #222!important;
 }
-.res-show-link, #desktop-onboarding-browse, .RESDropdownList li, .preftable select, .toggleButton .toggleThumb, #header-bottom-right, .RESDialogSmall {
+.res-show-link, #desktop-onboarding-browse, .RESDropdownList li, .preftable select, .toggleButton .toggleThumb, #header-bottom-right, .RESDialogSmall, .t9qpig-0 {
 	background-color: #000!important;
 }
 .moduleButton.active {
