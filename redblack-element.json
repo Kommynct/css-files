@@ -1,0 +1,22 @@
+{
+    "name": "Red and black",
+    "is_dark": true,
+    "colors": {
+        "accent-color": "#cc0000",
+        "primary-color": "#cc0000",
+        "warning-color": "#cccc00",
+
+        "sidebar-color": "#101010",
+        "roomlist-background-color": "#000000",
+        "roomlist-text-color": "#FFFFFF",
+        "roomlist-text-secondary-color": "#cccccc",
+        "roomlist-highlights-color": "#3c3c3c",
+        "roomlist-separator-color": "#101010",
+
+        "timeline-background-color": "#000000",
+        "timeline-text-color": "#FFFFFF",
+        "timeline-text-secondary-color": "#101010",
+        "timeline-highlights-color": "#202020",
+        "reaction-row-button-selected-bg-color": "#bbbbbb"
+    }
+}
