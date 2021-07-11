@@ -31,5 +31,5 @@
                     "timeline-bubble-background-selected": "#c04040",
                     "username-colors": ["#cc0000", "#cc1000", "#cc2000", "#cc3000", "#cc4000", "#cc5000", "#cc6000", "#cc7000", "#cc8000", "#cc9000", "#cca000", "#ccb000", "#cce000" , "#cccc00", "#ccd000", "#cce000", "#ccf000", "#ccff00"],
                     "avatar-background-colors": ["#cc0000", "#cc1000", "#cc2000", "#cc3000", "#cc4000", "#cc5000", "#cc6000", "#cc7000", "#cc8000", "#cc9000", "#cca000", "#ccb000", "#cce000" , "#cccc00", "#ccd000", "#cce000", "#ccf000", "#ccff00"]
-                }
+                },
             }
