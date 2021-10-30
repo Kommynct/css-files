@@ -18,7 +18,10 @@
 				"timeline-bubble-background-incoming": "#101010",
 				"timeline-bubble-background-outgoing": "#050505",
 				"timeline-bubble-background-selected": "#c04040",
+				"secondary-content": "#000000",
+				"tertiary-content": "#000000",
 				"username-colors": [ "#cc0000", "#cc2000", "#cc4000", "#cc6000", "#cc8000", "#ccca00", "#ccc000", "#ccf000" ],
 				"avatar-background-colors": [ "#cc0000", "#cc8000", "#ccff00" ]
+		
 	}
 }
