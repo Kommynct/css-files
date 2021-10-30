@@ -20,8 +20,8 @@
 			"timeline-text-secondary-color": "#101010",
 			"timeline-highlights-color": "#202020",
 			"reaction-row-button-selected-bg-color": "#202020"
-			"timeline-bubble-background-incoming": "#101010",
-			"timeline-bubble-background-outgoing": "#050505",
-			"timeline-bubble-background-selected": "#c04040",
+			"eventbubble-others-bg": "#101010",
+			"eventbubble-self-bg": "#050505",
+			"eventbubble-selected-bg": "#c04040",
 				}
 }
