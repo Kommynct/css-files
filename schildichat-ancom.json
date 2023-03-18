@@ -1,27 +1,22 @@
 {
-	"name": "Schildichat Ancom",
-	"is_dark": true,
-		"colors": {
-			"accent-color": "#cc0000",
-			"primary-color": "#cc0000",
-			"warning-color": "#cccc00",
-
-			"sidebar-color": "#101010",
-			"roomlist-background-color": "#000000",
-			"roomlist-text-color": "#FFFFFF",
-			"roomlist-text-secondary-color": "#101010",
-			"roomlist-highlights-color": "#202020",
-			"roomlist-separator-color": "#101010",
-
-			"timeline-background-color": "#000000",
-			"timeline-text-color": "#FFFFFF",
-			"secondary-content": "#000000",
-			"tertiary-content": "#000000",
-			"timeline-text-secondary-color": "#101010",
-			"timeline-highlights-color": "#202020",
-			"reaction-row-button-selected-bg-color": "#202020",
-			"eventbubble-others-bg": "#101010",
-			"eventbubble-self-bg": "#050505",
-			"eventbubble-selected-bg": "#c04040"
-				}
+    "name": "schildichat test theme",
+    "is_dark": true,
+    "colors": {
+        "accent-color": "#cc0001",
+        "primary-color": "#00001",
+        "warning-color": "#cc0001",
+        "sidebar-color": "#000001",
+        "roomlist-background-color": "#111112",
+        "roomlist-text-color": "#ffffff",
+        "roomlist-text-secondary-color": "#ffffff",
+        "roomlist-highlights-color": "#cc0001",
+        "roomlist-separator-color": "#111112",
+        "timeline-background-color": "#000001",
+        "timeline-text-color": "#ffffff",
+        "secondary-content": "#ffffff",
+        "tertiary-content": "#ffffff",
+        "timeline-text-secondary-color": "#cc0001",
+        "timeline-highlights-color": "#cc0001",
+        "reaction-row-button-selected-bg-color": "#cc0001"
+    }
 }
