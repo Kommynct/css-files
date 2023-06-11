@@ -1,5 +1,5 @@
 {
-  "name": "Ancom-2",
+  "name": "Ancom-3",
   "is_dark": true,
   "colors": {
     "accent-color": "#cc0000",
@@ -11,7 +11,7 @@
     "roomlist-text-color": "#c0c0c0",
     "roomlist-text-secondary-color": "#1e1e1e",
     "roomlist-highlights-color": "#454545",
-    "roomlist-separator-color": "#000000",
+    "roomlist-separator-color": "#000",
     "timeline-background-color": "#202020",
     "timeline-text-color": "#cccccc",
     "secondary-content": "#cccccc",
@@ -20,10 +20,14 @@
     "timeline-highlights-color": "#101010",
     "reaction-row-button-selected-bg-color": "#cc0000",
     "menu-selected-color": "#cc0000",
-    "focus-bg-color": "#ff2020",
+    "focus-bg-color": "#202020",
     "room-highlight-color": "#cc0000",
     "togglesw-off-color": "#909090",
     "other-user-pill-bg-color": "#cc0000",
+	"eventbubble-self-bg": "#202020",
+	"eventbubble-others-bg": "#101010",
+	"eventbubble-bg-hover": "#202020",
+	"eventbubble-reply-color": "#404040",
     "username-colors": [
       "#cba6f7",
       "#eba0ac",
