@@ -1,8 +1,9 @@
 {
-  "name": "Ancom-4",
+  "name": "Ancom-5",
   "is_dark": true,
   "colors": {
     "accent-color": "#cc0000",
+	  "accent": "#cc0000",
     "primary-color": "#c0c0c0",
     "warning-color": "#cccc00",
     "alert": "#00cc00",
