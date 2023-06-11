@@ -1,5 +1,5 @@
 {
-  "name": "Ancom-3",
+  "name": "Ancom-4",
   "is_dark": true,
   "colors": {
     "accent-color": "#cc0000",
@@ -12,7 +12,7 @@
     "roomlist-text-secondary-color": "#1e1e1e",
     "roomlist-highlights-color": "#454545",
     "roomlist-separator-color": "#000",
-    "timeline-background-color": "#202020",
+    "timeline-background-color": "#000000",
     "timeline-text-color": "#cccccc",
     "secondary-content": "#cccccc",
     "tertiary-content": "#cccccc",
