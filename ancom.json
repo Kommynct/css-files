@@ -1,0 +1,43 @@
+{
+  "name": "Ancom",
+  "is_dark": true,
+  "colors": {
+    "accent-color": "#cc0000",
+    "primary-color": "#c0c0c0",
+    "warning-color": "#cccc00",
+    "alert": "#00cc00",
+    "sidebar-color": "#101010",
+    "roomlist-background-color": "#000",
+    "roomlist-text-color": "#c0c0c0",
+    "roomlist-text-secondary-color": "#1e1e1e",
+    "roomlist-highlights-color": "#454545",
+    "roomlist-separator-color": "#000",
+    "timeline-background-color": "#202020",
+    "timeline-text-color": "#ccc",
+    "secondary-content": "#ccc",
+    "tertiary-content": "#ccc",
+    "timeline-text-secondary-color": "#a0a0a0",
+    "timeline-highlights-color": "#101010",
+    "reaction-row-button-selected-bg-color": "#cc0000",
+    "menu-selected-color": "#cc0000",
+    "focus-bg-color": "#202020",
+    "room-highlight-color": "#cc0000",
+    "togglesw-off-color": "#909090",
+    "other-user-pill-bg-color": "#cc0000",
+    "username-colors": [
+      "#cba6f7",
+      "#eba0ac",
+      "#fab387",
+      "#a6e3a1",
+      "#94e2d5",
+      "#89dceb",
+      "#74c7ec",
+      "#b4befe"
+    ],
+    "avatar-background-colors": [
+      "#89b4fa",
+      "#cba6f7",
+      "#a6e3a1"
+    ]
+  }
+}
